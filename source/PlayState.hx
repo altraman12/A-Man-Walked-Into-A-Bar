@@ -15,6 +15,49 @@ class PlayState extends FlxState
 	/**
 	 * Function that is called up when to state is created to set it up. 
 	 */
+	
+	public function justPressed():Bool
+	{
+		#if mobile
+			var returnVal = false;
+			for (touch in FlxG.touches.list)
+			{
+				returnVal = touch.justPressed;
+			}
+			return returnVal;
+		#else
+			return FlxG.mouse.justPressed;
+		#end
+	}
+	
+	public function pressed():Bool
+	{
+		#if mobile
+			var returnVal = false;
+			for (touch in FlxG.touches.list)
+			{
+				returnVal = touch.pressed;
+			}
+			return returnVal;
+		#else
+			return FlxG.mouse.pressed;
+		#end
+	}
+	
+	public function justReleased():Bool
+	{
+		#if mobile
+			var returnVal = false;
+			for (touch in FlxG.touches.list)
+			{
+				returnVal = touch.justReleased;
+			}
+			return returnVal;
+		#else
+			return FlxG.mouse.justReleased;
+		#end
+	}
+	 
 	override public function create():Void
 	{
 		super.create();
@@ -35,5 +78,5 @@ class PlayState extends FlxState
 	override public function update():Void
 	{
 		super.update();
-	}	
+	}
 }
