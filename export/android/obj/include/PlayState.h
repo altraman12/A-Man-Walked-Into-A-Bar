@@ -16,6 +16,7 @@ HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
 HX_DECLARE_CLASS2(flixel,interfaces,IFlxDestroyable)
 HX_DECLARE_CLASS2(flixel,interfaces,IFlxPooled)
 HX_DECLARE_CLASS2(flixel,util,FlxPoint)
+HX_DECLARE_CLASS2(flixel,util,FlxTimer)
 
 
 class HXCPP_CLASS_ATTRIBUTES  PlayState_obj : public ::flixel::FlxState_obj{
@@ -41,6 +42,8 @@ class HXCPP_CLASS_ATTRIBUTES  PlayState_obj : public ::flixel::FlxState_obj{
 		::String __ToString() const { return HX_CSTRING("PlayState"); }
 
 		::flixel::FlxSprite player;
+		Float acc;
+		Float vel;
 		virtual bool justPressed( );
 		Dynamic justPressed_dyn();
 
@@ -57,7 +60,7 @@ class HXCPP_CLASS_ATTRIBUTES  PlayState_obj : public ::flixel::FlxState_obj{
 
 		virtual Void destroy( );
 
-		virtual Void run( );
+		virtual Void run( ::flixel::util::FlxTimer Timer);
 		Dynamic run_dyn();
 
 		virtual Void jump( );

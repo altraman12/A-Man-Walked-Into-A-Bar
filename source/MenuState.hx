@@ -14,9 +14,12 @@ class MenuState extends FlxState
 	override public function create():Void
 	{		
 		var titleTxt:FlxText;
-		titleTxt = new FlxText(30, 30, FlxG.width);
+		titleTxt = new FlxText(30, 30, 0);
+		titleTxt.wordWrap = false;
+		titleTxt.autoSize = true;
 		titleTxt.text = "A Man Walks Into A Bar";
 		titleTxt.setFormat(42, FlxColor.WHITE);
+		titleTxt.x = (FlxG.width / 2) - (titleTxt.width / 2);
 		add(titleTxt);
 		
 		var btnPlay:FlxButton;

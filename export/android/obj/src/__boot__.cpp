@@ -330,6 +330,7 @@
 #include <StringBuf.h>
 #include <Reflect.h>
 #include <PlayState.h>
+#include <OptnState.h>
 #include <MenuState.h>
 #include <flixel/FlxState.h>
 #include <flixel/group/FlxGroup.h>
@@ -700,6 +701,7 @@ hx::RegisterResources( hx::GetResources() );
 ::StringBuf_obj::__register();
 ::Reflect_obj::__register();
 ::PlayState_obj::__register();
+::OptnState_obj::__register();
 ::MenuState_obj::__register();
 ::flixel::FlxState_obj::__register();
 ::flixel::group::FlxGroup_obj::__register();
@@ -774,6 +776,7 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::group::FlxGroup_obj::__boot();
 ::flixel::FlxState_obj::__boot();
 ::MenuState_obj::__boot();
+::OptnState_obj::__boot();
 ::PlayState_obj::__boot();
 ::Reflect_obj::__boot();
 ::StringBuf_obj::__boot();

@@ -20,6 +20,8 @@ C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\assets\
 C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\assets\assets\music \
 C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\assets\assets\sounds \
 C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\assets\assets\data\data-goes-here.txt \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\assets\assets\images\barwalker.png \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\assets\assets\images\GameTitleTemp.png \
 C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\assets\assets\images\images-go-here.txt \
 C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\assets\assets\music\music-goes-here.txt \
 C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\assets\assets\sounds\beep.ogg \
