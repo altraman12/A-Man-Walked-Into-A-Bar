@@ -18,6 +18,12 @@ class AssetData {
 			
 			path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
 			type.set ("assets/data/data-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
+			path.set ("assets/images/barwalker - insert ready.png", "assets/images/barwalker - insert ready.png");
+			type.set ("assets/images/barwalker - insert ready.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/barwalker.png", "assets/images/barwalker.png");
+			type.set ("assets/images/barwalker.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/GameTitleTemp.png", "assets/images/GameTitleTemp.png");
+			type.set ("assets/images/GameTitleTemp.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
 			type.set ("assets/images/images-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");

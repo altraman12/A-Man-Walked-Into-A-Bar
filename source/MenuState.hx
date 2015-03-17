@@ -6,36 +6,45 @@ import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.util.FlxMath;
+import flixel.util.FlxColor;
 
-/**
- * A FlxState which can be used for the game's menu.
- */
+
 class MenuState extends FlxState
 {
-	/**
-	 * Function that is called up when to state is created to set it up. 
-	 */
 	override public function create():Void
-	{
-		super.create();
-		FlxG.switchState(new PlayState());
+	{		
+		var titleTxt:FlxText;
+		titleTxt = new FlxText(30, 30, FlxG.width);
+		titleTxt.text = "A Man Walks Into A Bar";
+		titleTxt.setFormat(42, FlxColor.WHITE);
+		add(titleTxt);
 		
+		var btnPlay:FlxButton;
+		btnPlay = new FlxButton(FlxG.width / 2 - 40, FlxG.height / 2, "Play", clickPlay);
+		add(btnPlay);
+		
+		var btnOptions:FlxButton;
+		btnOptions = new FlxButton(FlxG.width / 2 - 40, FlxG.height / 2 + 60, "Options", clickOptions);
+		add(btnOptions);
 	}
 	
-	/**
-	 * Function that is called when this state is destroyed - you might want to 
-	 * consider setting all objects this state uses to null to help garbage collection.
-	 */
 	override public function destroy():Void
 	{
 		super.destroy();
 	}
 
-	/**
-	 * Function that is called once every frame.
-	 */
 	override public function update():Void
 	{
 		super.update();
 	}	
+	
+	private function clickPlay()
+	{
+		FlxG.switchState(new PlayState());
+	}
+	
+	private function clickOptions()
+	{
+		FlxG.switchState(new OptnState());
+	}
 }
