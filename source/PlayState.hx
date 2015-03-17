@@ -90,7 +90,7 @@ class PlayState extends FlxState
 			player.loadGraphic("assets/images/barwalker.png", true, 64, 64, true);
 			add(player);
 			player.animation.add("run", [7,8,9,10,11,12,13], 30, true);
-			player.animation.add("jump", [14,15,16,17], 30, false);
+			player.animation.add("jump", [14,15,16,16,17], 6, false);
 			player.animation.add("slide", [21], 30, false);
 			vel = 0;
 			acc = 0;
@@ -120,7 +120,7 @@ class PlayState extends FlxState
 	
 	function jump() 
 	{
-		var t = new FlxTimer(4/30, run, 1);
+		var t = new FlxTimer(1, run, 1);
 		player.animation.play("jump");
 		vel = -11200/30;
 	}
