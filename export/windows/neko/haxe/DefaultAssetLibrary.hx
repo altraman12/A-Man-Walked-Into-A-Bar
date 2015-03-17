@@ -48,17 +48,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
-<<<<<<< HEAD
-		path.set ("assets/images/barwalker - insert ready.png", "assets/images/barwalker - insert ready.png");
-		type.set ("assets/images/barwalker - insert ready.png", AssetType.IMAGE);
 		path.set ("assets/images/barwalker.png", "assets/images/barwalker.png");
 		type.set ("assets/images/barwalker.png", AssetType.IMAGE);
 		path.set ("assets/images/GameTitleTemp.png", "assets/images/GameTitleTemp.png");
 		type.set ("assets/images/GameTitleTemp.png", AssetType.IMAGE);
-=======
-		path.set ("assets/images/barwalker.png", "assets/images/barwalker.png");
-		type.set ("assets/images/barwalker.png", AssetType.IMAGE);
->>>>>>> origin/Development
 		path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
 		path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
@@ -77,21 +70,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/data/data-goes-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
-<<<<<<< HEAD
-		id = "assets/images/barwalker - insert ready.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
 		id = "assets/images/barwalker.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/GameTitleTemp.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
-=======
-		id = "assets/images/barwalker.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
->>>>>>> origin/Development
 		id = "assets/images/images-go-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
@@ -121,11 +105,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-<<<<<<< HEAD
 		
-		
-=======
->>>>>>> origin/Development
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
@@ -136,11 +116,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
-<<<<<<< HEAD
 		useManifest = true;
-		useManifest = true;
-=======
->>>>>>> origin/Development
 		
 		
 		if (useManifest) {
@@ -767,11 +743,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> origin/Development
 #elseif html5
 
 
@@ -783,11 +755,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> origin/Development
 #else
 
 #if (windows || mac || linux)
