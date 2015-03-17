@@ -7,6 +7,7 @@ import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.util.FlxMath;
 import flixel.util.FlxPoint;
+import flixel.util.FlxTimer;
 
 /**
  * A FlxState which can be used for the actual gameplay.
@@ -14,6 +15,8 @@ import flixel.util.FlxPoint;
 class PlayState extends FlxState
 {
 	var player:FlxSprite;
+	var acc:Float;
+	var vel:Float;
 	
 	/**
 	 * Function that is called up when to state is created to set it up. 
@@ -83,12 +86,16 @@ class PlayState extends FlxState
 	override public function create():Void
 	{
 		{//set up player
-			player = new FlxSprite(FlxG.width/5,FlxG.height/2);
+			player = new FlxSprite(FlxG.width / 5, FlxG.height / 2);
+			player.loadGraphic("assets/images/barwalker.png", true, 64, 64, true);
 			add(player);
-			player.animation.add("run", [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 30, true);
-			player.animation.add("jump", [10, 11, 12, 13, 14, 15, 16], 30, false);
-			player.animation.add("slide", [17], 30, false);
+			player.animation.add("run", [7,8,9,10,11,12,13], 30, true);
+			player.animation.add("jump", [14,15,16,16,17], 6, false);
+			player.animation.add("slide", [21], 30, false);
+			vel = 0;
+			acc = 0;
 			super.create();
+			run();
 		}
 		
 		{//set up bars
@@ -106,18 +113,21 @@ class PlayState extends FlxState
 		super.destroy();
 	}
 	
-	function run() 
+	function run(?Timer:FlxTimer) 
 	{
 		player.animation.play("run");
 	}
 	
 	function jump() 
 	{
+		var t = new FlxTimer(1, run, 1);
 		player.animation.play("jump");
+		vel = -11200/30;
 	}
 	
 	function slide()
 	{
+		var t = new FlxTimer(1, run, 1);
 		player.animation.play("slide");
 	}
 
@@ -127,9 +137,33 @@ class PlayState extends FlxState
 	override public function update():Void
 	{
 		super.update();
-		if (justPressed())
-		{
-		trace(clickCoords());
+		{//physics
+			trace(player.y);
+			if (player.y > FlxG.height / 2)
+			{
+				acc = 340/30;
+				trace('grav');
+			}
+			else if (player.y < FlxG.height / 2)
+			{
+				acc = 0;
+				vel = 0;
+				player.y = FlxG.height / 2;
+			}
+			vel += acc;
+			player.y += vel;
 		}
+		{//controls
+			if (justPressed()&&(clickCoords().y <= FlxG.height/2))
+			{
+				jump();
+			}
+			
+			if (justPressed() && (clickCoords().y > FlxG.height / 2))
+			{
+				slide();
+			}
+		}
+
 	}
 }
