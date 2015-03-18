@@ -83,6 +83,7 @@ class ChickenState extends FlxState
 		add(chicken);
 		super.create();
 		
+		//temporary menu button
 		var btnMenu:FlxButton;
 		btnMenu = new FlxButton(0, 0, "Main Menu", clickMenu);
 		add(btnMenu);
@@ -99,24 +100,24 @@ class ChickenState extends FlxState
 	{
 		super.update();
 		{//controls
-			if (justPressed() && (clickCoords().y > clickCoords().x && clickCoords().y > -clickCoords().x))
+			if (justPressed() && ((clickCoords().y < clickCoords().x + FlxG.width) && (clickCoords().y > -clickCoords().x)))
 			{
-				chicken.y - 32;
+				chicken.y -= 32;
 			}
 			
-			if (justPressed() && (clickCoords().y < clickCoords().x && clickCoords().y < -clickCoords().x))
+			if (justPressed() && ((clickCoords().y > clickCoords().x + FlxG.width) && (clickCoords().y < -clickCoords().x)))
 			{
-				chicken.y + 32;
+				chicken.y += 32;
 			}
 			
-			if (justPressed() && (clickCoords().y < clickCoords().x && clickCoords().y > -clickCoords().x))
+			if (justPressed() && ((clickCoords().y > clickCoords().x + FlxG.width) && (clickCoords().y > -clickCoords().x)))
 			{
-				chicken.x + 32;
+				chicken.x += 32;
 			}
 			
-			if (justPressed() && (clickCoords().y > clickCoords().x && clickCoords().y < -clickCoords().x))
+			if (justPressed() && ((clickCoords().y < clickCoords().x + FlxG.width) && (clickCoords().y < -clickCoords().x)))
 			{
-				chicken.x - 32;
+				chicken.x -= 32;
 			}
 		}
 	}
