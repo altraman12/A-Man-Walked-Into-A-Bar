@@ -85,6 +85,16 @@ class PlayState extends FlxState
 	 
 	override public function create():Void
 	{
+		//temporary level skip button
+		var btnChicken:FlxButton;
+		btnChicken = new FlxButton(FlxG.width - 80, 0, "Level 2", clickChicken);
+		add(btnChicken);
+		
+		//temporary menu button
+		var btnMenu:FlxButton;
+		btnMenu = new FlxButton(0, 0, "Main Menu", clickMenu);
+		add(btnMenu);
+		
 		{//set up player
 			player = new FlxSprite(FlxG.width / 5, FlxG.height / 2);
 			player.loadGraphic("assets/images/barwalker.png", true, 64, 64, true);
@@ -135,7 +145,7 @@ class PlayState extends FlxState
 	 * Function that is called once every frame.
 	 */
 	override public function update():Void
-	{
+	{		
 		super.update();
 		{//physics
 			trace(player.y);
@@ -165,5 +175,15 @@ class PlayState extends FlxState
 			}
 		}
 
+	}
+	
+	private function clickChicken()
+	{
+		FlxG.switchState(new ChickenState());
+	}
+	
+	private function clickMenu()
+	{
+		FlxG.switchState(new MenuState());
 	}
 }
