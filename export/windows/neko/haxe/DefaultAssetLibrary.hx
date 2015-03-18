@@ -78,9 +78,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/ChickenTemp.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
+<<<<<<< HEAD
 		id = "assets/images/GameTitleTemp.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
+=======
+>>>>>>> origin/Development
 		id = "assets/images/images-go-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
@@ -110,7 +113,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/Development
 		
 		#if (windows || mac || linux)
 		
@@ -122,7 +128,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
+<<<<<<< HEAD
 		useManifest = true;
+=======
+>>>>>>> origin/Development
 		useManifest = true;
 		
 		
@@ -751,7 +760,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Development
 #elseif html5
 
 
@@ -763,7 +775,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Development
 
 #else
 
