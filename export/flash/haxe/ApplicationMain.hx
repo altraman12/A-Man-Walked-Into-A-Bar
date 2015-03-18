@@ -35,6 +35,10 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/ChickenTemp.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/GameTitleTemp.png");
 		types.push (AssetType.IMAGE);
 		
