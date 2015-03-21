@@ -31,7 +31,7 @@ class ApplicationMain {
 		types.push (AssetType.TEXT);
 		
 		
-		urls.push ("assets/images/bar that you walk into you feel.png");
+		urls.push ("assets/images/bar.png");
 		types.push (AssetType.IMAGE);
 		
 		

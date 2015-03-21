@@ -46,8 +46,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
-		className.set ("assets/images/bar that you walk into you feel.png", __ASSET__assets_images_bar_that_you_walk_into_you_feel_png);
-		type.set ("assets/images/bar that you walk into you feel.png", AssetType.IMAGE);
+		className.set ("assets/images/bar.png", __ASSET__assets_images_bar_png);
+		type.set ("assets/images/bar.png", AssetType.IMAGE);
 		className.set ("assets/images/barwalker.png", __ASSET__assets_images_barwalker_png);
 		type.set ("assets/images/barwalker.png", AssetType.IMAGE);
 		className.set ("assets/images/bg.png", __ASSET__assets_images_bg_png);
@@ -79,7 +79,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
-		id = "assets/images/bar that you walk into you feel.png";
+		id = "assets/images/bar.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -156,8 +156,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		
-		className.set ("assets/images/bar that you walk into you feel.png", __ASSET__assets_images_bar_that_you_walk_into_you_feel_png);
-		type.set ("assets/images/bar that you walk into you feel.png", AssetType.IMAGE);
+		className.set ("assets/images/bar.png", __ASSET__assets_images_bar_png);
+		type.set ("assets/images/bar.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/barwalker.png", __ASSET__assets_images_barwalker_png);
 		type.set ("assets/images/barwalker.png", AssetType.IMAGE);
@@ -763,7 +763,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if flash
 
 @:keep @:bind #if display private #end class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_bar_that_you_walk_into_you_feel_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_bar_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_barwalker_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_bg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_chickentemp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -806,7 +806,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 @:file("assets/data/data-goes-here.txt") class __ASSET__assets_data_data_goes_here_txt extends lime.utils.ByteArray {}
-@:bitmap("assets/images/bar that you walk into you feel.png") class __ASSET__assets_images_bar_that_you_walk_into_you_feel_png extends lime.graphics.Image {}
+@:bitmap("assets/images/bar.png") class __ASSET__assets_images_bar_png extends lime.graphics.Image {}
 @:bitmap("assets/images/barwalker.png") class __ASSET__assets_images_barwalker_png extends lime.graphics.Image {}
 @:bitmap("assets/images/bg.png") class __ASSET__assets_images_bg_png extends lime.graphics.Image {}
 @:bitmap("assets/images/ChickenTemp.png") class __ASSET__assets_images_chickentemp_png extends lime.graphics.Image {}

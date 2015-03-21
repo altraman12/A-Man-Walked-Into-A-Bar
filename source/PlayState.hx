@@ -25,6 +25,8 @@ class PlayState extends FlxState
 	var jumpAnim:FlxAnimation;
 	var slideAnim:FlxAnimation;
 	var jumpDuration = 0.75;
+	var bar:BarClass;
+	public var speed:Int;
 	
 	/**
 	 * Function that is called up when to state is created to set it up. 
@@ -93,6 +95,8 @@ class PlayState extends FlxState
 	 
 	override public function create():Void
 	{
+		speed = 10;
+		
 		//temporary level skip button
 		var btnChicken:FlxButton;
 		btnChicken = new FlxButton(FlxG.width - 80, 0, "Level 2", clickChicken);
@@ -117,7 +121,8 @@ class PlayState extends FlxState
 		}
 		
 		{//set up bars
-			
+			var bar = new BarClass(FlxG.width, 0, this);
+			add(bar);
 		}
 	}
 	
@@ -150,7 +155,7 @@ class PlayState extends FlxState
 	function jump() 
 	{
 		player.animation.play("jump",false,0);
-		FlxTween.tween(player, { x:FlxG.width/5, y:FlxG.height/4 }, jumpDuration/2, { ease: FlxEase.quadOut, complete: fall});
+		FlxTween.tween(player, { x:FlxG.width / 5, y:FlxG.height / 4 }, jumpDuration / 2, { ease: FlxEase.quadOut, complete: fall } );
 	}
 	
 	function fall(Tween:FlxTween)
@@ -160,10 +165,16 @@ class PlayState extends FlxState
 	
 	function slide()
 	{
-		var t = new FlxTimer(1, runTime, 1);
-		player.animation.play("slide",false,0);
+		player.animation.play("slide", false, 0);
+		if (justReleased())
+		{
+			slideBool = false;
+			run();
+		}
 	}
 
+	var slideBool = false;
+	
 	/**
 	 * Function that is called once every frame.
 	 */
@@ -187,6 +198,11 @@ class PlayState extends FlxState
 			player.y += vel;
 		}*/
 		{//controls
+			if (slideBool)
+			{
+				slide();
+			}
+			
 			if (player.animation.curAnim == player.animation.getByName("run"))
 			{
 				if (justPressed()&&(clickCoords().y <= FlxG.height/2))
@@ -196,6 +212,7 @@ class PlayState extends FlxState
 				
 				if (justPressed() && (clickCoords().y > FlxG.height / 2))
 				{
+					slideBool = true;
 					slide();
 				}
 			}
