@@ -21,6 +21,7 @@ class BarClass extends FlxSprite
 {
 	var state:PlayState;
 	var barRange:Float;
+	var firstPass:Bool;
 
 	public function new(X:Float=0, Y:Float=0, level:PlayState, ?SimpleGraphic:Dynamic) 
 	{
@@ -29,15 +30,47 @@ class BarClass extends FlxSprite
 		barRange = 2 * FlxG.height / level.player.height;
 		this.y = (Math.random() * FlxG.height / barRange) + ((FlxG.height/2)-(FlxG.height/barRange));
 		state = level;
+		firstPass = true;
+		level.bars.add(this);
 	}
 	
 	public override function update()
 	{
-		this.x -= state.speed;
-		if (this.x <= 0)
+		if (firstPass)
 		{
-			this.x = FlxG.width;
-			this.y = (Math.random() * FlxG.height / 4) + FlxG.height/4;
+			if (x <= FlxG.width / 2)
+			{
+				state.add(new BarClass(FlxG.width, 0, state));
+				firstPass = false;
+			}
+		}
+		
+		this.x -= state.speed;
+		if (this.x <= 0-this.width)
+		{
+			this.destroy();
+		}
+		
+		if (FlxG.overlap(this, state.player))
+		{
+			collide();
 		}
 	}	
+	
+	function gameOver(Timer:FlxTimer) 
+	{
+		FlxG.switchState(new ChickenState());
+	}
+	
+	
+	public function collide()
+	{
+		if (FlxG.pixelPerfectOverlap(this, state.player, 255))
+		{
+			var t = new FlxTimer(1, gameOver, 1);
+			state.player.animation.play("die", true, 0);
+			state.player.x = this.x;
+			state.speed = 0;
+		}
+	}
 }

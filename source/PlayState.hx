@@ -15,6 +15,7 @@ import flixel.util.FlxTimer;
 import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
 import flixel.addons.display.FlxBackdrop;
+import haxe.Timer;
 
 /**
  * A FlxState which can be used for the actual gameplay.
@@ -27,7 +28,7 @@ class PlayState extends FlxState
 	var slideAnim:FlxAnimation;
 	var jumpDuration = 0.75;
 	var maxBars = 5;
-	var bars:FlxTypedGroup<BarClass>;
+	public var bars:FlxTypedGroup<BarClass>;
 	var bar:BarClass;
 	var bg:FlxBackdrop;
 	public var speed = 10;
@@ -112,6 +113,8 @@ class PlayState extends FlxState
 		bg = new FlxBackdrop("assets/images/bg.png", 1, 0, true, false);
 		add(bg);
 		
+		bars = new FlxTypedGroup<BarClass>();
+		
 		{//set up player
 			player = new FlxSprite(FlxG.width / 5, FlxG.height / 2);
 			player.loadGraphic("assets/images/barwalker.png", true, 64, 64, true);
@@ -119,6 +122,7 @@ class PlayState extends FlxState
 			player.animation.add("run", [7, 8, 9, 10, 11, 12, 13], 30, true);
 			player.animation.add("jump", [14, 15, 16, 17, 18, 19, 20], Math.ceil(7/jumpDuration), false);
 			player.animation.add("slide", [21], 30, false);
+			player.animation.add("die", [23], 30, false);
 			super.create();
 			run();
 		}
@@ -176,6 +180,7 @@ class PlayState extends FlxState
 			run();
 		}
 	}
+	
 
 	var slideBool = false;
 	
@@ -186,15 +191,7 @@ class PlayState extends FlxState
 	{		
 		super.update();
 		
-		bg.x -= 10;
-		
-		if (FlxG.overlap(player, bar))
-		{
-			if (FlxG.pixelPerfectOverlap(bar, player))
-			{
-				FlxG.switchState(new ChickenState());
-			}
-		}
+		bg.x -= speed;
 		
 		/*{//physics
 			trace(player.y);
