@@ -100,24 +100,24 @@ class ChickenState extends FlxState
 	{
 		super.update();
 		{//controls
-			if (justPressed() && ((clickCoords().y < clickCoords().x + FlxG.width) && (clickCoords().y > -clickCoords().x)))
-			{
-				chicken.y -= 32;
-			}
-			
-			if (justPressed() && ((clickCoords().y > clickCoords().x + FlxG.width) && (clickCoords().y < -clickCoords().x)))
-			{
-				chicken.y += 32;
-			}
-			
-			if (justPressed() && ((clickCoords().y > clickCoords().x + FlxG.width) && (clickCoords().y > -clickCoords().x)))
+			if (justPressed() && ((clickCoords().y < clickCoords().x) && (clickCoords().y > -clickCoords().x + FlxG.width)))
 			{
 				chicken.x += 32;
 			}
 			
-			if (justPressed() && ((clickCoords().y < clickCoords().x + FlxG.width) && (clickCoords().y < -clickCoords().x)))
+			if (justPressed() && ((clickCoords().y > clickCoords().x) && (clickCoords().y < -clickCoords().x + FlxG.width)))
 			{
 				chicken.x -= 32;
+			}
+			
+			if (justPressed() && ((clickCoords().y > clickCoords().x) && (clickCoords().y > -clickCoords().x + FlxG.width)))
+			{
+				chicken.y += 32;
+			}
+			
+			if (justPressed() && ((clickCoords().y < clickCoords().x) && (clickCoords().y < -clickCoords().x + FlxG.width)))
+			{
+				chicken.y -= 32;
 			}
 		}
 	}

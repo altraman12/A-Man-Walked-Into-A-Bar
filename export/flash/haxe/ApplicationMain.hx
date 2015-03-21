@@ -31,7 +31,15 @@ class ApplicationMain {
 		types.push (AssetType.TEXT);
 		
 		
+		urls.push ("assets/images/bar that you walk into you feel.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/barwalker.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/bg.png");
 		types.push (AssetType.IMAGE);
 		
 		
@@ -45,6 +53,14 @@ class ApplicationMain {
 		
 		urls.push ("assets/images/images-go-here.txt");
 		types.push (AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/sidewalk tile - insert ready.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/stores - insert ready.png");
+		types.push (AssetType.IMAGE);
 		
 		
 		urls.push ("assets/music/music-goes-here.txt");

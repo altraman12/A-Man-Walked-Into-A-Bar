@@ -1,5 +1,7 @@
 package;
 
+import flixel.animation.FlxAnimation;
+import flixel.animation.FlxAnimationController;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
@@ -17,6 +19,9 @@ class PlayState extends FlxState
 	var player:FlxSprite;
 	var acc:Float;
 	var vel:Float;
+	var runAnim:FlxAnimation;
+	var jumpAnim:FlxAnimation;
+	var slideAnim:FlxAnimation;
 	
 	/**
 	 * Function that is called up when to state is created to set it up. 
@@ -99,8 +104,8 @@ class PlayState extends FlxState
 			player = new FlxSprite(FlxG.width / 5, FlxG.height / 2);
 			player.loadGraphic("assets/images/barwalker.png", true, 64, 64, true);
 			add(player);
-			player.animation.add("run", [7,8,9,10,11,12,13], 30, true);
-			player.animation.add("jump", [14,15,16,16,17], 6, false);
+			player.animation.add("run", [7, 8, 9, 10, 11, 12, 13], 30, true);
+			player.animation.add("jump", [14, 15, 16, 17, 18, 19, 20], 7, false);
 			player.animation.add("slide", [21], 30, false);
 			vel = 0;
 			acc = 0;
@@ -125,20 +130,20 @@ class PlayState extends FlxState
 	
 	function run(?Timer:FlxTimer) 
 	{
-		player.animation.play("run");
+		player.animation.play("run",false,0);
 	}
 	
 	function jump() 
 	{
 		var t = new FlxTimer(1, run, 1);
-		player.animation.play("jump");
-		vel = -11200/30;
+		player.animation.play("jump",false,0);
+		acc = -11200;
 	}
 	
 	function slide()
 	{
 		var t = new FlxTimer(1, run, 1);
-		player.animation.play("slide");
+		player.animation.play("slide",false,0);
 	}
 
 	/**
@@ -164,14 +169,17 @@ class PlayState extends FlxState
 			player.y += vel;
 		}
 		{//controls
-			if (justPressed()&&(clickCoords().y <= FlxG.height/2))
+			if (player.animation.curAnim == player.animation.getByName("run"))
 			{
-				jump();
-			}
-			
-			if (justPressed() && (clickCoords().y > FlxG.height / 2))
-			{
-				slide();
+				if (justPressed()&&(clickCoords().y <= FlxG.height/2))
+				{
+					jump();
+				}
+				
+				if (justPressed() && (clickCoords().y > FlxG.height / 2))
+				{
+					slide();
+				}
 			}
 		}
 
