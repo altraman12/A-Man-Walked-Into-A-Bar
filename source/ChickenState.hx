@@ -79,7 +79,7 @@ class ChickenState extends FlxState
 	override public function create():Void
 	{
 		chicken = new FlxSprite(FlxG.width / 2 - 32, FlxG.height - 64);
-		chicken.loadGraphic("assets/images/Stage2/ChickenTemp.png", true, 64, 64, true);
+		chicken.loadGraphic("assets/images/ChickenTemp.png", true, 64, 64, true);
 		add(chicken);
 		super.create();
 		
