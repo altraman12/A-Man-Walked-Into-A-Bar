@@ -1,0 +1,26 @@
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes.dex : \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\com\example\myapp\BuildConfig.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\com\example\myapp\MainActivity.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\com\example\myapp\R$attr.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\com\example\myapp\R$drawable.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\com\example\myapp\R.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\GameActivity$1.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\GameActivity.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$1.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$10.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$11.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$12.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$2.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$3.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$4.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$5.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$6.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$7.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$8.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$9.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$Renderer.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\ManagedMediaPlayer$1.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\ManagedMediaPlayer.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\Sound.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\dexedLibs\classes-0eca115540f22e760c3767e93d082613.jar \
