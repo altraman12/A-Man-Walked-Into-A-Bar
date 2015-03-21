@@ -32,6 +32,10 @@ class BarClass extends FlxSprite
 		state = level;
 		firstPass = true;
 		level.bars.add(this);
+		if (this.x > state.alcoholBar.x)
+		{
+			destroy();
+		}
 	}
 	
 	public override function update()
@@ -69,6 +73,7 @@ class BarClass extends FlxSprite
 		{
 			var t = new FlxTimer(1, gameOver, 1);
 			state.player.animation.play("die", true, 0);
+			state.dead = true;
 			state.player.x = this.x;
 			state.speed = 0;
 		}

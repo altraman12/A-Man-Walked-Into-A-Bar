@@ -39,6 +39,10 @@ class ApplicationMain {
 		types.push (AssetType.TEXT);
 		
 		
+		urls.push ("assets/images/Stage1/alcolholbar.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/Stage1/bar.png");
 		types.push (AssetType.IMAGE);
 		

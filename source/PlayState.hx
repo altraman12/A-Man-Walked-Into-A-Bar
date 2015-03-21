@@ -30,8 +30,11 @@ class PlayState extends FlxState
 	var maxBars = 5;
 	public var bars:FlxTypedGroup<BarClass>;
 	var bar:BarClass;
+	public var alcoholBar:FlxSprite;
 	var bg:FlxBackdrop;
 	public var speed = 10;
+	var levelTime = 12;
+	public var dead = false;
 	
 	/**
 	 * Function that is called up when to state is created to set it up. 
@@ -115,6 +118,10 @@ class PlayState extends FlxState
 		
 		bars = new FlxTypedGroup<BarClass>();
 		
+		alcoholBar = new FlxSprite(60 * speed * levelTime, 230, "assets/images/Stage1/alcolholbar.png");
+		alcoholBar.loadGraphic("assets/images/Stage1/alcolholbar.png");
+		add(alcoholBar);
+		
 		{//set up player
 			player = new FlxSprite(FlxG.width / 5, FlxG.height / 2);
 			player.loadGraphic("assets/images/Stage1/barwalker.png", true, 64, 64, true);
@@ -146,7 +153,10 @@ class PlayState extends FlxState
 	
 	function run()
 	{
-		player.animation.play("run",false,0);
+		if (!dead)
+		{
+			player.animation.play("run", false, 0);
+		}
 	}
 	
 	function runTime(Timer:FlxTimer):Void
@@ -191,7 +201,13 @@ class PlayState extends FlxState
 	{		
 		super.update();
 		
+		if (player.x>=alcoholBar.x)
+		{
+			FlxG.switchState(new ChickenState());
+		}
+		
 		bg.x -= speed;
+		alcoholBar.x -= speed;
 		
 		/*{//physics
 			trace(player.y);
