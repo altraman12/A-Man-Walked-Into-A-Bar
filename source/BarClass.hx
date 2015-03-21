@@ -44,7 +44,7 @@ class BarClass extends FlxSprite
 		{
 			if (x <= FlxG.width / 2)
 			{
-				state.add(new BarClass(FlxG.width, 0, state));
+				state.add(new BarClass(state.roundToNearest(FlxG.width,160), 0, state));
 				firstPass = false;
 			}
 		}

@@ -100,6 +100,11 @@ class PlayState extends FlxState
 			return new FlxPoint(FlxG.mouse.screenX, FlxG.mouse.screenY);
 		#end
 	}
+	
+	public function roundToNearest(number, nearest):Int
+	{
+		return Math.round(number / nearest) * nearest;
+	}
 	 
 	override public function create():Void
 	{
@@ -118,7 +123,7 @@ class PlayState extends FlxState
 		
 		bars = new FlxTypedGroup<BarClass>();
 		
-		alcoholBar = new FlxSprite(60 * speed * levelTime, 230, "assets/images/Stage1/alcolholbar.png");
+		alcoholBar = new FlxSprite(roundToNearest(60 * speed * levelTime,320) , 230, "assets/images/Stage1/alcolholbar.png");
 		alcoholBar.loadGraphic("assets/images/Stage1/alcolholbar.png");
 		add(alcoholBar);
 		
@@ -135,7 +140,7 @@ class PlayState extends FlxState
 		}
 		
 		{//set up bars
-			bar = new BarClass(FlxG.width, 0, this);
+			bar = new BarClass(roundToNearest(FlxG.width,160), 0, this);
 			add(bar);
 		}
 	}
@@ -173,7 +178,7 @@ class PlayState extends FlxState
 	function jump() 
 	{
 		player.animation.play("jump",false,0);
-		FlxTween.tween(player, { x:FlxG.width / 5, y:(FlxG.height / 2)-(player.height*1.5)}, jumpDuration / 2, { ease: FlxEase.quadOut, complete: fall } );
+		FlxTween.tween(player, { x:FlxG.width / 5, y:(FlxG.height / 2)-(player.height*1.125)}, jumpDuration / 2, { ease: FlxEase.quadOut, complete: fall } );
 	}
 	
 	function fall(Tween:FlxTween)
