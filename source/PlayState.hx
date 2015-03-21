@@ -5,6 +5,8 @@ import flixel.animation.FlxAnimationController;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
+import flixel.group.FlxGroup;
+import flixel.group.FlxTypedGroup;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.util.FlxMath;
@@ -25,6 +27,8 @@ class PlayState extends FlxState
 	var jumpAnim:FlxAnimation;
 	var slideAnim:FlxAnimation;
 	var jumpDuration = 0.75;
+	var maxBars = 5;
+	var bars:FlxTypedGroup<BarClass>;
 	var bar:BarClass;
 	public var speed:Int;
 	
@@ -181,6 +185,13 @@ class PlayState extends FlxState
 	override public function update():Void
 	{		
 		super.update();
+		
+		if (FlxG.overlap(player, bar))
+		{
+			FlxG.switchState(new ChickenState());
+		}
+		trace(FlxG.overlap(player, bar));
+		
 		/*{//physics
 			trace(player.y);
 			if (player.y > FlxG.height / 2)
