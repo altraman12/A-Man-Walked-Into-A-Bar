@@ -20,12 +20,13 @@ import flixel.tweens.FlxEase;
 class BarClass extends FlxSprite
 {
 	var state:PlayState;
-	var barRange=12;
+	var barRange:Float;
 
 	public function new(X:Float=0, Y:Float=0, level:PlayState, ?SimpleGraphic:Dynamic) 
 	{
 		super(X, Y, SimpleGraphic);
 		this.loadGraphic("assets/images/bar.png");
+		barRange = 2 * FlxG.height / level.player.height;
 		this.y = (Math.random() * FlxG.height / barRange) + ((FlxG.height/2)-(FlxG.height/barRange));
 		state = level;
 	}

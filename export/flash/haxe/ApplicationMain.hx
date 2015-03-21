@@ -59,7 +59,7 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/stores - insert ready.png");
+		urls.push ("assets/images/stores.png");
 		types.push (AssetType.IMAGE);
 		
 		
@@ -131,19 +131,19 @@ class ApplicationMain {
 			depthBuffer: false,
 			fps: Std.int (60),
 			fullscreen: false,
-			height: Std.int (480),
+			height: Std.int (720),
 			orientation: "portrait",
 			resizable: true,
 			stencilBuffer: false,
 			title: "A-Man-Walked-Into-A-Bar",
 			vsync: true,
-			width: Std.int (640),
+			width: Std.int (1280),
 			
 		}
 		
 		#if js
 		#if (munit || utest)
-		flash.Lib.embed (null, 640, 480, "000000");
+		flash.Lib.embed (null, 1280, 720, "000000");
 		#end
 		#else
 		create ();

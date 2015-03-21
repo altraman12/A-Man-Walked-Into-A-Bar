@@ -62,8 +62,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
 		path.set ("assets/images/sidewalk tile - insert ready.png", "assets/images/sidewalk tile - insert ready.png");
 		type.set ("assets/images/sidewalk tile - insert ready.png", AssetType.IMAGE);
-		path.set ("assets/images/stores - insert ready.png", "assets/images/stores - insert ready.png");
-		type.set ("assets/images/stores - insert ready.png", AssetType.IMAGE);
+		path.set ("assets/images/stores.png", "assets/images/stores.png");
+		type.set ("assets/images/stores.png", AssetType.IMAGE);
 		path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/sounds/sounds-go-here.txt", "assets/sounds/sounds-go-here.txt");
@@ -101,7 +101,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/sidewalk tile - insert ready.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/stores - insert ready.png";
+		id = "assets/images/stores.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/music/music-goes-here.txt";

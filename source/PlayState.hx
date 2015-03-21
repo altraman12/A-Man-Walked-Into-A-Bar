@@ -21,7 +21,7 @@ import flixel.addons.display.FlxBackdrop;
  */
 class PlayState extends FlxState
 {
-	var player:FlxSprite;
+	public var player:FlxSprite;
 	var runAnim:FlxAnimation;
 	var jumpAnim:FlxAnimation;
 	var slideAnim:FlxAnimation;
