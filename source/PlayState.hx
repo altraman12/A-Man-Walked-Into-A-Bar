@@ -10,6 +10,8 @@ import flixel.ui.FlxButton;
 import flixel.util.FlxMath;
 import flixel.util.FlxPoint;
 import flixel.util.FlxTimer;
+import flixel.tweens.FlxTween;
+import flixel.tweens.FlxEase;
 
 /**
  * A FlxState which can be used for the actual gameplay.
@@ -128,21 +130,36 @@ class PlayState extends FlxState
 		super.destroy();
 	}
 	
-	function run(?Timer:FlxTimer) 
+	function run()
+	{
+		player.animation.play("run",false,0);
+	}
+	
+	function runTime(Timer:FlxTimer):Void
+	{
+		player.animation.play("run",false,0);
+	}
+	
+	function runTween(Tween:FlxTween):Void
 	{
 		player.animation.play("run",false,0);
 	}
 	
 	function jump() 
 	{
-		var t = new FlxTimer(1, run, 1);
+		var t = new FlxTimer(1,runTime,1);
 		player.animation.play("jump",false,0);
-		acc = -11200;
+		FlxTween.tween(player, { x:FlxG.width/5, y:FlxG.height/4 }, 0.5, { ease: FlxEase.quadOut, complete: fall});
+	}
+	
+	function fall(Tween:FlxTween)
+	{
+		FlxTween.tween(player, { x:FlxG.width/5, y:FlxG.height/2 }, 0.5, { ease: FlxEase.quadIn, complete: runTween});
 	}
 	
 	function slide()
 	{
-		var t = new FlxTimer(1, run, 1);
+		var t = new FlxTimer(1, runTime, 1);
 		player.animation.play("slide",false,0);
 	}
 
@@ -152,7 +169,7 @@ class PlayState extends FlxState
 	override public function update():Void
 	{		
 		super.update();
-		{//physics
+		/*{//physics
 			trace(player.y);
 			if (player.y > FlxG.height / 2)
 			{
@@ -167,7 +184,7 @@ class PlayState extends FlxState
 			}
 			vel += acc;
 			player.y += vel;
-		}
+		}*/
 		{//controls
 			if (player.animation.curAnim == player.animation.getByName("run"))
 			{
