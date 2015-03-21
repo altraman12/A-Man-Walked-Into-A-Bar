@@ -1,14 +1,5 @@
 #include <hxcpp.h>
 
-#ifndef INCLUDED_flixel_FlxG
-#include <flixel/FlxG.h>
-#endif
-#ifndef INCLUDED_flixel_system_debug_LogStyle
-#include <flixel/system/debug/LogStyle.h>
-#endif
-#ifndef INCLUDED_flixel_system_frontEnds_LogFrontEnd
-#include <flixel/system/frontEnds/LogFrontEnd.h>
-#endif
 #ifndef INCLUDED_flixel_util_FlxSave
 #include <flixel/util/FlxSave.h>
 #endif
@@ -99,8 +90,6 @@ bool FlxSave_obj::bind( ::String Name){
 		if (__e.IsClass< ::openfl::errors::Error >() ){
 			HX_STACK_BEGIN_CATCH
 			::openfl::errors::Error e = __e;{
-				HX_STACK_LINE(80)
-				::flixel::FlxG_obj::log->advanced(HX_CSTRING("There was a problem binding to\nthe shared object data from FlxSave."),::flixel::system::debug::LogStyle_obj::ERROR,true);
 				HX_STACK_LINE(81)
 				this->destroy();
 				HX_STACK_LINE(82)
@@ -212,11 +201,11 @@ bool FlxSave_obj::onDone( int Result){
 	int _switch_1 = (Result);
 	if (  ( _switch_1==::flixel::util::FlxSave_obj::PENDING)){
 		HX_STACK_LINE(188)
-		::flixel::FlxG_obj::log->advanced(HX_CSTRING("FlxSave is requesting extra storage space."),::flixel::system::debug::LogStyle_obj::WARNING,true);
+		Dynamic();
 	}
 	else if (  ( _switch_1==::flixel::util::FlxSave_obj::ERROR)){
 		HX_STACK_LINE(190)
-		::flixel::FlxG_obj::log->advanced(HX_CSTRING("There was a problem flushing\nthe shared object data from FlxSave."),::flixel::system::debug::LogStyle_obj::ERROR,true);
+		Dynamic();
 	}
 	HX_STACK_LINE(193)
 	if (((this->_onComplete_dyn() != null()))){
@@ -240,8 +229,6 @@ bool FlxSave_obj::checkBinding( ){
 	HX_STACK_THIS(this)
 	HX_STACK_LINE(211)
 	if (((this->_sharedObject == null()))){
-		HX_STACK_LINE(213)
-		::flixel::FlxG_obj::log->advanced(HX_CSTRING("You must call FlxSave.bind()\nbefore you can read or write data."),::flixel::system::debug::LogStyle_obj::WARNING,true);
 		HX_STACK_LINE(214)
 		return false;
 	}

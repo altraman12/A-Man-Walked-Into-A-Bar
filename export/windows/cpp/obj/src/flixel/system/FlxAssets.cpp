@@ -6,9 +6,6 @@
 #ifndef INCLUDED_flixel_system_FlxAssets
 #include <flixel/system/FlxAssets.h>
 #endif
-#ifndef INCLUDED_flixel_system__FlxAssets_FontDebugger
-#include <flixel/system/_FlxAssets/FontDebugger.h>
-#endif
 #ifndef INCLUDED_flixel_system__FlxAssets_FontDefault
 #include <flixel/system/_FlxAssets/FontDefault.h>
 #endif
@@ -69,11 +66,9 @@ Dynamic FlxAssets_obj::__Create(hx::DynamicArray inArgs)
 
 Void FlxAssets_obj::init( ){
 {
-		HX_STACK_FRAME("flixel.system.FlxAssets","init",0x4cb026b6,"flixel.system.FlxAssets.init","flixel/system/FlxAssets.hx",99,0xd3ac1356)
+		HX_STACK_FRAME("flixel.system.FlxAssets","init",0x4cb026b6,"flixel.system.FlxAssets.init","flixel/system/FlxAssets.hx",100,0xd3ac1356)
 		HX_STACK_LINE(100)
 		::openfl::_v2::text::Font_obj::registerFont(hx::ClassOf< ::flixel::system::_FlxAssets::FontDefault >());
-		HX_STACK_LINE(103)
-		::openfl::_v2::text::Font_obj::registerFont(hx::ClassOf< ::flixel::system::_FlxAssets::FontDebugger >());
 	}
 return null();
 }

@@ -39,12 +39,6 @@
 #ifndef INCLUDED_flixel_interfaces_IFlxSignal
 #include <flixel/interfaces/IFlxSignal.h>
 #endif
-#ifndef INCLUDED_flixel_system_debug_FlxDebugger
-#include <flixel/system/debug/FlxDebugger.h>
-#endif
-#ifndef INCLUDED_flixel_system_frontEnds_DebuggerFrontEnd
-#include <flixel/system/frontEnds/DebuggerFrontEnd.h>
-#endif
 #ifndef INCLUDED_flixel_system_frontEnds_SignalFrontEnd
 #include <flixel/system/frontEnds/SignalFrontEnd.h>
 #endif
@@ -682,11 +676,6 @@ Void FlxMouse_obj::onMouseWheel( ::openfl::_v2::events::MouseEvent FlashEvent){
 		HX_STACK_FRAME("flixel.input.mouse.FlxMouse","onMouseWheel",0xdc642911,"flixel.input.mouse.FlxMouse.onMouseWheel","flixel/input/mouse/FlxMouse.hx",560,0xe4e80b89)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(FlashEvent,"FlashEvent")
-		HX_STACK_LINE(562)
-		if (((bool(::flixel::FlxG_obj::debugger->visible) && bool(::flixel::FlxG_obj::game->debugger->hasMouse)))){
-			HX_STACK_LINE(565)
-			return null();
-		}
 		HX_STACK_LINE(569)
 		this->_wheelUsed = true;
 		HX_STACK_LINE(570)

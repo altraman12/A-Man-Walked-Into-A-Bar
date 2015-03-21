@@ -15,6 +15,7 @@ HX_DECLARE_CLASS1(flixel,FlxState)
 HX_DECLARE_CLASS2(flixel,group,FlxGroup)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
 HX_DECLARE_CLASS2(flixel,interfaces,IFlxDestroyable)
+HX_DECLARE_CLASS2(flixel,util,FlxTimer)
 
 
 class HXCPP_CLASS_ATTRIBUTES  BarClass_obj : public ::flixel::FlxSprite_obj{
@@ -40,8 +41,15 @@ class HXCPP_CLASS_ATTRIBUTES  BarClass_obj : public ::flixel::FlxSprite_obj{
 		::String __ToString() const { return HX_CSTRING("BarClass"); }
 
 		::PlayState state;
-		int barRange;
+		Float barRange;
+		bool firstPass;
 		virtual Void update( );
+
+		virtual Void gameOver( ::flixel::util::FlxTimer Timer);
+		Dynamic gameOver_dyn();
+
+		virtual Void collide( );
+		Dynamic collide_dyn();
 
 };
 

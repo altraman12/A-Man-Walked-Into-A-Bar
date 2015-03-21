@@ -12,6 +12,7 @@ HX_DECLARE_CLASS1(flixel,FlxBasic)
 HX_DECLARE_CLASS1(flixel,FlxObject)
 HX_DECLARE_CLASS1(flixel,FlxSprite)
 HX_DECLARE_CLASS1(flixel,FlxState)
+HX_DECLARE_CLASS3(flixel,addons,display,FlxBackdrop)
 HX_DECLARE_CLASS2(flixel,animation,FlxAnimation)
 HX_DECLARE_CLASS2(flixel,animation,FlxBaseAnimation)
 HX_DECLARE_CLASS2(flixel,group,FlxGroup)
@@ -46,8 +47,6 @@ class HXCPP_CLASS_ATTRIBUTES  PlayState_obj : public ::flixel::FlxState_obj{
 		::String __ToString() const { return HX_CSTRING("PlayState"); }
 
 		::flixel::FlxSprite player;
-		Float acc;
-		Float vel;
 		::flixel::animation::FlxAnimation runAnim;
 		::flixel::animation::FlxAnimation jumpAnim;
 		::flixel::animation::FlxAnimation slideAnim;
@@ -55,6 +54,7 @@ class HXCPP_CLASS_ATTRIBUTES  PlayState_obj : public ::flixel::FlxState_obj{
 		int maxBars;
 		::flixel::group::FlxTypedGroup bars;
 		::BarClass bar;
+		::flixel::addons::display::FlxBackdrop bg;
 		int speed;
 		virtual bool justPressed( );
 		Dynamic justPressed_dyn();

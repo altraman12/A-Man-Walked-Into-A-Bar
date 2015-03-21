@@ -33,6 +33,9 @@
 #ifndef INCLUDED_flixel_FlxState
 #include <flixel/FlxState.h>
 #endif
+#ifndef INCLUDED_flixel_addons_display_FlxBackdrop
+#include <flixel/addons/display/FlxBackdrop.h>
+#endif
 #ifndef INCLUDED_flixel_animation_FlxAnimation
 #include <flixel/animation/FlxAnimation.h>
 #endif
@@ -84,9 +87,6 @@
 #ifndef INCLUDED_flixel_util_FlxTimer
 #include <flixel/util/FlxTimer.h>
 #endif
-#ifndef INCLUDED_haxe_Log
-#include <haxe/Log.h>
-#endif
 #ifndef INCLUDED_haxe_ds_StringMap
 #include <haxe/ds/StringMap.h>
 #endif
@@ -117,17 +117,19 @@
 
 Void PlayState_obj::__construct(Dynamic MaxSize)
 {
-HX_STACK_FRAME("PlayState","new",0xf8bf96cf,"PlayState.new","PlayState.hx",21,0xb30d7781)
+HX_STACK_FRAME("PlayState","new",0xf8bf96cf,"PlayState.new","PlayState.hx",23,0xb30d7781)
 HX_STACK_THIS(this)
 HX_STACK_ARG(MaxSize,"MaxSize")
 {
-	HX_STACK_LINE(180)
+	HX_STACK_LINE(185)
 	this->slideBool = false;
+	HX_STACK_LINE(34)
+	this->speed = (int)10;
 	HX_STACK_LINE(30)
 	this->maxBars = (int)5;
 	HX_STACK_LINE(29)
 	this->jumpDuration = 0.75;
-	HX_STACK_LINE(21)
+	HX_STACK_LINE(23)
 	super::__construct(MaxSize);
 }
 ;
@@ -148,11 +150,11 @@ Dynamic PlayState_obj::__Create(hx::DynamicArray inArgs)
 	return result;}
 
 bool PlayState_obj::justPressed( ){
-	HX_STACK_FRAME("PlayState","justPressed",0xfbf55b45,"PlayState.justPressed","PlayState.hx",49,0xb30d7781)
+	HX_STACK_FRAME("PlayState","justPressed",0xfbf55b45,"PlayState.justPressed","PlayState.hx",50,0xb30d7781)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(49)
+	HX_STACK_LINE(50)
 	::flixel::input::mouse::FlxMouseButton _this = ::flixel::FlxG_obj::mouse->_leftButton;		HX_STACK_VAR(_this,"_this");
-	HX_STACK_LINE(49)
+	HX_STACK_LINE(50)
 	return (bool((_this->current == (int)2)) || bool((_this->current == (int)-2)));
 }
 
@@ -160,9 +162,9 @@ bool PlayState_obj::justPressed( ){
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,justPressed,return )
 
 bool PlayState_obj::pressed( ){
-	HX_STACK_FRAME("PlayState","pressed",0x8427fc91,"PlayState.pressed","PlayState.hx",63,0xb30d7781)
+	HX_STACK_FRAME("PlayState","pressed",0x8427fc91,"PlayState.pressed","PlayState.hx",64,0xb30d7781)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(63)
+	HX_STACK_LINE(64)
 	return (::flixel::FlxG_obj::mouse->_leftButton->current > (int)0);
 }
 
@@ -170,11 +172,11 @@ bool PlayState_obj::pressed( ){
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,pressed,return )
 
 bool PlayState_obj::justReleased( ){
-	HX_STACK_FRAME("PlayState","justReleased",0x81908eba,"PlayState.justReleased","PlayState.hx",77,0xb30d7781)
+	HX_STACK_FRAME("PlayState","justReleased",0x81908eba,"PlayState.justReleased","PlayState.hx",78,0xb30d7781)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(77)
+	HX_STACK_LINE(78)
 	::flixel::input::mouse::FlxMouseButton _this = ::flixel::FlxG_obj::mouse->_leftButton;		HX_STACK_VAR(_this,"_this");
-	HX_STACK_LINE(77)
+	HX_STACK_LINE(78)
 	return (bool((_this->current == (int)-1)) || bool((_this->current == (int)-2)));
 }
 
@@ -182,9 +184,9 @@ bool PlayState_obj::justReleased( ){
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,justReleased,return )
 
 ::flixel::util::FlxPoint PlayState_obj::clickCoords( ){
-	HX_STACK_FRAME("PlayState","clickCoords",0x00d447f5,"PlayState.clickCoords","PlayState.hx",96,0xb30d7781)
+	HX_STACK_FRAME("PlayState","clickCoords",0x00d447f5,"PlayState.clickCoords","PlayState.hx",97,0xb30d7781)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(96)
+	HX_STACK_LINE(97)
 	return ::flixel::util::FlxPoint_obj::__new(::flixel::FlxG_obj::mouse->screenX,::flixel::FlxG_obj::mouse->screenY);
 }
 
@@ -193,59 +195,67 @@ HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,clickCoords,return )
 
 Void PlayState_obj::create( ){
 {
-		HX_STACK_FRAME("PlayState","create",0x82220fed,"PlayState.create","PlayState.hx",101,0xb30d7781)
+		HX_STACK_FRAME("PlayState","create",0x82220fed,"PlayState.create","PlayState.hx",102,0xb30d7781)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(102)
-		this->speed = (int)10;
-		HX_STACK_LINE(105)
+		HX_STACK_LINE(104)
 		::flixel::ui::FlxButton btnChicken;		HX_STACK_VAR(btnChicken,"btnChicken");
-		HX_STACK_LINE(106)
+		HX_STACK_LINE(105)
 		::flixel::ui::FlxButton _g = ::flixel::ui::FlxButton_obj::__new((::flixel::FlxG_obj::width - (int)80),(int)0,HX_CSTRING("Level 2"),this->clickChicken_dyn());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(106)
+		HX_STACK_LINE(105)
 		btnChicken = _g;
-		HX_STACK_LINE(107)
+		HX_STACK_LINE(106)
 		this->add(btnChicken);
-		HX_STACK_LINE(110)
+		HX_STACK_LINE(109)
 		::flixel::ui::FlxButton btnMenu;		HX_STACK_VAR(btnMenu,"btnMenu");
-		HX_STACK_LINE(111)
+		HX_STACK_LINE(110)
 		::flixel::ui::FlxButton _g1 = ::flixel::ui::FlxButton_obj::__new((int)0,(int)0,HX_CSTRING("Main Menu"),this->clickMenu_dyn());		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(111)
+		HX_STACK_LINE(110)
 		btnMenu = _g1;
-		HX_STACK_LINE(112)
+		HX_STACK_LINE(111)
 		this->add(btnMenu);
+		HX_STACK_LINE(113)
+		::flixel::addons::display::FlxBackdrop _g2 = ::flixel::addons::display::FlxBackdrop_obj::__new(HX_CSTRING("assets/images/bg.png"),(int)1,(int)0,true,false);		HX_STACK_VAR(_g2,"_g2");
+		HX_STACK_LINE(113)
+		this->bg = _g2;
 		HX_STACK_LINE(114)
+		this->add(this->bg);
+		HX_STACK_LINE(116)
+		::flixel::group::FlxTypedGroup _g3 = ::flixel::group::FlxTypedGroup_obj::__new(null());		HX_STACK_VAR(_g3,"_g3");
+		HX_STACK_LINE(116)
+		this->bars = _g3;
+		HX_STACK_LINE(118)
 		{
-			HX_STACK_LINE(115)
-			::flixel::FlxSprite _g2 = ::flixel::FlxSprite_obj::__new((Float(::flixel::FlxG_obj::width) / Float((int)5)),(Float(::flixel::FlxG_obj::height) / Float((int)2)),null());		HX_STACK_VAR(_g2,"_g2");
-			HX_STACK_LINE(115)
-			this->player = _g2;
-			HX_STACK_LINE(116)
-			this->player->loadGraphic(HX_CSTRING("assets/images/barwalker.png"),true,(int)64,(int)64,true,null());
-			HX_STACK_LINE(117)
-			this->add(this->player);
-			HX_STACK_LINE(118)
-			this->player->animation->add(HX_CSTRING("run"),Array_obj< int >::__new().Add((int)7).Add((int)8).Add((int)9).Add((int)10).Add((int)11).Add((int)12).Add((int)13),(int)30,true);
 			HX_STACK_LINE(119)
-			int _g3 = ::Math_obj::ceil((Float((int)7) / Float(this->jumpDuration)));		HX_STACK_VAR(_g3,"_g3");
+			::flixel::FlxSprite _g4 = ::flixel::FlxSprite_obj::__new((Float(::flixel::FlxG_obj::width) / Float((int)5)),(Float(::flixel::FlxG_obj::height) / Float((int)2)),null());		HX_STACK_VAR(_g4,"_g4");
 			HX_STACK_LINE(119)
-			this->player->animation->add(HX_CSTRING("jump"),Array_obj< int >::__new().Add((int)14).Add((int)15).Add((int)16).Add((int)17).Add((int)18).Add((int)19).Add((int)20),_g3,false);
+			this->player = _g4;
 			HX_STACK_LINE(120)
-			this->player->animation->add(HX_CSTRING("slide"),Array_obj< int >::__new().Add((int)21),(int)30,false);
+			this->player->loadGraphic(HX_CSTRING("assets/images/barwalker.png"),true,(int)64,(int)64,true,null());
 			HX_STACK_LINE(121)
-			this->vel = (int)0;
+			this->add(this->player);
 			HX_STACK_LINE(122)
-			this->acc = (int)0;
+			this->player->animation->add(HX_CSTRING("run"),Array_obj< int >::__new().Add((int)7).Add((int)8).Add((int)9).Add((int)10).Add((int)11).Add((int)12).Add((int)13),(int)30,true);
 			HX_STACK_LINE(123)
-			this->super::create();
+			int _g5 = ::Math_obj::ceil((Float((int)7) / Float(this->jumpDuration)));		HX_STACK_VAR(_g5,"_g5");
+			HX_STACK_LINE(123)
+			this->player->animation->add(HX_CSTRING("jump"),Array_obj< int >::__new().Add((int)14).Add((int)15).Add((int)16).Add((int)17).Add((int)18).Add((int)19).Add((int)20),_g5,false);
 			HX_STACK_LINE(124)
+			this->player->animation->add(HX_CSTRING("slide"),Array_obj< int >::__new().Add((int)21),(int)30,false);
+			HX_STACK_LINE(125)
+			this->player->animation->add(HX_CSTRING("die"),Array_obj< int >::__new().Add((int)23),(int)30,false);
+			HX_STACK_LINE(126)
+			this->super::create();
+			HX_STACK_LINE(127)
 			this->run();
 		}
-		HX_STACK_LINE(127)
+		HX_STACK_LINE(130)
 		{
-			HX_STACK_LINE(128)
-			::BarClass bar = ::BarClass_obj::__new(::flixel::FlxG_obj::width,(int)0,hx::ObjectPtr<OBJ_>(this),null());		HX_STACK_VAR(bar,"bar");
-			HX_STACK_LINE(129)
-			this->add(bar);
+			HX_STACK_LINE(131)
+			::BarClass _g6 = ::BarClass_obj::__new(::flixel::FlxG_obj::width,(int)0,hx::ObjectPtr<OBJ_>(this),null());		HX_STACK_VAR(_g6,"_g6");
+			HX_STACK_LINE(131)
+			this->bar = _g6;
+			HX_STACK_LINE(132)
+			this->add(this->bar);
 		}
 	}
 return null();
@@ -254,11 +264,13 @@ return null();
 
 Void PlayState_obj::destroy( ){
 {
-		HX_STACK_FRAME("PlayState","destroy",0x6ec756e9,"PlayState.destroy","PlayState.hx",138,0xb30d7781)
+		HX_STACK_FRAME("PlayState","destroy",0x6ec756e9,"PlayState.destroy","PlayState.hx",141,0xb30d7781)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(139)
+		HX_STACK_LINE(142)
 		this->player->destroy();
-		HX_STACK_LINE(140)
+		HX_STACK_LINE(143)
+		this->bar->destroy();
+		HX_STACK_LINE(144)
 		this->super::destroy();
 	}
 return null();
@@ -267,9 +279,9 @@ return null();
 
 Void PlayState_obj::run( ){
 {
-		HX_STACK_FRAME("PlayState","run",0xf8c2adba,"PlayState.run","PlayState.hx",145,0xb30d7781)
+		HX_STACK_FRAME("PlayState","run",0xf8c2adba,"PlayState.run","PlayState.hx",149,0xb30d7781)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(145)
+		HX_STACK_LINE(149)
 		this->player->animation->play(HX_CSTRING("run"),false,(int)0);
 	}
 return null();
@@ -280,10 +292,10 @@ HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,run,(void))
 
 Void PlayState_obj::runTime( ::flixel::util::FlxTimer Timer){
 {
-		HX_STACK_FRAME("PlayState","runTime",0x247b0ae7,"PlayState.runTime","PlayState.hx",150,0xb30d7781)
+		HX_STACK_FRAME("PlayState","runTime",0x247b0ae7,"PlayState.runTime","PlayState.hx",154,0xb30d7781)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(Timer,"Timer")
-		HX_STACK_LINE(150)
+		HX_STACK_LINE(154)
 		this->player->animation->play(HX_CSTRING("run"),false,(int)0);
 	}
 return null();
@@ -294,10 +306,10 @@ HX_DEFINE_DYNAMIC_FUNC1(PlayState_obj,runTime,(void))
 
 Void PlayState_obj::runTween( ::flixel::tweens::FlxTween Tween){
 {
-		HX_STACK_FRAME("PlayState","runTween",0xd0696a51,"PlayState.runTween","PlayState.hx",155,0xb30d7781)
+		HX_STACK_FRAME("PlayState","runTween",0xd0696a51,"PlayState.runTween","PlayState.hx",159,0xb30d7781)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(Tween,"Tween")
-		HX_STACK_LINE(155)
+		HX_STACK_LINE(159)
 		this->player->animation->play(HX_CSTRING("run"),false,(int)0);
 	}
 return null();
@@ -308,25 +320,33 @@ HX_DEFINE_DYNAMIC_FUNC1(PlayState_obj,runTween,(void))
 
 Void PlayState_obj::jump( ){
 {
-		HX_STACK_FRAME("PlayState","jump",0xac4b9f9f,"PlayState.jump","PlayState.hx",160,0xb30d7781)
+		HX_STACK_FRAME("PlayState","jump",0xac4b9f9f,"PlayState.jump","PlayState.hx",164,0xb30d7781)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(161)
+		HX_STACK_LINE(165)
 		this->player->animation->play(HX_CSTRING("jump"),false,(int)0);
+		HX_STACK_LINE(166)
+		Float _g = this->player->get_height();		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(166)
+		Float _g1 = (_g * 1.5);		HX_STACK_VAR(_g1,"_g1");
+		HX_STACK_LINE(166)
+		Float _g2 = ((Float(::flixel::FlxG_obj::height) / Float((int)2)) - _g1);		HX_STACK_VAR(_g2,"_g2");
 		struct _Function_1_1{
-			inline static Dynamic Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","PlayState.hx",162,0xb30d7781)
+			inline static Dynamic Block( Float &_g2){
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","PlayState.hx",166,0xb30d7781)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("x") , (Float(::flixel::FlxG_obj::width) / Float((int)5)),false);
-					__result->Add(HX_CSTRING("y") , (Float(::flixel::FlxG_obj::height) / Float((int)4)),false);
+					__result->Add(HX_CSTRING("y") , _g2,false);
 					return __result;
 				}
 				return null();
 			}
 		};
+		HX_STACK_LINE(166)
+		Dynamic _g3 = _Function_1_1::Block(_g2);		HX_STACK_VAR(_g3,"_g3");
 		struct _Function_1_2{
 			inline static Dynamic Block( hx::ObjectPtr< ::PlayState_obj > __this){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","PlayState.hx",162,0xb30d7781)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","PlayState.hx",166,0xb30d7781)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("ease") , ::flixel::tweens::FlxEase_obj::quadOut_dyn(),false);
@@ -336,8 +356,8 @@ Void PlayState_obj::jump( ){
 				return null();
 			}
 		};
-		HX_STACK_LINE(162)
-		::flixel::tweens::FlxTween_obj::tween(this->player,_Function_1_1::Block(),(Float(this->jumpDuration) / Float((int)2)),_Function_1_2::Block(this));
+		HX_STACK_LINE(166)
+		::flixel::tweens::FlxTween_obj::tween(this->player,_g3,(Float(this->jumpDuration) / Float((int)2)),_Function_1_2::Block(this));
 	}
 return null();
 }
@@ -347,12 +367,12 @@ HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,jump,(void))
 
 Void PlayState_obj::fall( ::flixel::tweens::FlxTween Tween){
 {
-		HX_STACK_FRAME("PlayState","fall",0xa997972c,"PlayState.fall","PlayState.hx",167,0xb30d7781)
+		HX_STACK_FRAME("PlayState","fall",0xa997972c,"PlayState.fall","PlayState.hx",171,0xb30d7781)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(Tween,"Tween")
 		struct _Function_1_1{
 			inline static Dynamic Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","PlayState.hx",167,0xb30d7781)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","PlayState.hx",171,0xb30d7781)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("x") , (Float(::flixel::FlxG_obj::width) / Float((int)5)),false);
@@ -364,7 +384,7 @@ Void PlayState_obj::fall( ::flixel::tweens::FlxTween Tween){
 		};
 		struct _Function_1_2{
 			inline static Dynamic Block( hx::ObjectPtr< ::PlayState_obj > __this){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","PlayState.hx",167,0xb30d7781)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","PlayState.hx",171,0xb30d7781)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("ease") , ::flixel::tweens::FlxEase_obj::quadIn_dyn(),false);
@@ -374,7 +394,7 @@ Void PlayState_obj::fall( ::flixel::tweens::FlxTween Tween){
 				return null();
 			}
 		};
-		HX_STACK_LINE(167)
+		HX_STACK_LINE(171)
 		::flixel::tweens::FlxTween_obj::tween(this->player,_Function_1_1::Block(),(Float(this->jumpDuration) / Float((int)2)),_Function_1_2::Block(this));
 	}
 return null();
@@ -385,15 +405,15 @@ HX_DEFINE_DYNAMIC_FUNC1(PlayState_obj,fall,(void))
 
 Void PlayState_obj::slide( ){
 {
-		HX_STACK_FRAME("PlayState","slide",0x3e854560,"PlayState.slide","PlayState.hx",171,0xb30d7781)
+		HX_STACK_FRAME("PlayState","slide",0x3e854560,"PlayState.slide","PlayState.hx",175,0xb30d7781)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(172)
+		HX_STACK_LINE(176)
 		this->player->animation->play(HX_CSTRING("slide"),false,(int)0);
-		HX_STACK_LINE(173)
+		HX_STACK_LINE(177)
 		if ((this->justReleased())){
-			HX_STACK_LINE(175)
+			HX_STACK_LINE(179)
 			this->slideBool = false;
-			HX_STACK_LINE(176)
+			HX_STACK_LINE(180)
 			this->run();
 		}
 	}
@@ -405,58 +425,54 @@ HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,slide,(void))
 
 Void PlayState_obj::update( ){
 {
-		HX_STACK_FRAME("PlayState","update",0x8d182efa,"PlayState.update","PlayState.hx",186,0xb30d7781)
+		HX_STACK_FRAME("PlayState","update",0x8d182efa,"PlayState.update","PlayState.hx",191,0xb30d7781)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(187)
+		HX_STACK_LINE(192)
 		this->super::update();
-		HX_STACK_LINE(189)
-		if ((::flixel::FlxG_obj::overlap(this->player,this->bar,null(),null()))){
-			HX_STACK_LINE(191)
-			::flixel::FlxState State = ::ChickenState_obj::__new(null());		HX_STACK_VAR(State,"State");
-			HX_STACK_LINE(191)
-			::flixel::FlxG_obj::game->_requestedState = State;
-		}
-		HX_STACK_LINE(193)
-		bool _g = ::flixel::FlxG_obj::overlap(this->player,this->bar,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(193)
-		::haxe::Log_obj::trace(_g,hx::SourceInfo(HX_CSTRING("PlayState.hx"),193,HX_CSTRING("PlayState"),HX_CSTRING("update")));
-		HX_STACK_LINE(211)
+		HX_STACK_LINE(194)
 		{
-			HX_STACK_LINE(212)
+			HX_STACK_LINE(194)
+			::flixel::addons::display::FlxBackdrop _g = this->bg;		HX_STACK_VAR(_g,"_g");
+			HX_STACK_LINE(194)
+			_g->set_x((_g->x - this->speed));
+		}
+		HX_STACK_LINE(212)
+		{
+			HX_STACK_LINE(213)
 			if ((this->slideBool)){
-				HX_STACK_LINE(214)
+				HX_STACK_LINE(215)
 				this->slide();
 			}
-			HX_STACK_LINE(217)
-			::flixel::animation::FlxAnimation _g1;		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(217)
+			HX_STACK_LINE(218)
+			::flixel::animation::FlxAnimation _g;		HX_STACK_VAR(_g,"_g");
+			HX_STACK_LINE(218)
 			{
-				HX_STACK_LINE(217)
+				HX_STACK_LINE(218)
 				::flixel::animation::FlxAnimationController _this = this->player->animation;		HX_STACK_VAR(_this,"_this");
-				HX_STACK_LINE(217)
+				HX_STACK_LINE(218)
 				::flixel::animation::FlxAnimation anim = null();		HX_STACK_VAR(anim,"anim");
-				HX_STACK_LINE(217)
+				HX_STACK_LINE(218)
 				if (((bool((bool((_this->_curAnim != null())) && bool((_this->_curAnim->delay > (int)0)))) && bool(((bool(_this->_curAnim->looped) || bool(!(_this->_curAnim->finished)))))))){
-					HX_STACK_LINE(217)
+					HX_STACK_LINE(218)
 					anim = _this->_curAnim;
 				}
-				HX_STACK_LINE(217)
-				_g1 = anim;
+				HX_STACK_LINE(218)
+				_g = anim;
 			}
-			HX_STACK_LINE(217)
-			::flixel::animation::FlxAnimation _g2 = this->player->animation->_animations->get(HX_CSTRING("run"));		HX_STACK_VAR(_g2,"_g2");
-			HX_STACK_LINE(217)
-			if (((_g1 == _g2))){
-				HX_STACK_LINE(219)
+			HX_STACK_LINE(218)
+			::flixel::animation::FlxAnimation _g1 = this->player->animation->_animations->get(HX_CSTRING("run"));		HX_STACK_VAR(_g1,"_g1");
+			HX_STACK_LINE(218)
+			if (((_g == _g1))){
+				HX_STACK_LINE(220)
 				if (((  ((this->justPressed())) ? bool((this->clickCoords()->y <= (Float(::flixel::FlxG_obj::height) / Float((int)2)))) : bool(false) ))){
-					HX_STACK_LINE(221)
+					HX_STACK_LINE(222)
 					this->jump();
 				}
-				HX_STACK_LINE(224)
+				HX_STACK_LINE(225)
 				if (((  ((this->justPressed())) ? bool((this->clickCoords()->y > (Float(::flixel::FlxG_obj::height) / Float((int)2)))) : bool(false) ))){
-					HX_STACK_LINE(226)
-					this->slideBool = true;
 					HX_STACK_LINE(227)
+					this->slideBool = true;
+					HX_STACK_LINE(228)
 					this->slide();
 				}
 			}
@@ -468,11 +484,11 @@ return null();
 
 Void PlayState_obj::clickChicken( ){
 {
-		HX_STACK_FRAME("PlayState","clickChicken",0x6e1ebd7e,"PlayState.clickChicken","PlayState.hx",236,0xb30d7781)
+		HX_STACK_FRAME("PlayState","clickChicken",0x6e1ebd7e,"PlayState.clickChicken","PlayState.hx",237,0xb30d7781)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(236)
+		HX_STACK_LINE(237)
 		::flixel::FlxState State = ::ChickenState_obj::__new(null());		HX_STACK_VAR(State,"State");
-		HX_STACK_LINE(236)
+		HX_STACK_LINE(237)
 		::flixel::FlxG_obj::game->_requestedState = State;
 	}
 return null();
@@ -483,11 +499,11 @@ HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,clickChicken,(void))
 
 Void PlayState_obj::clickMenu( ){
 {
-		HX_STACK_FRAME("PlayState","clickMenu",0x63ab75b6,"PlayState.clickMenu","PlayState.hx",241,0xb30d7781)
+		HX_STACK_FRAME("PlayState","clickMenu",0x63ab75b6,"PlayState.clickMenu","PlayState.hx",242,0xb30d7781)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(241)
+		HX_STACK_LINE(242)
 		::flixel::FlxState State = ::MenuState_obj::__new(null());		HX_STACK_VAR(State,"State");
-		HX_STACK_LINE(241)
+		HX_STACK_LINE(242)
 		::flixel::FlxG_obj::game->_requestedState = State;
 	}
 return null();
@@ -505,8 +521,6 @@ void PlayState_obj::__Mark(HX_MARK_PARAMS)
 {
 	HX_MARK_BEGIN_CLASS(PlayState);
 	HX_MARK_MEMBER_NAME(player,"player");
-	HX_MARK_MEMBER_NAME(acc,"acc");
-	HX_MARK_MEMBER_NAME(vel,"vel");
 	HX_MARK_MEMBER_NAME(runAnim,"runAnim");
 	HX_MARK_MEMBER_NAME(jumpAnim,"jumpAnim");
 	HX_MARK_MEMBER_NAME(slideAnim,"slideAnim");
@@ -514,6 +528,7 @@ void PlayState_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(maxBars,"maxBars");
 	HX_MARK_MEMBER_NAME(bars,"bars");
 	HX_MARK_MEMBER_NAME(bar,"bar");
+	HX_MARK_MEMBER_NAME(bg,"bg");
 	HX_MARK_MEMBER_NAME(speed,"speed");
 	HX_MARK_MEMBER_NAME(slideBool,"slideBool");
 	::flixel::FlxState_obj::__Mark(HX_MARK_ARG);
@@ -523,8 +538,6 @@ void PlayState_obj::__Mark(HX_MARK_PARAMS)
 void PlayState_obj::__Visit(HX_VISIT_PARAMS)
 {
 	HX_VISIT_MEMBER_NAME(player,"player");
-	HX_VISIT_MEMBER_NAME(acc,"acc");
-	HX_VISIT_MEMBER_NAME(vel,"vel");
 	HX_VISIT_MEMBER_NAME(runAnim,"runAnim");
 	HX_VISIT_MEMBER_NAME(jumpAnim,"jumpAnim");
 	HX_VISIT_MEMBER_NAME(slideAnim,"slideAnim");
@@ -532,6 +545,7 @@ void PlayState_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(maxBars,"maxBars");
 	HX_VISIT_MEMBER_NAME(bars,"bars");
 	HX_VISIT_MEMBER_NAME(bar,"bar");
+	HX_VISIT_MEMBER_NAME(bg,"bg");
 	HX_VISIT_MEMBER_NAME(speed,"speed");
 	HX_VISIT_MEMBER_NAME(slideBool,"slideBool");
 	::flixel::FlxState_obj::__Visit(HX_VISIT_ARG);
@@ -540,9 +554,10 @@ void PlayState_obj::__Visit(HX_VISIT_PARAMS)
 Dynamic PlayState_obj::__Field(const ::String &inName,bool inCallProp)
 {
 	switch(inName.length) {
+	case 2:
+		if (HX_FIELD_EQ(inName,"bg") ) { return bg; }
+		break;
 	case 3:
-		if (HX_FIELD_EQ(inName,"acc") ) { return acc; }
-		if (HX_FIELD_EQ(inName,"vel") ) { return vel; }
 		if (HX_FIELD_EQ(inName,"bar") ) { return bar; }
 		if (HX_FIELD_EQ(inName,"run") ) { return run_dyn(); }
 		break;
@@ -591,9 +606,10 @@ Dynamic PlayState_obj::__Field(const ::String &inName,bool inCallProp)
 Dynamic PlayState_obj::__SetField(const ::String &inName,const Dynamic &inValue,bool inCallProp)
 {
 	switch(inName.length) {
+	case 2:
+		if (HX_FIELD_EQ(inName,"bg") ) { bg=inValue.Cast< ::flixel::addons::display::FlxBackdrop >(); return inValue; }
+		break;
 	case 3:
-		if (HX_FIELD_EQ(inName,"acc") ) { acc=inValue.Cast< Float >(); return inValue; }
-		if (HX_FIELD_EQ(inName,"vel") ) { vel=inValue.Cast< Float >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"bar") ) { bar=inValue.Cast< ::BarClass >(); return inValue; }
 		break;
 	case 4:
@@ -625,8 +641,6 @@ Dynamic PlayState_obj::__SetField(const ::String &inName,const Dynamic &inValue,
 void PlayState_obj::__GetFields(Array< ::String> &outFields)
 {
 	outFields->push(HX_CSTRING("player"));
-	outFields->push(HX_CSTRING("acc"));
-	outFields->push(HX_CSTRING("vel"));
 	outFields->push(HX_CSTRING("runAnim"));
 	outFields->push(HX_CSTRING("jumpAnim"));
 	outFields->push(HX_CSTRING("slideAnim"));
@@ -634,6 +648,7 @@ void PlayState_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_CSTRING("maxBars"));
 	outFields->push(HX_CSTRING("bars"));
 	outFields->push(HX_CSTRING("bar"));
+	outFields->push(HX_CSTRING("bg"));
 	outFields->push(HX_CSTRING("speed"));
 	outFields->push(HX_CSTRING("slideBool"));
 	super::__GetFields(outFields);
@@ -645,8 +660,6 @@ static ::String sStaticFields[] = {
 #if HXCPP_SCRIPTABLE
 static hx::StorageInfo sMemberStorageInfo[] = {
 	{hx::fsObject /*::flixel::FlxSprite*/ ,(int)offsetof(PlayState_obj,player),HX_CSTRING("player")},
-	{hx::fsFloat,(int)offsetof(PlayState_obj,acc),HX_CSTRING("acc")},
-	{hx::fsFloat,(int)offsetof(PlayState_obj,vel),HX_CSTRING("vel")},
 	{hx::fsObject /*::flixel::animation::FlxAnimation*/ ,(int)offsetof(PlayState_obj,runAnim),HX_CSTRING("runAnim")},
 	{hx::fsObject /*::flixel::animation::FlxAnimation*/ ,(int)offsetof(PlayState_obj,jumpAnim),HX_CSTRING("jumpAnim")},
 	{hx::fsObject /*::flixel::animation::FlxAnimation*/ ,(int)offsetof(PlayState_obj,slideAnim),HX_CSTRING("slideAnim")},
@@ -654,6 +667,7 @@ static hx::StorageInfo sMemberStorageInfo[] = {
 	{hx::fsInt,(int)offsetof(PlayState_obj,maxBars),HX_CSTRING("maxBars")},
 	{hx::fsObject /*::flixel::group::FlxTypedGroup*/ ,(int)offsetof(PlayState_obj,bars),HX_CSTRING("bars")},
 	{hx::fsObject /*::BarClass*/ ,(int)offsetof(PlayState_obj,bar),HX_CSTRING("bar")},
+	{hx::fsObject /*::flixel::addons::display::FlxBackdrop*/ ,(int)offsetof(PlayState_obj,bg),HX_CSTRING("bg")},
 	{hx::fsInt,(int)offsetof(PlayState_obj,speed),HX_CSTRING("speed")},
 	{hx::fsBool,(int)offsetof(PlayState_obj,slideBool),HX_CSTRING("slideBool")},
 	{ hx::fsUnknown, 0, null()}
@@ -662,8 +676,6 @@ static hx::StorageInfo sMemberStorageInfo[] = {
 
 static ::String sMemberFields[] = {
 	HX_CSTRING("player"),
-	HX_CSTRING("acc"),
-	HX_CSTRING("vel"),
 	HX_CSTRING("runAnim"),
 	HX_CSTRING("jumpAnim"),
 	HX_CSTRING("slideAnim"),
@@ -671,6 +683,7 @@ static ::String sMemberFields[] = {
 	HX_CSTRING("maxBars"),
 	HX_CSTRING("bars"),
 	HX_CSTRING("bar"),
+	HX_CSTRING("bg"),
 	HX_CSTRING("speed"),
 	HX_CSTRING("justPressed"),
 	HX_CSTRING("pressed"),

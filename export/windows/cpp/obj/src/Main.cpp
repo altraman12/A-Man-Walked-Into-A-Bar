@@ -77,9 +77,9 @@ HX_STACK_THIS(this)
 	HX_STACK_LINE(15)
 	this->initialState = hx::ClassOf< ::MenuState >();
 	HX_STACK_LINE(14)
-	this->gameHeight = (int)480;
+	this->gameHeight = (int)720;
 	HX_STACK_LINE(13)
-	this->gameWidth = (int)640;
+	this->gameWidth = (int)1280;
 	HX_STACK_LINE(30)
 	super::__construct();
 	HX_STACK_LINE(32)

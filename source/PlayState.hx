@@ -163,7 +163,7 @@ class PlayState extends FlxState
 	function jump() 
 	{
 		player.animation.play("jump",false,0);
-		FlxTween.tween(player, { x:FlxG.width / 5, y:FlxG.height / 4 }, jumpDuration / 2, { ease: FlxEase.quadOut, complete: fall } );
+		FlxTween.tween(player, { x:FlxG.width / 5, y:(FlxG.height / 2)-(player.height*1.5)}, jumpDuration / 2, { ease: FlxEase.quadOut, complete: fall } );
 	}
 	
 	function fall(Tween:FlxTween)

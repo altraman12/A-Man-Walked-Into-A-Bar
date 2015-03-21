@@ -174,8 +174,6 @@ Void FlxBGSprite_obj::draw( ){
 				currDrawData[_g111] = this->alpha;
 				HX_STACK_LINE(69)
 				drawItem->position = currIndex;
-				HX_STACK_LINE(72)
-				(::flixel::FlxBasic_obj::_VISIBLECOUNT)++;
 			}
 		}
 	}
