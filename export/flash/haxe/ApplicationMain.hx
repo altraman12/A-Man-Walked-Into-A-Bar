@@ -31,22 +31,6 @@ class ApplicationMain {
 		types.push (AssetType.TEXT);
 		
 		
-		urls.push ("assets/images/bar.png");
-		types.push (AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/barwalker.png");
-		types.push (AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/bg.png");
-		types.push (AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/ChickenTemp.png");
-		types.push (AssetType.IMAGE);
-		
-		
 		urls.push ("assets/images/GameTitleTemp.png");
 		types.push (AssetType.IMAGE);
 		
@@ -55,11 +39,19 @@ class ApplicationMain {
 		types.push (AssetType.TEXT);
 		
 		
-		urls.push ("assets/images/sidewalk tile - insert ready.png");
+		urls.push ("assets/images/Stage1/bar.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/stores.png");
+		urls.push ("assets/images/Stage1/barwalker.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage1/bg.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/ChickenTemp.png");
 		types.push (AssetType.IMAGE);
 		
 		
