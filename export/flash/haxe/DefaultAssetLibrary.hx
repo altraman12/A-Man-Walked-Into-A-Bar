@@ -46,22 +46,18 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
-		className.set ("assets/images/bar.png", __ASSET__assets_images_bar_png);
-		type.set ("assets/images/bar.png", AssetType.IMAGE);
-		className.set ("assets/images/barwalker.png", __ASSET__assets_images_barwalker_png);
-		type.set ("assets/images/barwalker.png", AssetType.IMAGE);
-		className.set ("assets/images/bg.png", __ASSET__assets_images_bg_png);
-		type.set ("assets/images/bg.png", AssetType.IMAGE);
-		className.set ("assets/images/ChickenTemp.png", __ASSET__assets_images_chickentemp_png);
-		type.set ("assets/images/ChickenTemp.png", AssetType.IMAGE);
 		className.set ("assets/images/GameTitleTemp.png", __ASSET__assets_images_gametitletemp_png);
 		type.set ("assets/images/GameTitleTemp.png", AssetType.IMAGE);
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
-		className.set ("assets/images/sidewalk tile - insert ready.png", __ASSET__assets_images_sidewalk_tile___insert_ready_png);
-		type.set ("assets/images/sidewalk tile - insert ready.png", AssetType.IMAGE);
-		className.set ("assets/images/stores.png", __ASSET__assets_images_stores_png);
-		type.set ("assets/images/stores.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage1/bar.png", __ASSET__assets_images_stage1_bar_png);
+		type.set ("assets/images/Stage1/bar.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage1/barwalker.png", __ASSET__assets_images_stage1_barwalker_png);
+		type.set ("assets/images/Stage1/barwalker.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage1/bg.png", __ASSET__assets_images_stage1_bg_png);
+		type.set ("assets/images/Stage1/bg.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/ChickenTemp.png", __ASSET__assets_images_stage2_chickentemp_png);
+		type.set ("assets/images/Stage2/ChickenTemp.png", AssetType.IMAGE);
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
@@ -79,22 +75,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
-		id = "assets/images/bar.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/barwalker.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/bg.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/ChickenTemp.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
 		id = "assets/images/GameTitleTemp.png";
 		path.set (id, id);
 		
@@ -103,11 +83,19 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
-		id = "assets/images/sidewalk tile - insert ready.png";
+		id = "assets/images/Stage1/bar.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/stores.png";
+		id = "assets/images/Stage1/barwalker.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage1/bg.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/ChickenTemp.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -145,8 +133,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-		
-		
 		#end
 		
 		#if (windows || mac || linux)
@@ -156,29 +142,23 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		
-		className.set ("assets/images/bar.png", __ASSET__assets_images_bar_png);
-		type.set ("assets/images/bar.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/barwalker.png", __ASSET__assets_images_barwalker_png);
-		type.set ("assets/images/barwalker.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/bg.png", __ASSET__assets_images_bg_png);
-		type.set ("assets/images/bg.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/ChickenTemp.png", __ASSET__assets_images_chickentemp_png);
-		type.set ("assets/images/ChickenTemp.png", AssetType.IMAGE);
-		
 		className.set ("assets/images/GameTitleTemp.png", __ASSET__assets_images_gametitletemp_png);
 		type.set ("assets/images/GameTitleTemp.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
 		
-		className.set ("assets/images/sidewalk tile - insert ready.png", __ASSET__assets_images_sidewalk_tile___insert_ready_png);
-		type.set ("assets/images/sidewalk tile - insert ready.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage1/bar.png", __ASSET__assets_images_stage1_bar_png);
+		type.set ("assets/images/Stage1/bar.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/stores.png", __ASSET__assets_images_stores_png);
-		type.set ("assets/images/stores.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage1/barwalker.png", __ASSET__assets_images_stage1_barwalker_png);
+		type.set ("assets/images/Stage1/barwalker.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage1/bg.png", __ASSET__assets_images_stage1_bg_png);
+		type.set ("assets/images/Stage1/bg.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/ChickenTemp.png", __ASSET__assets_images_stage2_chickentemp_png);
+		type.set ("assets/images/Stage2/ChickenTemp.png", AssetType.IMAGE);
 		
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
@@ -763,14 +743,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if flash
 
 @:keep @:bind #if display private #end class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_bar_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_barwalker_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_bg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_chickentemp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_gametitletemp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray { }
-@:keep @:bind #if display private #end class __ASSET__assets_images_sidewalk_tile___insert_ready_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stores_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage1_bar_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage1_barwalker_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage1_bg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_chickentemp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_beep_mp3 extends flash.media.Sound { }
@@ -780,8 +758,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 #elseif html5
 
 #if openfl
-
-
 
 
 
@@ -806,14 +782,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 @:file("assets/data/data-goes-here.txt") class __ASSET__assets_data_data_goes_here_txt extends lime.utils.ByteArray {}
-@:bitmap("assets/images/bar.png") class __ASSET__assets_images_bar_png extends lime.graphics.Image {}
-@:bitmap("assets/images/barwalker.png") class __ASSET__assets_images_barwalker_png extends lime.graphics.Image {}
-@:bitmap("assets/images/bg.png") class __ASSET__assets_images_bg_png extends lime.graphics.Image {}
-@:bitmap("assets/images/ChickenTemp.png") class __ASSET__assets_images_chickentemp_png extends lime.graphics.Image {}
 @:bitmap("assets/images/GameTitleTemp.png") class __ASSET__assets_images_gametitletemp_png extends lime.graphics.Image {}
 @:file("assets/images/images-go-here.txt") class __ASSET__assets_images_images_go_here_txt extends lime.utils.ByteArray {}
-@:bitmap("assets/images/sidewalk tile - insert ready.png") class __ASSET__assets_images_sidewalk_tile___insert_ready_png extends lime.graphics.Image {}
-@:bitmap("assets/images/stores.png") class __ASSET__assets_images_stores_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage1/bar.png") class __ASSET__assets_images_stage1_bar_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage1/barwalker.png") class __ASSET__assets_images_stage1_barwalker_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage1/bg.png") class __ASSET__assets_images_stage1_bg_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/ChickenTemp.png") class __ASSET__assets_images_stage2_chickentemp_png extends lime.graphics.Image {}
 @:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends lime.utils.ByteArray {}
 @:file("assets/sounds/sounds-go-here.txt") class __ASSET__assets_sounds_sounds_go_here_txt extends lime.utils.ByteArray {}
 @:sound("C:/HaxeToolkit/haxe/lib/flixel/3,3,6/assets/sounds/beep.mp3") class __ASSET__assets_sounds_beep_mp3 extends lime.audio.AudioSource {}

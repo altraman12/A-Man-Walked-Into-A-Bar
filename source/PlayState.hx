@@ -110,14 +110,14 @@ class PlayState extends FlxState
 		btnMenu = new FlxButton(0, 0, "Main Menu", clickMenu);
 		add(btnMenu);
 		
-		bg = new FlxBackdrop("assets/images/bg.png", 1, 0, true, false);
+		bg = new FlxBackdrop("assets/images/Stage1/bg.png", 1, 0, true, false);
 		add(bg);
 		
 		bars = new FlxTypedGroup<BarClass>();
 		
 		{//set up player
 			player = new FlxSprite(FlxG.width / 5, FlxG.height / 2);
-			player.loadGraphic("assets/images/barwalker.png", true, 64, 64, true);
+			player.loadGraphic("assets/images/Stage1/barwalker.png", true, 64, 64, true);
 			add(player);
 			player.animation.add("run", [7, 8, 9, 10, 11, 12, 13], 30, true);
 			player.animation.add("jump", [14, 15, 16, 17, 18, 19, 20], Math.ceil(7/jumpDuration), false);

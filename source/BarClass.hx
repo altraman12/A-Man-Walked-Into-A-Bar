@@ -26,7 +26,7 @@ class BarClass extends FlxSprite
 	public function new(X:Float=0, Y:Float=0, level:PlayState, ?SimpleGraphic:Dynamic) 
 	{
 		super(X, Y, SimpleGraphic);
-		this.loadGraphic("assets/images/bar.png");
+		this.loadGraphic("assets/images/Stage1/bar.png");
 		barRange = 2 * FlxG.height / level.player.height;
 		this.y = (Math.random() * FlxG.height / barRange) + ((FlxG.height/2)-(FlxG.height/barRange));
 		state = level;
