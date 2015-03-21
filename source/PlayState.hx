@@ -21,8 +21,6 @@ import flixel.tweens.FlxEase;
 class PlayState extends FlxState
 {
 	var player:FlxSprite;
-	var acc:Float;
-	var vel:Float;
 	var runAnim:FlxAnimation;
 	var jumpAnim:FlxAnimation;
 	var slideAnim:FlxAnimation;
@@ -30,7 +28,7 @@ class PlayState extends FlxState
 	var maxBars = 5;
 	var bars:FlxTypedGroup<BarClass>;
 	var bar:BarClass;
-	public var speed:Int;
+	public var speed = 10;
 	
 	/**
 	 * Function that is called up when to state is created to set it up. 
@@ -99,8 +97,6 @@ class PlayState extends FlxState
 	 
 	override public function create():Void
 	{
-		speed = 10;
-		
 		//temporary level skip button
 		var btnChicken:FlxButton;
 		btnChicken = new FlxButton(FlxG.width - 80, 0, "Level 2", clickChicken);
@@ -118,14 +114,12 @@ class PlayState extends FlxState
 			player.animation.add("run", [7, 8, 9, 10, 11, 12, 13], 30, true);
 			player.animation.add("jump", [14, 15, 16, 17, 18, 19, 20], Math.ceil(7/jumpDuration), false);
 			player.animation.add("slide", [21], 30, false);
-			vel = 0;
-			acc = 0;
 			super.create();
 			run();
 		}
 		
 		{//set up bars
-			var bar = new BarClass(FlxG.width, 0, this);
+			bar = new BarClass(FlxG.width, 0, this);
 			add(bar);
 		}
 	}
@@ -137,6 +131,7 @@ class PlayState extends FlxState
 	override public function destroy():Void
 	{
 		player.destroy();
+		bar.destroy();
 		super.destroy();
 	}
 	
@@ -188,9 +183,11 @@ class PlayState extends FlxState
 		
 		if (FlxG.overlap(player, bar))
 		{
-			FlxG.switchState(new ChickenState());
+			if (FlxG.pixelPerfectOverlap(bar, player))
+			{
+				FlxG.switchState(new ChickenState());
+			}
 		}
-		trace(FlxG.overlap(player, bar));
 		
 		/*{//physics
 			trace(player.y);
