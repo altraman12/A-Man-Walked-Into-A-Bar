@@ -14,6 +14,7 @@ import flixel.util.FlxPoint;
 import flixel.util.FlxTimer;
 import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
+import flixel.addons.display.FlxBackdrop;
 
 /**
  * A FlxState which can be used for the actual gameplay.
@@ -28,6 +29,7 @@ class PlayState extends FlxState
 	var maxBars = 5;
 	var bars:FlxTypedGroup<BarClass>;
 	var bar:BarClass;
+	var bg:FlxBackdrop;
 	public var speed = 10;
 	
 	/**
@@ -107,6 +109,9 @@ class PlayState extends FlxState
 		btnMenu = new FlxButton(0, 0, "Main Menu", clickMenu);
 		add(btnMenu);
 		
+		bg = new FlxBackdrop("assets/images/bg.png", 1, 0, true, false);
+		add(bg);
+		
 		{//set up player
 			player = new FlxSprite(FlxG.width / 5, FlxG.height / 2);
 			player.loadGraphic("assets/images/barwalker.png", true, 64, 64, true);
@@ -180,6 +185,8 @@ class PlayState extends FlxState
 	override public function update():Void
 	{		
 		super.update();
+		
+		bg.x -= 10;
 		
 		if (FlxG.overlap(player, bar))
 		{
