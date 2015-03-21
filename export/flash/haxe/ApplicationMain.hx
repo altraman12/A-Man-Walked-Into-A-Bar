@@ -31,6 +31,10 @@ class ApplicationMain {
 		types.push (AssetType.TEXT);
 		
 		
+		urls.push ("assets/images/bar transparent.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/bar.png");
 		types.push (AssetType.IMAGE);
 		
