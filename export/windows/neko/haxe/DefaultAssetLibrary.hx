@@ -62,6 +62,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage1/bg.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/ChickenTemp.png", "assets/images/Stage2/ChickenTemp.png");
 		type.set ("assets/images/Stage2/ChickenTemp.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage3/chicken ghost.png", "assets/images/Stage3/chicken ghost.png");
+		type.set ("assets/images/Stage3/chicken ghost.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage3/door.png", "assets/images/Stage3/door.png");
+		type.set ("assets/images/Stage3/door.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage3/hall.png", "assets/images/Stage3/hall.png");
+		type.set ("assets/images/Stage3/hall.png", AssetType.IMAGE);
 		path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/sounds/sounds-go-here.txt", "assets/sounds/sounds-go-here.txt");
@@ -99,6 +105,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/Stage2/ChickenTemp.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage3/chicken ghost.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage3/door.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage3/hall.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/music/music-goes-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
@@ -130,9 +145,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -776,7 +797,13 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
 #elseif html5
+
+
+
 
 
 

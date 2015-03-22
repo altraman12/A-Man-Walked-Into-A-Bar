@@ -32,6 +32,12 @@ class AssetData {
 			type.set ("assets/images/Stage1/bg.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Stage2/ChickenTemp.png", "assets/images/Stage2/ChickenTemp.png");
 			type.set ("assets/images/Stage2/ChickenTemp.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage3/chicken ghost.png", "assets/images/Stage3/chicken ghost.png");
+			type.set ("assets/images/Stage3/chicken ghost.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage3/door.png", "assets/images/Stage3/door.png");
+			type.set ("assets/images/Stage3/door.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage3/hall.png", "assets/images/Stage3/hall.png");
+			type.set ("assets/images/Stage3/hall.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
 			type.set ("assets/music/music-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/sounds/sounds-go-here.txt", "assets/sounds/sounds-go-here.txt");

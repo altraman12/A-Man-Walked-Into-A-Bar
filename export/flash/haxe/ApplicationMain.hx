@@ -59,6 +59,18 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/Stage3/chicken ghost.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage3/door.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage3/hall.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/music/music-goes-here.txt");
 		types.push (AssetType.TEXT);
 		

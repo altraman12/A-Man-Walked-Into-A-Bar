@@ -60,6 +60,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage1/bg.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage2/ChickenTemp.png", __ASSET__assets_images_stage2_chickentemp_png);
 		type.set ("assets/images/Stage2/ChickenTemp.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage3/chicken ghost.png", __ASSET__assets_images_stage3_chicken_ghost_png);
+		type.set ("assets/images/Stage3/chicken ghost.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage3/door.png", __ASSET__assets_images_stage3_door_png);
+		type.set ("assets/images/Stage3/door.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage3/hall.png", __ASSET__assets_images_stage3_hall_png);
+		type.set ("assets/images/Stage3/hall.png", AssetType.IMAGE);
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
@@ -105,6 +111,18 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage3/chicken ghost.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage3/door.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage3/hall.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/music/music-goes-here.txt";
 		path.set (id, id);
 		
@@ -126,6 +144,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#else
 		
 		#if openfl
+		
+		
+		
 		
 		
 		
@@ -169,6 +190,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/Stage2/ChickenTemp.png", __ASSET__assets_images_stage2_chickentemp_png);
 		type.set ("assets/images/Stage2/ChickenTemp.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage3/chicken ghost.png", __ASSET__assets_images_stage3_chicken_ghost_png);
+		type.set ("assets/images/Stage3/chicken ghost.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage3/door.png", __ASSET__assets_images_stage3_door_png);
+		type.set ("assets/images/Stage3/door.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage3/hall.png", __ASSET__assets_images_stage3_hall_png);
+		type.set ("assets/images/Stage3/hall.png", AssetType.IMAGE);
 		
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
@@ -760,6 +790,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage1_barwalker_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage1_bg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage2_chickentemp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage3_chicken_ghost_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage3_door_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage3_hall_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_beep_mp3 extends flash.media.Sound { }
@@ -769,6 +802,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 #elseif html5
 
 #if openfl
+
+
+
 
 
 
@@ -801,6 +837,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:bitmap("assets/images/Stage1/barwalker.png") class __ASSET__assets_images_stage1_barwalker_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage1/bg.png") class __ASSET__assets_images_stage1_bg_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage2/ChickenTemp.png") class __ASSET__assets_images_stage2_chickentemp_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage3/chicken ghost.png") class __ASSET__assets_images_stage3_chicken_ghost_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage3/door.png") class __ASSET__assets_images_stage3_door_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage3/hall.png") class __ASSET__assets_images_stage3_hall_png extends lime.graphics.Image {}
 @:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends lime.utils.ByteArray {}
 @:file("assets/sounds/sounds-go-here.txt") class __ASSET__assets_sounds_sounds_go_here_txt extends lime.utils.ByteArray {}
 @:sound("C:/HaxeToolkit/haxe/lib/flixel/3,3,6/assets/sounds/beep.mp3") class __ASSET__assets_sounds_beep_mp3 extends lime.audio.AudioSource {}
