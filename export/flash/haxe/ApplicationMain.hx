@@ -55,7 +55,19 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/Stage2/car.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/chicken.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/Stage2/ChickenTemp.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage3/789 door.png");
 		types.push (AssetType.IMAGE);
 		
 		
@@ -67,7 +79,15 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/Stage3/hall wall.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/Stage3/hall.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage3/surprised.png");
 		types.push (AssetType.IMAGE);
 		
 		

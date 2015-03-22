@@ -6,6 +6,7 @@ import flixel.FlxState;
 import flixel.FlxG;
 import flixel.group.FlxTypedGroup;
 import flixel.group.FlxTypedGroupIterator;
+import flixel.text.FlxText;
 import flixel.util.FlxPoint;
 /**
  * ...
@@ -15,9 +16,13 @@ class GhostState extends FlxState
 {
 	var ghost:FlxSprite;
 	var hall:FlxBackdrop;
-	var doorsIterator:FlxTypedGroupIterator<Door>;
+	var wall:FlxSprite;
 	public var doors:FlxTypedGroup<Door>;
-	public var speed = 10;
+	public var speed = 0;
+	public var inTransit:Bool;
+	public var knockCount = 0;
+	public var doneWithThisDoor = false;
+	public var doorIndex = 0;
 	
 	public function justPressed():Bool
 	{
@@ -82,34 +87,53 @@ class GhostState extends FlxState
 	
 	override public function create() 
 	{
-		hall = new FlxBackdrop("assets/images/Stage3/hall.png", 0, 0, true, false);
+		hall = new FlxBackdrop("assets/images/Stage3/hall wall.png", 0, 0, true, false);
 		add(hall);
 		
 		doors = new FlxTypedGroup<Door> ();
 		add(doors);
 		
 		#if web
-			doors.add(new Door((FlxG.width/2) - 259, (FlxG.height - 280) / 2, this, "assets/images/Stage3/door.png"));
+			doors.add(new Door(((FlxG.width/2) - 259) + 465 + 175, (FlxG.height - 280) / 2, this, "assets/images/Stage3/door.png"));
 		#else
-			doors.add(new Door((FlxG.width - 250-(175/2)-10) / 2, (FlxG.height - 280) / 2, this, "assets/images/Stage3/door.png"));
+			doors.add(new Door(((FlxG.width - 250-(175/2)-10) / 2) + 465 + 175, (FlxG.height - 280) / 2, this, "assets/images/Stage3/door.png"));
 		#end
 		
 		ghost = new FlxSprite(FlxG.width / 2, FlxG.height / 2, "assets/images/Stage3/chicken ghost.png");
 		ghost.loadGraphic("assets/images/Stage3/chicken ghost.png", true, 75, 100);
-		ghost.animation.add("right", [1], 30, true);
-		ghost.animation.add("forward", [2], 30, true);
-		ghost.animation.add("back", [3], 30, true);
+		ghost.animation.add("right", [0], 30, true);
+		ghost.animation.add("forward", [1], 30, true);
+		ghost.animation.add("back", [2], 30, true);
 		add(ghost);
 		
-		speed = 10;
+		speed = 0;
 		super.create();
+		
+		nextDoor();
+	}
+	
+	public function nextDoor()
+	{
+		inTransit = true;
+		if (ghost.x <= doors.members[doorIndex].x)
+		{
+			speed = 10;
+			ghost.animation.play("right");
+		}
+		else
+		{
+			speed = 0;
+			inTransit = false;
+			doorIndex++;
+			ghost.animation.play("forward");
+		}
 	}
 	
 	override public function update()
 	{
 		hall.x -= speed;
 		
-		var i = 0;
+		/*	var i = 0;
 		while (i < doors.members.length)
 		{
 			var basic = doors.members[i++];
@@ -117,6 +141,31 @@ class GhostState extends FlxState
 			if (basic != null && basic.exists && basic.active)
 			{
 				basic.update();
+			}
+		}*/
+		
+		if (inTransit)
+		{
+			nextDoor();
+		}
+		
+		super.update();
+		
+		if (justPressed())
+		{
+			var knock = new FlxText(ghost.x, ghost.y-100*knockCount, -1, "knock",20);
+			
+			if (knockCount == 2)
+			{
+				nextDoor();
+				knockCount = 0;
+				knock.x -= 100;
+			}
+			else 
+			{
+				knockCount++;
+				knock.color = 0x000000;
+				add(knock);
 			}
 		}
 	}
