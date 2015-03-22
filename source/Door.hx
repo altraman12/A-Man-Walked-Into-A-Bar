@@ -27,7 +27,7 @@ class Door extends FlxSprite
 		{
 			if (x <= FlxG.width / 2)
 			{
-				state.add(new Door(FlxG.width-(175/2), 0, state));
+				state.add(new Door(x+464+175, (FlxG.height - 280) / 2, state));
 				firstPass = false;
 			}
 		}

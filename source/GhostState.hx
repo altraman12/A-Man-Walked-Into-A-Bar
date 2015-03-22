@@ -86,7 +86,11 @@ class GhostState extends FlxState
 		add(hall);
 		
 		doors = new FlxTypedGroup<Door> ();
-		add(new Door(-175/2, Math.floor((FlxG.height-250) / 2), this,"assets/images/Stage3/door.png"));
+		#if web
+			add(new Door((FlxG.width/2) - 172, (FlxG.height - 280) / 2, this, "assets/images/Stage3/door.png"));
+		#else
+			add(new Door((FlxG.width - 175) / 2, (FlxG.height - 280) / 2, this, "assets/images/Stage3/door.png"));
+		#end
 		
 		ghost = new FlxSprite(FlxG.width / 2, FlxG.height / 2, "assets/images/Stage3/chicken ghost.png");
 		ghost.loadGraphic("assets/images/Stage3/chicken ghost.png", true, 75, 100);
@@ -102,6 +106,17 @@ class GhostState extends FlxState
 	override public function update()
 	{
 		hall.x -= speed;
+		
+		var i = 0;
+		while (i < doors.members.length)
+		{
+			var basic = doors.members[i++];
+			
+			if (basic != null && basic.exists && basic.active)
+			{
+				basic.update();
+			}
+		}
 	}
 	
 }
