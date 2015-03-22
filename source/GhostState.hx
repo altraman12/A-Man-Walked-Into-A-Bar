@@ -86,10 +86,12 @@ class GhostState extends FlxState
 		add(hall);
 		
 		doors = new FlxTypedGroup<Door> ();
+		add(doors);
+		
 		#if web
-			add(new Door((FlxG.width/2) - 172, (FlxG.height - 280) / 2, this, "assets/images/Stage3/door.png"));
+			doors.add(new Door((FlxG.width/2) - 259, (FlxG.height - 280) / 2, this, "assets/images/Stage3/door.png"));
 		#else
-			add(new Door((FlxG.width - 175) / 2, (FlxG.height - 280) / 2, this, "assets/images/Stage3/door.png"));
+			doors.add(new Door((FlxG.width - 250-(175/2)-10) / 2, (FlxG.height - 280) / 2, this, "assets/images/Stage3/door.png"));
 		#end
 		
 		ghost = new FlxSprite(FlxG.width / 2, FlxG.height / 2, "assets/images/Stage3/chicken ghost.png");

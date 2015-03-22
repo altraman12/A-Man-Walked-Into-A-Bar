@@ -18,16 +18,17 @@ class Door extends FlxSprite
 		super(X, Y, SimpleGraphic);
 		loadGraphic("assets/images/Stage3/door.png", true, 175, 250, false);
 		state = level;
-		state.doors.add(this);
+		//state.doors.add(this);
 	}
 	
 	public override function update():Void
 	{
 		if (firstPass)
 		{
-			if (x <= FlxG.width / 2)
+			if (isOnScreen())
 			{
-				state.add(new Door(x+464+175, (FlxG.height - 280) / 2, state));
+				state.doors.add(new Door(x + 465 + 175, (FlxG.height - 280) / 2, state));
+				//state.add(new Door(x+465+175, (FlxG.height - 280) / 2, state));
 				firstPass = false;
 			}
 		}
