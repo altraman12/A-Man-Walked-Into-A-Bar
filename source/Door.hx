@@ -17,7 +17,10 @@ class Door extends FlxSprite
 	{
 		super(X, Y, SimpleGraphic);
 		loadGraphic("assets/images/Stage3/door.png", true, 175, 250, false);
+		animation.add("open", [0, 1, 2, 3, 4, 5], 30, false);
+		animation.add("close", [5,4,3,2,1,0], 30, false);
 		state = level;
+		//this.animation.play("open");
 		//state.doors.add(this);
 	}
 	

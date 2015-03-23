@@ -17,6 +17,7 @@ class GhostState extends FlxState
 	var ghost:FlxSprite;
 	var hall:FlxBackdrop;
 	var wall:FlxSprite;
+	var knock :Array<FlxText>;
 	public var doors:FlxTypedGroup<Door>;
 	public var speed = 0;
 	public var inTransit:Bool;
@@ -109,6 +110,16 @@ class GhostState extends FlxState
 		speed = 0;
 		super.create();
 		
+		knock = new Array();
+		knock.push(new FlxText(ghost.x+25, ghost.y-35, -1, "*knock*", 20));
+		knock.push(new FlxText(ghost.x+25, ghost.y - 85, -1, "*knock*", 20));
+		for (member in knock)
+		{
+			member.color = 0x000000;
+			add(member);
+			member.kill();
+		}
+		
 		nextDoor();
 	}
 	
@@ -151,21 +162,24 @@ class GhostState extends FlxState
 		
 		super.update();
 		
-		if (justPressed())
+		if (justPressed()&&!inTransit)
 		{
-			var knock = new FlxText(ghost.x, ghost.y-100*knockCount, -1, "knock",20);
 			
 			if (knockCount == 2)
 			{
-				nextDoor();
 				knockCount = 0;
-				knock.x -= 100;
+				for (member in knock)
+				{
+					member.kill();
+				}
+				doors.members[doorIndex-1].animation.play("open", true, 0);
+				FlxG.watch.add(this,"doorIndex");
+				nextDoor();
 			}
 			else 
 			{
+				knock[knockCount].revive();
 				knockCount++;
-				knock.color = 0x000000;
-				add(knock);
 			}
 		}
 	}
