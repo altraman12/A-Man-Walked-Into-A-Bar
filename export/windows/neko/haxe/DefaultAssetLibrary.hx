@@ -60,30 +60,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage1/barwalker.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage1/bg.png", "assets/images/Stage1/bg.png");
 		type.set ("assets/images/Stage1/bg.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/CarGoingLeftTemp.png", "assets/images/Stage2/CarGoingLeftTemp.png");
-		type.set ("assets/images/Stage2/CarGoingLeftTemp.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/CarGoingLeftTemp2.png", "assets/images/Stage2/CarGoingLeftTemp2.png");
-		type.set ("assets/images/Stage2/CarGoingLeftTemp2.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/CarGoingLeftTemp2Copy.png", "assets/images/Stage2/CarGoingLeftTemp2Copy.png");
-		type.set ("assets/images/Stage2/CarGoingLeftTemp2Copy.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/CarGoingLeftTemp2Copy2.png", "assets/images/Stage2/CarGoingLeftTemp2Copy2.png");
-		type.set ("assets/images/Stage2/CarGoingLeftTemp2Copy2.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/CarGoingLeftTempCopy.png", "assets/images/Stage2/CarGoingLeftTempCopy.png");
-		type.set ("assets/images/Stage2/CarGoingLeftTempCopy.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/CarGoingLeftTempCopy2.png", "assets/images/Stage2/CarGoingLeftTempCopy2.png");
-		type.set ("assets/images/Stage2/CarGoingLeftTempCopy2.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/CarGoingRightTemp.png", "assets/images/Stage2/CarGoingRightTemp.png");
-		type.set ("assets/images/Stage2/CarGoingRightTemp.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/CarGoingRightTemp2.png", "assets/images/Stage2/CarGoingRightTemp2.png");
-		type.set ("assets/images/Stage2/CarGoingRightTemp2.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/CarGoingRightTemp2Copy.png", "assets/images/Stage2/CarGoingRightTemp2Copy.png");
-		type.set ("assets/images/Stage2/CarGoingRightTemp2Copy.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/CarGoingRightTemp2Copy2.png", "assets/images/Stage2/CarGoingRightTemp2Copy2.png");
-		type.set ("assets/images/Stage2/CarGoingRightTemp2Copy2.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/CarGoingRightTempCopy.png", "assets/images/Stage2/CarGoingRightTempCopy.png");
-		type.set ("assets/images/Stage2/CarGoingRightTempCopy.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/CarGoingRightTempCopy2.png", "assets/images/Stage2/CarGoingRightTempCopy2.png");
-		type.set ("assets/images/Stage2/CarGoingRightTempCopy2.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/ChickenTemp.png", "assets/images/Stage2/ChickenTemp.png");
 		type.set ("assets/images/Stage2/ChickenTemp.png", AssetType.IMAGE);
 		path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
@@ -120,42 +96,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/Stage1/bg.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingLeftTemp.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingLeftTemp2.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingLeftTemp2Copy.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingLeftTemp2Copy2.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingLeftTempCopy.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingLeftTempCopy2.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingRightTemp.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingRightTemp2.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingRightTemp2Copy.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingRightTemp2Copy2.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingRightTempCopy.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingRightTempCopy2.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage2/ChickenTemp.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
@@ -190,33 +130,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -860,31 +776,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 #elseif html5
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
