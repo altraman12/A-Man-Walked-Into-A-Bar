@@ -1,10 +1,10 @@
 #include <hxcpp.h>
 
+#ifndef INCLUDED_GhostState
+#include <GhostState.h>
+#endif
 #ifndef INCLUDED_Main
 #include <Main.h>
-#endif
-#ifndef INCLUDED_MenuState
-#include <MenuState.h>
 #endif
 #ifndef INCLUDED_flixel_FlxBasic
 #include <flixel/FlxBasic.h>
@@ -75,7 +75,7 @@ HX_STACK_THIS(this)
 	HX_STACK_LINE(16)
 	this->zoom = (int)-1;
 	HX_STACK_LINE(15)
-	this->initialState = hx::ClassOf< ::MenuState >();
+	this->initialState = hx::ClassOf< ::GhostState >();
 	HX_STACK_LINE(14)
 	this->gameHeight = (int)720;
 	HX_STACK_LINE(13)
