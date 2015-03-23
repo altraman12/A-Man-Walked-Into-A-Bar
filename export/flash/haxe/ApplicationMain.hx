@@ -59,6 +59,54 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/Stage2/CarGoingLeftTemp.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/CarGoingLeftTemp2.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/CarGoingLeftTemp2Copy.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/CarGoingLeftTemp2Copy2.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/CarGoingLeftTempCopy.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/CarGoingLeftTempCopy2.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/CarGoingRightTemp.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/CarGoingRightTemp2.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/CarGoingRightTemp2Copy.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/CarGoingRightTemp2Copy2.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/CarGoingRightTempCopy.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/CarGoingRightTempCopy2.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/Stage2/chicken.png");
 		types.push (AssetType.IMAGE);
 		
