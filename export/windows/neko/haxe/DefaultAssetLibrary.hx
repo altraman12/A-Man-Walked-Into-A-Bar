@@ -66,6 +66,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage1/cutscene bubbles 2.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage1/cutscene bubbles.png", "assets/images/Stage1/cutscene bubbles.png");
 		type.set ("assets/images/Stage1/cutscene bubbles.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage1/lose bubbles.png", "assets/images/Stage1/lose bubbles.png");
+		type.set ("assets/images/Stage1/lose bubbles.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/car.png", "assets/images/Stage2/car.png");
 		type.set ("assets/images/Stage2/car.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/car1left.png", "assets/images/Stage2/car1left.png");
@@ -179,6 +181,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage1/cutscene bubbles.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage1/lose bubbles.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage2/car.png";
@@ -358,9 +363,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1080,7 +1087,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
 #elseif html5
+
 
 
 
