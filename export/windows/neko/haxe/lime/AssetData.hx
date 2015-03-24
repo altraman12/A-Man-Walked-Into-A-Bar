@@ -38,6 +38,11 @@ class AssetData {
 			type.set ("assets/images/Stage1/cutscene bubbles.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Stage1/lose bubbles.png", "assets/images/Stage1/lose bubbles.png");
 			type.set ("assets/images/Stage1/lose bubbles.png", Reflect.field (AssetType, "image".toUpperCase ()));
+<<<<<<< HEAD
+=======
+			path.set ("assets/images/Stage2/car.png", "assets/images/Stage2/car.png");
+			type.set ("assets/images/Stage2/car.png", Reflect.field (AssetType, "image".toUpperCase ()));
+>>>>>>> origin/Development
 			path.set ("assets/images/Stage2/car1left.png", "assets/images/Stage2/car1left.png");
 			type.set ("assets/images/Stage2/car1left.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Stage2/car1left1.png", "assets/images/Stage2/car1left1.png");

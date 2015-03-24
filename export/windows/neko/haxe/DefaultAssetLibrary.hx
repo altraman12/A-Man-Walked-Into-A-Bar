@@ -68,6 +68,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage1/cutscene bubbles.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage1/lose bubbles.png", "assets/images/Stage1/lose bubbles.png");
 		type.set ("assets/images/Stage1/lose bubbles.png", AssetType.IMAGE);
+<<<<<<< HEAD
+=======
+		path.set ("assets/images/Stage2/car.png", "assets/images/Stage2/car.png");
+		type.set ("assets/images/Stage2/car.png", AssetType.IMAGE);
+>>>>>>> origin/Development
 		path.set ("assets/images/Stage2/car1left.png", "assets/images/Stage2/car1left.png");
 		type.set ("assets/images/Stage2/car1left.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/car1left1.png", "assets/images/Stage2/car1left1.png");
@@ -186,6 +191,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage1/lose bubbles.png";
+<<<<<<< HEAD
+=======
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car.png";
+>>>>>>> origin/Development
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage2/car1left.png";
@@ -369,7 +380,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/Development
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
@@ -424,7 +438,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
+<<<<<<< HEAD
 		useManifest = true;
+=======
+>>>>>>> origin/Development
 		
 		
 		if (useManifest) {
@@ -1095,7 +1112,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Development
 #elseif html5
 
 
@@ -1151,7 +1171,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Development
 #else
 
 #if (windows || mac || linux)

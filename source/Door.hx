@@ -43,4 +43,14 @@ class Door extends FlxSprite
 		}
 	}	
 	
+	public function open()
+	{
+		trace("open");
+		animation.play("open", true, 0);
+	}
+	
+	public function close()
+	{
+		animation.play("close", true, 0);
+	}
 }

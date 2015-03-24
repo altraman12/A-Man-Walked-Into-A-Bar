@@ -172,7 +172,7 @@ class GhostState extends FlxState
 				{
 					member.kill();
 				}
-				doors.members[doorIndex-1].animation.play("open", true, 0);
+				doors.members[doorIndex-1].open();
 				FlxG.watch.add(this,"doorIndex");
 				nextDoor();
 			}
