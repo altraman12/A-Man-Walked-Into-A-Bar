@@ -93,7 +93,7 @@ class ChickenState extends FlxState
 	override public function create():Void
 	{
 		chicken = new FlxSprite(FlxG.width / 2 - 32, FlxG.height - 64);
-		chicken.loadGraphic("assets/images/Stage2/chicken.png", true, 64, 64, true);
+		chicken.loadGraphic("assets/images/Stage2/chicken.png", true, 31, 41, true);
 		add(chicken);
 		super.create();
 		
@@ -173,22 +173,22 @@ class ChickenState extends FlxState
 	{
 		super.update();
 		{//controls
-			if (justPressed() && ((clickCoords().y < clickCoords().x) && (clickCoords().y > -clickCoords().x + FlxG.width)))
+			if (justPressed() && ((clickCoords().y < clickCoords().x- 280) && (clickCoords().y > -clickCoords().x + 1000)))
 			{
 				chicken.x += 32;
 			}
 			
-			if (justPressed() && ((clickCoords().y > clickCoords().x) && (clickCoords().y < -clickCoords().x + FlxG.width)))
+			if (justPressed() && ((clickCoords().y > clickCoords().x - 280) && (clickCoords().y < -clickCoords().x + 1000)))
 			{
 				chicken.x -= 32;
 			}
 			
-			if (justPressed() && ((clickCoords().y > clickCoords().x) && (clickCoords().y > -clickCoords().x + FlxG.width)))
+			if (justPressed() && ((clickCoords().y > clickCoords().x - 280) && (clickCoords().y > -clickCoords().x + 1000)))
 			{
 				chicken.y += 32;
 			}
 			
-			if (justPressed() && ((clickCoords().y < clickCoords().x) && (clickCoords().y < -clickCoords().x + FlxG.width)))
+			if (justPressed() && ((clickCoords().y < clickCoords().x - 280) && (clickCoords().y < -clickCoords().x + 1000)))
 			{
 				chicken.y -= 32;
 			}

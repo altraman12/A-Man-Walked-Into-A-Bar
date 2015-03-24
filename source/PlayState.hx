@@ -33,7 +33,7 @@ class PlayState extends FlxState
 	public var alcoholBar:FlxSprite;
 	var bg:FlxBackdrop;
 	public var speed = 10;
-	var levelTime = 12;
+	var levelTime = 36;
 	public var dead = false;
 	
 	/**

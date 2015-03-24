@@ -8,12 +8,10 @@ class ApplicationMain {
 	public static var config:lime.app.Config;
 	public static var preloader:openfl.display.Preloader;
 	
-	private static var app:lime.app.Application;
-	
 	
 	public static function create ():Void {
 		
-		app = new openfl.display.Application ();
+		var app = new openfl.display.Application ();
 		app.create (config);
 		
 		var display = new flixel.system.FlxPreloader ();
@@ -22,7 +20,7 @@ class ApplicationMain {
 		preloader.onComplete = init;
 		preloader.create (config);
 		
-		#if js
+		#if (js && html5)
 		var urls = [];
 		var types = [];
 		
@@ -43,6 +41,10 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/Stage1/bar inside.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/Stage1/bar.png");
 		types.push (AssetType.IMAGE);
 		
@@ -55,7 +57,63 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/Stage1/cutscene bubbles 2.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage1/cutscene bubbles.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/Stage2/car.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car1left.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car1left2.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car1left3.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car1right.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car1right2.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car1right3.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car2left.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car2left2.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car2left3.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car2right.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car2right2.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car2right3.png");
 		types.push (AssetType.IMAGE);
 		
 		
@@ -139,6 +197,18 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/Stage4/69.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage4/7.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage4/background.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/music/music-goes-here.txt");
 		types.push (AssetType.TEXT);
 		
@@ -156,12 +226,26 @@ class ApplicationMain {
 		
 		
 		
+		if (config.assetsPrefix != null) {
+			
+			for (i in 0...urls.length) {
+				
+				if (types[i] != AssetType.FONT) {
+					
+					urls[i] = config.assetsPrefix + urls[i];
+					
+				}
+				
+			}
+			
+		}
+		
 		preloader.load (urls, types);
 		#end
 		
 		var result = app.exec ();
 		
-		#if sys
+		#if (sys && !emscripten)
 		Sys.exit (result);
 		#end
 		
@@ -230,12 +314,10 @@ class ApplicationMain {
 	
 	public static function start ():Void {
 		
-		openfl.Lib.current.stage.align = openfl.display.StageAlign.TOP_LEFT;
-		openfl.Lib.current.stage.scaleMode = openfl.display.StageScaleMode.NO_SCALE;
-		
 		var hasMain = false;
+		var entryPoint = Type.resolveClass ("Main");
 		
-		for (methodName in Type.getClassFields (Main)) {
+		for (methodName in Type.getClassFields (entryPoint)) {
 			
 			if (methodName == "main") {
 				
@@ -248,7 +330,7 @@ class ApplicationMain {
 		
 		if (hasMain) {
 			
-			Reflect.callMethod (Main, Reflect.field (Main, "main"), []);
+			Reflect.callMethod (entryPoint, Reflect.field (entryPoint, "main"), []);
 			
 		} else {
 			
