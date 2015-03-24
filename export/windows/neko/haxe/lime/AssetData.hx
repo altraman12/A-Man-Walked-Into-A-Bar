@@ -38,11 +38,6 @@ class AssetData {
 			type.set ("assets/images/Stage1/cutscene bubbles.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Stage1/lose bubbles.png", "assets/images/Stage1/lose bubbles.png");
 			type.set ("assets/images/Stage1/lose bubbles.png", Reflect.field (AssetType, "image".toUpperCase ()));
-<<<<<<< HEAD
-=======
-			path.set ("assets/images/Stage2/car.png", "assets/images/Stage2/car.png");
-			type.set ("assets/images/Stage2/car.png", Reflect.field (AssetType, "image".toUpperCase ()));
->>>>>>> origin/Development
 			path.set ("assets/images/Stage2/car1left.png", "assets/images/Stage2/car1left.png");
 			type.set ("assets/images/Stage2/car1left.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Stage2/car1left1.png", "assets/images/Stage2/car1left1.png");
@@ -91,16 +86,46 @@ class AssetData {
 			type.set ("assets/images/Stage2/car4right1.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Stage2/car4right2.png", "assets/images/Stage2/car4right2.png");
 			type.set ("assets/images/Stage2/car4right2.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/car5left.png", "assets/images/Stage2/car5left.png");
+			type.set ("assets/images/Stage2/car5left.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/car5left1.png", "assets/images/Stage2/car5left1.png");
+			type.set ("assets/images/Stage2/car5left1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/car5left2.png", "assets/images/Stage2/car5left2.png");
+			type.set ("assets/images/Stage2/car5left2.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/car5right.png", "assets/images/Stage2/car5right.png");
+			type.set ("assets/images/Stage2/car5right.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/car5right1.png", "assets/images/Stage2/car5right1.png");
+			type.set ("assets/images/Stage2/car5right1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/car5right2.png", "assets/images/Stage2/car5right2.png");
+			type.set ("assets/images/Stage2/car5right2.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/car6left.png", "assets/images/Stage2/car6left.png");
+			type.set ("assets/images/Stage2/car6left.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/car6left1.png", "assets/images/Stage2/car6left1.png");
+			type.set ("assets/images/Stage2/car6left1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/car6left2.png", "assets/images/Stage2/car6left2.png");
+			type.set ("assets/images/Stage2/car6left2.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/car6right.png", "assets/images/Stage2/car6right.png");
+			type.set ("assets/images/Stage2/car6right.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/car6right1.png", "assets/images/Stage2/car6right1.png");
+			type.set ("assets/images/Stage2/car6right1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/car6right2.png", "assets/images/Stage2/car6right2.png");
+			type.set ("assets/images/Stage2/car6right2.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Stage2/chicken.png", "assets/images/Stage2/chicken.png");
 			type.set ("assets/images/Stage2/chicken.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/chickensprite.png", "assets/images/Stage2/chickensprite.png");
+			type.set ("assets/images/Stage2/chickensprite.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Stage2/ChickenTemp.png", "assets/images/Stage2/ChickenTemp.png");
 			type.set ("assets/images/Stage2/ChickenTemp.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Stage2/froggerbg.png", "assets/images/Stage2/froggerbg.png");
 			type.set ("assets/images/Stage2/froggerbg.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Stage2/RealChicken.jpg", "assets/images/Stage2/RealChicken.jpg");
 			type.set ("assets/images/Stage2/RealChicken.jpg", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage2/road tile.png", "assets/images/Stage2/road tile.png");
+			type.set ("assets/images/Stage2/road tile.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Stage3/789 door.png", "assets/images/Stage3/789 door.png");
 			type.set ("assets/images/Stage3/789 door.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/Stage3/ascension.png", "assets/images/Stage3/ascension.png");
+			type.set ("assets/images/Stage3/ascension.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Stage3/chicken ghost.png", "assets/images/Stage3/chicken ghost.png");
 			type.set ("assets/images/Stage3/chicken ghost.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Stage3/door.png", "assets/images/Stage3/door.png");

@@ -68,11 +68,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage1/cutscene bubbles.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage1/lose bubbles.png", "assets/images/Stage1/lose bubbles.png");
 		type.set ("assets/images/Stage1/lose bubbles.png", AssetType.IMAGE);
-<<<<<<< HEAD
-=======
-		path.set ("assets/images/Stage2/car.png", "assets/images/Stage2/car.png");
-		type.set ("assets/images/Stage2/car.png", AssetType.IMAGE);
->>>>>>> origin/Development
 		path.set ("assets/images/Stage2/car1left.png", "assets/images/Stage2/car1left.png");
 		type.set ("assets/images/Stage2/car1left.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/car1left1.png", "assets/images/Stage2/car1left1.png");
@@ -121,16 +116,46 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage2/car4right1.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/car4right2.png", "assets/images/Stage2/car4right2.png");
 		type.set ("assets/images/Stage2/car4right2.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/car5left.png", "assets/images/Stage2/car5left.png");
+		type.set ("assets/images/Stage2/car5left.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/car5left1.png", "assets/images/Stage2/car5left1.png");
+		type.set ("assets/images/Stage2/car5left1.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/car5left2.png", "assets/images/Stage2/car5left2.png");
+		type.set ("assets/images/Stage2/car5left2.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/car5right.png", "assets/images/Stage2/car5right.png");
+		type.set ("assets/images/Stage2/car5right.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/car5right1.png", "assets/images/Stage2/car5right1.png");
+		type.set ("assets/images/Stage2/car5right1.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/car5right2.png", "assets/images/Stage2/car5right2.png");
+		type.set ("assets/images/Stage2/car5right2.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/car6left.png", "assets/images/Stage2/car6left.png");
+		type.set ("assets/images/Stage2/car6left.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/car6left1.png", "assets/images/Stage2/car6left1.png");
+		type.set ("assets/images/Stage2/car6left1.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/car6left2.png", "assets/images/Stage2/car6left2.png");
+		type.set ("assets/images/Stage2/car6left2.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/car6right.png", "assets/images/Stage2/car6right.png");
+		type.set ("assets/images/Stage2/car6right.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/car6right1.png", "assets/images/Stage2/car6right1.png");
+		type.set ("assets/images/Stage2/car6right1.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/car6right2.png", "assets/images/Stage2/car6right2.png");
+		type.set ("assets/images/Stage2/car6right2.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/chicken.png", "assets/images/Stage2/chicken.png");
 		type.set ("assets/images/Stage2/chicken.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/chickensprite.png", "assets/images/Stage2/chickensprite.png");
+		type.set ("assets/images/Stage2/chickensprite.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/ChickenTemp.png", "assets/images/Stage2/ChickenTemp.png");
 		type.set ("assets/images/Stage2/ChickenTemp.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/froggerbg.png", "assets/images/Stage2/froggerbg.png");
 		type.set ("assets/images/Stage2/froggerbg.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/RealChicken.jpg", "assets/images/Stage2/RealChicken.jpg");
 		type.set ("assets/images/Stage2/RealChicken.jpg", AssetType.IMAGE);
+		path.set ("assets/images/Stage2/road tile.png", "assets/images/Stage2/road tile.png");
+		type.set ("assets/images/Stage2/road tile.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage3/789 door.png", "assets/images/Stage3/789 door.png");
 		type.set ("assets/images/Stage3/789 door.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage3/ascension.png", "assets/images/Stage3/ascension.png");
+		type.set ("assets/images/Stage3/ascension.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage3/chicken ghost.png", "assets/images/Stage3/chicken ghost.png");
 		type.set ("assets/images/Stage3/chicken ghost.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage3/door.png", "assets/images/Stage3/door.png");
@@ -191,12 +216,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage1/lose bubbles.png";
-<<<<<<< HEAD
-=======
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/car.png";
->>>>>>> origin/Development
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage2/car1left.png";
@@ -271,7 +290,46 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/Stage2/car4right2.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car5left.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car5left1.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car5left2.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car5right.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car5right1.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car5right2.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car6left.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car6left1.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car6left2.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car6right.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car6right1.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car6right2.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage2/chicken.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/chickensprite.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage2/ChickenTemp.png";
@@ -283,7 +341,13 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/Stage2/RealChicken.jpg";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/road tile.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage3/789 door.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage3/ascension.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage3/chicken ghost.png";
@@ -380,10 +444,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-<<<<<<< HEAD
 		
-=======
->>>>>>> origin/Development
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
@@ -438,10 +514,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
-<<<<<<< HEAD
 		useManifest = true;
-=======
->>>>>>> origin/Development
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		
 		
 		if (useManifest) {
@@ -1112,10 +1200,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/Development
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #elseif html5
 
 
@@ -1171,10 +1271,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/Development
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #else
 
 #if (windows || mac || linux)
