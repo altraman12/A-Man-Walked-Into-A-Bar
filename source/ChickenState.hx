@@ -1,5 +1,6 @@
 package;
 
+import flixel.addons.display.FlxBackdrop;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
@@ -24,8 +25,11 @@ class ChickenState extends FlxState
 	var cargoingright2:FlxSprite;
 	var cargoingright2copy:FlxSprite;
 	var cargoingright2copy2:FlxSprite;
-	var velocidad = 4;
+	var killcar:FlxSprite;
+	var background:FlxBackdrop;
+	var velocidad = 6;
 	var firstpass:Bool;
+	var canMove:Bool;
 	
 	//UNIVERSAL CLICK CODE
 	public function justPressed():Bool
@@ -92,112 +96,144 @@ class ChickenState extends FlxState
 	
 	override public function create():Void
 	{
-		chicken = new FlxSprite(FlxG.width / 2 - 32, FlxG.height - 64);
-		chicken.loadGraphic("assets/images/Stage2/chicken.png", true, 31, 41, true);
-		add(chicken);
-		super.create();
+	//background defining
+		background = new FlxBackdrop("assets/images/Stage2/froggerbg.png", 0, 0, true, false);
+		add(background);
 		
-		//temporary menu button
+	//defining chicken
+		chicken = new FlxSprite(FlxG.width / 2 - 16, FlxG.height - 32);
+		chicken.loadGraphic("assets/images/Stage2/RealChicken.jpg", true, 32, 32, true);
+		add(chicken);
+		chicken.animation.add("up", [0], 30, false);
+		chicken.animation.add("left", [1], 30, false);
+		chicken.animation.add("right", [2], 30, false);
+		chicken.animation.add("down", [3], 30, false);
+		
+	//temporary menu button
 		var btnMenu:FlxButton;
 		btnMenu = new FlxButton(0, 0, "Main Menu", clickMenu);
 		add(btnMenu);
 		
+	//boolean setting
 		firstpass = true;
+		canMove = true;
 		
 	//temporary level skip button
 		var btnSkip:FlxButton;
 		btnSkip = new FlxButton(FlxG.width - 200, 0, "Next Level", clickSkip);
 		add(btnSkip);
+	
+	//kill car
+		killcar = new FlxSprite( -128, 32);
+		killcar.loadGraphic("assets/images/Stage2/car2right.png", false, 128, 64, true);
 		
 	//car going left 1
 		cargoingleft1 = new FlxSprite(FlxG.width, 4 * FlxG.height / 5);
-		cargoingleft1.loadGraphic("assets/images/Stage2/CarGoingLeftTemp.png",false, 128, 54, true);
+		cargoingleft1.loadGraphic("assets/images/Stage2/car1left.png",false, 128, 64, true);
 		add(cargoingleft1);
 
 		cargoingleft1copy = new FlxSprite(1.33 * FlxG.width + 64, 4 * FlxG.height / 5);
-		cargoingleft1copy.loadGraphic("assets/images/Stage2/CarGoingLeftTempCopy.png",false, 128, 64, true);
+		cargoingleft1copy.loadGraphic("assets/images/Stage2/car1left1.png",false, 128, 64, true);
 		add(cargoingleft1copy);
 		
 		cargoingleft1copy2 = new FlxSprite(1.66 * FlxG.width + 128, 4 * FlxG.height / 5);
-		cargoingleft1copy2.loadGraphic("assets/images/Stage2/CarGoingLeftTempCopy2.png",false, 128, 64, true);
+		cargoingleft1copy2.loadGraphic("assets/images/Stage2/car1left2.png",false, 128, 64, true);
 		add(cargoingleft1copy2);
 		
 	//car going right 1
 		cargoingright1 = new FlxSprite( -128, 3 * FlxG.height / 5);
-		cargoingright1.loadGraphic("assets/images/Stage2/CarGoingRightTemp.png",false, 128, 64, true);
+		cargoingright1.loadGraphic("assets/images/Stage2/car2right.png",false, 128, 64, true);
 		add(cargoingright1);
 
 		cargoingright1copy = new FlxSprite(( -FlxG.width / 3) - 192, 3 * FlxG.height / 5);
-		cargoingright1copy.loadGraphic("assets/images/Stage2/CarGoingRightTempCopy.png",false, 128, 64, true);
+		cargoingright1copy.loadGraphic("assets/images/Stage2/car2right1.png",false, 128, 64, true);
 		add(cargoingright1copy);
 
 		cargoingright1copy2 = new FlxSprite(( -2 * FlxG.width / 3) -256, 3 * FlxG.height / 5);
-		cargoingright1copy2.loadGraphic("assets/images/Stage2/CarGoingRightTempCopy2.png",false, 128, 64, true);
+		cargoingright1copy2.loadGraphic("assets/images/Stage2/car2right2.png",false, 128, 64, true);
 		add(cargoingright1copy2);
 		
 	//car going left 2
 		cargoingleft2 = new FlxSprite(FlxG.width, 2 * FlxG.height / 5);
-		cargoingleft2.loadGraphic("assets/images/Stage2/CarGoingLeftTemp2.png",false, 128, 64, true);
+		cargoingleft2.loadGraphic("assets/images/Stage2/car3left.png",false, 128, 64, true);
 		add(cargoingleft2);
 
 		cargoingleft2copy = new FlxSprite(1.33 * FlxG.width + 64, 2 * FlxG.height / 5);
-		cargoingleft2copy.loadGraphic("assets/images/Stage2/CarGoingLeftTemp2Copy.png",false, 128, 64, true);
+		cargoingleft2copy.loadGraphic("assets/images/Stage2/car3left1.png",false, 128, 64, true);
 		add(cargoingleft2copy);
 		
 		cargoingleft2copy2 = new FlxSprite(1.66 * FlxG.width + 128, 2 * FlxG.height / 5);
-		cargoingleft2copy2.loadGraphic("assets/images/Stage2/CarGoingLeftTemp2Copy2.png",false, 128, 64, true);
+		cargoingleft2copy2.loadGraphic("assets/images/Stage2/car3left2.png",false, 128, 64, true);
 		add(cargoingleft2copy2);
 		
 	//car going right 2
 		cargoingright2 = new FlxSprite( -128, FlxG.height / 5);
-		cargoingright2.loadGraphic("assets/images/Stage2/CarGoingRightTemp2.png",false, 128, 64, true);
+		cargoingright2.loadGraphic("assets/images/Stage2/car4right.png",false, 128, 64, true);
 		add(cargoingright2);
 		
 		cargoingright2copy = new FlxSprite(( -FlxG.width / 3) - 192, FlxG.height / 5);
-		cargoingright2copy.loadGraphic("assets/images/Stage2/CarGoingRightTemp2Copy.png",false, 128, 64, true);
+		cargoingright2copy.loadGraphic("assets/images/Stage2/car4right1.png",false, 128, 64, true);
 		add(cargoingright2copy);
 		
 		cargoingright2copy2 = new FlxSprite(( -2 * FlxG.width / 3) - 256, FlxG.height / 5);
-		cargoingright2copy2.loadGraphic("assets/images/Stage2/CarGoingRightTemp2Copy2.png",false, 128, 64, true);
+		cargoingright2copy2.loadGraphic("assets/images/Stage2/car4right2.png",false, 128, 64, true);
 		add(cargoingright2copy2);
-	}
-	
-	
-	override public function destroy():Void
-	{
-		chicken.destroy();
-		super.destroy();
 	}
 	
 	override public function update():Void
 	{
 		super.update();
 		{//controls
-			if (justPressed() && ((clickCoords().y < clickCoords().x- 280) && (clickCoords().y > -clickCoords().x + 1000)))
+			if (canMove)
 			{
-				chicken.x += 32;
-			}
+				if (justPressed() && ((clickCoords().y < clickCoords().x- 280) && (clickCoords().y > -clickCoords().x + 1000)))
+				{
+					chicken.x += 16;
+					chicken.animation.play("right", false, 0);
+				}
 			
-			if (justPressed() && ((clickCoords().y > clickCoords().x - 280) && (clickCoords().y < -clickCoords().x + 1000)))
-			{
-				chicken.x -= 32;
-			}
+				if (justPressed() && ((clickCoords().y > clickCoords().x - 280) && (clickCoords().y < -clickCoords().x + 1000)))
+				{
+					chicken.x -= 16;
+					chicken.animation.play("left", false, 0);
+				}
 			
-			if (justPressed() && ((clickCoords().y > clickCoords().x - 280) && (clickCoords().y > -clickCoords().x + 1000)))
-			{
-				chicken.y += 32;
-			}
+				if (justPressed() && ((clickCoords().y > clickCoords().x - 280) && (clickCoords().y > -clickCoords().x + 1000)))
+				{
+					chicken.y += 16;
+					chicken.animation.play("down", false, 0);
+				}
 			
-			if (justPressed() && ((clickCoords().y < clickCoords().x - 280) && (clickCoords().y < -clickCoords().x + 1000)))
+				if (justPressed() && ((clickCoords().y < clickCoords().x - 280) && (clickCoords().y < -clickCoords().x + 1000)))
+				{
+					chicken.y -= 16;
+					chicken.animation.play("up", false, 0);
+				}
+			}
+		}
+		
+		firstpass = true;
+		{//level end
+			if (chicken.y < 64)
 			{
-				chicken.y -= 32;
+				add(killcar);
+				killcar.x += 10 * velocidad;
+				canMove = false;
+				
+				if (FlxG.overlap(chicken, killcar))
+				{
+					if (FlxG.pixelPerfectOverlap(chicken, killcar, 255))
+					{
+						var z = new FlxTimer(0.5, endgame, 1);
+					}
+				}
 			}
 		}
 		
 		{//car code
-			cargoingleft1.x -= velocidad;
-			cargoingleft1copy.x -= velocidad;
-			cargoingleft1copy2.x -= velocidad;
+			cargoingleft1.x -= 1.3 * velocidad;
+			cargoingleft1copy.x -= 1.3 * velocidad;
+			cargoingleft1copy2.x -= 1.3 * velocidad;
 			
 			if (cargoingleft1.x < -128)
 			{
@@ -263,6 +299,139 @@ class ChickenState extends FlxState
 				cargoingright2copy2.x = -128;
 			}
 		}
+		
+		{//collision code
+		  //cargoingleft1
+			if (FlxG.overlap(chicken, cargoingleft1))
+			{
+				if (FlxG.pixelPerfectOverlap(chicken, cargoingleft1))
+				{
+					runover();
+				}
+			}
+			if (FlxG.overlap(chicken, cargoingleft1copy))
+			{
+				if (FlxG.pixelPerfectOverlap(chicken, cargoingleft1copy))
+				{
+					runover();
+				}
+			}
+			if (FlxG.overlap(chicken, cargoingleft1copy2))
+			{
+				if (FlxG.pixelPerfectOverlap(chicken, cargoingleft1copy2))
+				{
+					runover();
+				}
+			}
+		  //cargoingleft2
+			if (FlxG.overlap(chicken, cargoingleft2))
+			{
+				if (FlxG.pixelPerfectOverlap(chicken, cargoingleft2))
+				{
+					runover();
+				}
+			}
+			if (FlxG.overlap(chicken, cargoingleft2copy))
+			{
+				if (FlxG.pixelPerfectOverlap(chicken, cargoingleft2copy))
+				{
+					runover();
+				}
+			}
+			if (FlxG.overlap(chicken, cargoingleft2copy2))
+			{
+				if (FlxG.pixelPerfectOverlap(chicken, cargoingleft2copy2))
+				{
+					runover();
+				}
+			}
+		  //cargoingright1
+			if (FlxG.overlap(chicken, cargoingright1))
+			{
+				if (FlxG.pixelPerfectOverlap(chicken, cargoingright1))
+				{
+					runover();
+				}
+			}
+			if (FlxG.overlap(chicken, cargoingright1copy))
+			{
+				if (FlxG.pixelPerfectOverlap(chicken, cargoingright1copy))
+				{
+					runover();
+				}
+			}
+			if (FlxG.overlap(chicken, cargoingright1copy2))
+			{
+				if (FlxG.pixelPerfectOverlap(chicken, cargoingright1copy2))
+				{
+					runover();
+				}
+			}
+		  //cargoingright2
+			if (FlxG.overlap(chicken, cargoingright2))
+			{
+				if (FlxG.pixelPerfectOverlap(chicken, cargoingright2))
+				{
+					runover();
+				}
+			}
+			if (FlxG.overlap(chicken, cargoingright2copy))
+			{
+				if (FlxG.pixelPerfectOverlap(chicken, cargoingright2copy))
+				{
+					runover();
+				}
+			}
+			if (FlxG.overlap(chicken, cargoingright2copy2))
+			{
+				if (FlxG.pixelPerfectOverlap(chicken, cargoingright2copy2))
+				{
+					runover();
+				}
+			}
+		}
+	}
+	
+	override public function destroy():Void
+	{
+		chicken.destroy();
+		cargoingleft1.destroy();
+		cargoingleft1copy.destroy();
+		cargoingleft1copy2.destroy();
+		cargoingleft2.destroy();
+		cargoingleft2copy.destroy();
+		cargoingleft2copy2.destroy();
+		cargoingright1.destroy();
+		cargoingright1copy.destroy();
+		cargoingright1copy2.destroy();
+		cargoingright2.destroy();
+		cargoingright2copy.destroy();
+		cargoingright2copy2.destroy();
+	}
+	
+	private function runover()
+	{
+		var t = new FlxTimer(1, retry, 1);
+		velocidad = 0;
+		canMove = false;
+	}
+	
+	private function retry(Timer:FlxTimer)
+	{
+		chicken.y = FlxG.height - 32;
+		canMove = true;
+		velocidad = 4;
+	}
+	
+	private function endgame(Timer:FlxTimer)
+	{
+		velocidad = 0;
+		var n = new FlxTimer(0.5, gameOver, 1);
+	}
+	
+	private function gameOver(Timer:FlxTimer)
+	{
+		FlxG.switchState(new GhostState());
 	}
 	
 	private function clickMenu()
