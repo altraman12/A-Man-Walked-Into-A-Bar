@@ -344,39 +344,39 @@ int flags = __o_flags.Default(0);
 STATIC_HX_DEFINE_DYNAMIC_FUNC3(Lib_obj,createManagedStage,return )
 
 ::String Lib_obj::findHaxeLib( ::String library){
-	HX_STACK_FRAME("openfl._v2.Lib","findHaxeLib",0xdb1bb38c,"openfl._v2.Lib.findHaxeLib","openfl/_v2/Lib.hx",140,0x092451cc)
+	HX_STACK_FRAME("openfl._v2.Lib","findHaxeLib",0xdb1bb38c,"openfl._v2.Lib.findHaxeLib","openfl/_v2/Lib.hx",154,0x092451cc)
 	HX_STACK_ARG(library,"library")
-	HX_STACK_LINE(142)
+	HX_STACK_LINE(156)
 	try
 	{
 	HX_STACK_CATCHABLE(Dynamic, 0);
 	{
-		HX_STACK_LINE(144)
+		HX_STACK_LINE(158)
 		::sys::io::Process proc = ::sys::io::Process_obj::__new(HX_CSTRING("haxelib"),Array_obj< ::String >::__new().Add(HX_CSTRING("path")).Add(library));		HX_STACK_VAR(proc,"proc");
-		HX_STACK_LINE(146)
+		HX_STACK_LINE(160)
 		if (((proc != null()))){
-			HX_STACK_LINE(148)
+			HX_STACK_LINE(162)
 			::haxe::io::Input stream = proc->_stdout;		HX_STACK_VAR(stream,"stream");
-			HX_STACK_LINE(150)
+			HX_STACK_LINE(164)
 			try
 			{
 			HX_STACK_CATCHABLE(Dynamic, 0);
 			{
-				HX_STACK_LINE(152)
+				HX_STACK_LINE(166)
 				while((true)){
-					HX_STACK_LINE(154)
+					HX_STACK_LINE(168)
 					::String s = stream->readLine();		HX_STACK_VAR(s,"s");
-					HX_STACK_LINE(156)
+					HX_STACK_LINE(170)
 					::String _g = s.substr((int)0,(int)1);		HX_STACK_VAR(_g,"_g");
-					HX_STACK_LINE(156)
+					HX_STACK_LINE(170)
 					if (((_g != HX_CSTRING("-")))){
-						HX_STACK_LINE(158)
+						HX_STACK_LINE(172)
 						stream->close();
-						HX_STACK_LINE(159)
+						HX_STACK_LINE(173)
 						proc->close();
-						HX_STACK_LINE(160)
+						HX_STACK_LINE(174)
 						::openfl::_v2::Lib_obj::loaderTrace((HX_CSTRING("Found haxelib ") + s));
-						HX_STACK_LINE(161)
+						HX_STACK_LINE(175)
 						return s;
 					}
 				}
@@ -389,9 +389,9 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC3(Lib_obj,createManagedStage,return )
 					}
 				}
 			}
-			HX_STACK_LINE(169)
+			HX_STACK_LINE(183)
 			stream->close();
-			HX_STACK_LINE(170)
+			HX_STACK_LINE(184)
 			proc->close();
 		}
 	}
@@ -403,7 +403,7 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC3(Lib_obj,createManagedStage,return )
 			}
 		}
 	}
-	HX_STACK_LINE(176)
+	HX_STACK_LINE(190)
 	return HX_CSTRING("");
 }
 
@@ -412,102 +412,102 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(Lib_obj,findHaxeLib,return )
 
 Dynamic Lib_obj::load( ::String library,::String method,hx::Null< int >  __o_args){
 int args = __o_args.Default(0);
-	HX_STACK_FRAME("openfl._v2.Lib","load",0xc221d160,"openfl._v2.Lib.load","openfl/_v2/Lib.hx",181,0x092451cc)
+	HX_STACK_FRAME("openfl._v2.Lib","load",0xc221d160,"openfl._v2.Lib.load","openfl/_v2/Lib.hx",195,0x092451cc)
 	HX_STACK_ARG(library,"library")
 	HX_STACK_ARG(method,"method")
 	HX_STACK_ARG(args,"args")
 {
-		HX_STACK_LINE(184)
+		HX_STACK_LINE(198)
 		return ::cpp::Lib_obj::load(library,method,args);
-		HX_STACK_LINE(187)
+		HX_STACK_LINE(201)
 		if (((::openfl::_v2::Lib_obj::__moduleNames == null()))){
-			HX_STACK_LINE(187)
+			HX_STACK_LINE(201)
 			::haxe::ds::StringMap _g = ::haxe::ds::StringMap_obj::__new();		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(187)
+			HX_STACK_LINE(201)
 			::openfl::_v2::Lib_obj::__moduleNames = _g;
 		}
-		HX_STACK_LINE(188)
+		HX_STACK_LINE(202)
 		if ((::openfl::_v2::Lib_obj::__moduleNames->exists(library))){
-			HX_STACK_LINE(191)
+			HX_STACK_LINE(205)
 			::String _g1 = ::openfl::_v2::Lib_obj::__moduleNames->get(library);		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(191)
+			HX_STACK_LINE(205)
 			return ::cpp::Lib_obj::load(_g1,method,args);
 		}
-		HX_STACK_LINE(208)
+		HX_STACK_LINE(222)
 		::openfl::_v2::Lib_obj::__moduleNames->set(library,library);
-		HX_STACK_LINE(210)
+		HX_STACK_LINE(233)
 		Dynamic result = ::openfl::_v2::Lib_obj::tryLoad((HX_CSTRING("./") + library),library,method,args);		HX_STACK_VAR(result,"result");
-		HX_STACK_LINE(212)
+		HX_STACK_LINE(236)
 		if (((result == null()))){
-			HX_STACK_LINE(214)
+			HX_STACK_LINE(238)
 			Dynamic _g2 = ::openfl::_v2::Lib_obj::tryLoad((HX_CSTRING(".\\") + library),library,method,args);		HX_STACK_VAR(_g2,"_g2");
-			HX_STACK_LINE(214)
+			HX_STACK_LINE(238)
 			result = _g2;
 		}
-		HX_STACK_LINE(218)
+		HX_STACK_LINE(242)
 		if (((result == null()))){
-			HX_STACK_LINE(220)
+			HX_STACK_LINE(244)
 			Dynamic _g3 = ::openfl::_v2::Lib_obj::tryLoad(library,library,method,args);		HX_STACK_VAR(_g3,"_g3");
-			HX_STACK_LINE(220)
+			HX_STACK_LINE(244)
 			result = _g3;
 		}
-		HX_STACK_LINE(224)
+		HX_STACK_LINE(248)
 		if (((result == null()))){
-			HX_STACK_LINE(226)
+			HX_STACK_LINE(250)
 			::String _g4 = ::openfl::_v2::Lib_obj::sysName().substr((int)7,null()).toLowerCase();		HX_STACK_VAR(_g4,"_g4");
-			HX_STACK_LINE(226)
+			HX_STACK_LINE(250)
 			::String slash;		HX_STACK_VAR(slash,"slash");
-			HX_STACK_LINE(226)
+			HX_STACK_LINE(250)
 			if (((_g4 == HX_CSTRING("windows")))){
-				HX_STACK_LINE(226)
+				HX_STACK_LINE(250)
 				slash = HX_CSTRING("\\");
 			}
 			else{
-				HX_STACK_LINE(226)
+				HX_STACK_LINE(250)
 				slash = HX_CSTRING("/");
 			}
-			HX_STACK_LINE(227)
-			::String haxelib = ::openfl::_v2::Lib_obj::findHaxeLib(HX_CSTRING("openfl-native"));		HX_STACK_VAR(haxelib,"haxelib");
-			HX_STACK_LINE(229)
+			HX_STACK_LINE(251)
+			::String haxelib = ::openfl::_v2::Lib_obj::findHaxeLib(HX_CSTRING("lime"));		HX_STACK_VAR(haxelib,"haxelib");
+			HX_STACK_LINE(253)
 			if (((haxelib != HX_CSTRING("")))){
-				HX_STACK_LINE(231)
+				HX_STACK_LINE(255)
 				::String _g5 = ::openfl::_v2::Lib_obj::sysName();		HX_STACK_VAR(_g5,"_g5");
-				HX_STACK_LINE(231)
-				::String _g6 = ((((haxelib + slash) + HX_CSTRING("ndll")) + slash) + _g5);		HX_STACK_VAR(_g6,"_g6");
-				HX_STACK_LINE(231)
+				HX_STACK_LINE(255)
+				::String _g6 = ((((((haxelib + slash) + HX_CSTRING("legacy")) + slash) + HX_CSTRING("ndll")) + slash) + _g5);		HX_STACK_VAR(_g6,"_g6");
+				HX_STACK_LINE(255)
 				::String _g7 = (_g6 + slash);		HX_STACK_VAR(_g7,"_g7");
-				HX_STACK_LINE(231)
+				HX_STACK_LINE(255)
 				::String _g8 = (_g7 + library);		HX_STACK_VAR(_g8,"_g8");
-				HX_STACK_LINE(231)
+				HX_STACK_LINE(255)
 				Dynamic _g9 = ::openfl::_v2::Lib_obj::tryLoad(_g8,library,method,args);		HX_STACK_VAR(_g9,"_g9");
-				HX_STACK_LINE(231)
+				HX_STACK_LINE(255)
 				result = _g9;
-				HX_STACK_LINE(233)
+				HX_STACK_LINE(257)
 				if (((result == null()))){
-					HX_STACK_LINE(235)
+					HX_STACK_LINE(259)
 					::String _g10 = ::openfl::_v2::Lib_obj::sysName();		HX_STACK_VAR(_g10,"_g10");
-					HX_STACK_LINE(235)
-					::String _g11 = ((((haxelib + slash) + HX_CSTRING("ndll")) + slash) + _g10);		HX_STACK_VAR(_g11,"_g11");
-					HX_STACK_LINE(235)
+					HX_STACK_LINE(259)
+					::String _g11 = ((((((haxelib + slash) + HX_CSTRING("legacy")) + slash) + HX_CSTRING("ndll")) + slash) + _g10);		HX_STACK_VAR(_g11,"_g11");
+					HX_STACK_LINE(259)
 					::String _g12 = (_g11 + HX_CSTRING("64"));		HX_STACK_VAR(_g12,"_g12");
-					HX_STACK_LINE(235)
+					HX_STACK_LINE(259)
 					::String _g13 = (_g12 + slash);		HX_STACK_VAR(_g13,"_g13");
-					HX_STACK_LINE(235)
+					HX_STACK_LINE(259)
 					::String _g14 = (_g13 + library);		HX_STACK_VAR(_g14,"_g14");
-					HX_STACK_LINE(235)
+					HX_STACK_LINE(259)
 					Dynamic _g15 = ::openfl::_v2::Lib_obj::tryLoad(_g14,library,method,args);		HX_STACK_VAR(_g15,"_g15");
-					HX_STACK_LINE(235)
+					HX_STACK_LINE(259)
 					result = _g15;
 				}
 			}
 		}
-		HX_STACK_LINE(243)
+		HX_STACK_LINE(267)
 		::String _g16 = ::Std_obj::string(result);		HX_STACK_VAR(_g16,"_g16");
-		HX_STACK_LINE(243)
+		HX_STACK_LINE(267)
 		::String _g17 = (HX_CSTRING("Result : ") + _g16);		HX_STACK_VAR(_g17,"_g17");
-		HX_STACK_LINE(243)
+		HX_STACK_LINE(267)
 		::openfl::_v2::Lib_obj::loaderTrace(_g17);
-		HX_STACK_LINE(253)
+		HX_STACK_LINE(277)
 		return result;
 	}
 }
@@ -517,17 +517,17 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC3(Lib_obj,load,return )
 
 Void Lib_obj::loaderTrace( ::String message){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","loaderTrace",0x7c091578,"openfl._v2.Lib.loaderTrace","openfl/_v2/Lib.hx",258,0x092451cc)
+		HX_STACK_FRAME("openfl._v2.Lib","loaderTrace",0x7c091578,"openfl._v2.Lib.loaderTrace","openfl/_v2/Lib.hx",282,0x092451cc)
 		HX_STACK_ARG(message,"message")
-		HX_STACK_LINE(261)
+		HX_STACK_LINE(285)
 		Dynamic get_env = ::cpp::Lib_obj::load(HX_CSTRING("std"),HX_CSTRING("get_env"),(int)1);		HX_STACK_VAR(get_env,"get_env");
-		HX_STACK_LINE(262)
+		HX_STACK_LINE(286)
 		Dynamic _g = get_env(HX_CSTRING("OPENFL_LOAD_DEBUG"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(262)
+		HX_STACK_LINE(286)
 		bool debug = (_g != null());		HX_STACK_VAR(debug,"debug");
-		HX_STACK_LINE(267)
+		HX_STACK_LINE(291)
 		if ((debug)){
-			HX_STACK_LINE(269)
+			HX_STACK_LINE(293)
 			::Sys_obj::println(message);
 		}
 	}
@@ -539,14 +539,14 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(Lib_obj,loaderTrace,(void))
 
 Void Lib_obj::notImplemented( ::String api){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","notImplemented",0x85737e29,"openfl._v2.Lib.notImplemented","openfl/_v2/Lib.hx",278,0x092451cc)
+		HX_STACK_FRAME("openfl._v2.Lib","notImplemented",0x85737e29,"openfl._v2.Lib.notImplemented","openfl/_v2/Lib.hx",302,0x092451cc)
 		HX_STACK_ARG(api,"api")
-		HX_STACK_LINE(278)
+		HX_STACK_LINE(302)
 		if ((!(::openfl::_v2::Lib_obj::__sentWarnings->exists(api)))){
-			HX_STACK_LINE(280)
+			HX_STACK_LINE(304)
 			::openfl::_v2::Lib_obj::__sentWarnings->set(api,true);
-			HX_STACK_LINE(282)
-			::haxe::Log_obj::trace(((HX_CSTRING("Warning: ") + api) + HX_CSTRING(" is not implemented")),hx::SourceInfo(HX_CSTRING("Lib.hx"),282,HX_CSTRING("openfl._v2.Lib"),HX_CSTRING("notImplemented")));
+			HX_STACK_LINE(306)
+			::haxe::Log_obj::trace(((HX_CSTRING("Warning: ") + api) + HX_CSTRING(" is not implemented")),hx::SourceInfo(HX_CSTRING("Lib.hx"),306,HX_CSTRING("openfl._v2.Lib"),HX_CSTRING("notImplemented")));
 		}
 	}
 return null();
@@ -557,48 +557,48 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(Lib_obj,notImplemented,(void))
 
 Void Lib_obj::rethrow( Dynamic error){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","rethrow",0xdb133999,"openfl._v2.Lib.rethrow","openfl/_v2/Lib.hx",289,0x092451cc)
+		HX_STACK_FRAME("openfl._v2.Lib","rethrow",0xdb133999,"openfl._v2.Lib.rethrow","openfl/_v2/Lib.hx",313,0x092451cc)
 		HX_STACK_ARG(error,"error")
-		HX_STACK_LINE(291)
+		HX_STACK_LINE(315)
 		::openfl::events::UncaughtErrorEvent event = ::openfl::events::UncaughtErrorEvent_obj::__new(::openfl::events::UncaughtErrorEvent_obj::UNCAUGHT_ERROR,true,true,error);		HX_STACK_VAR(event,"event");
-		HX_STACK_LINE(293)
+		HX_STACK_LINE(317)
 		if (((  (((::openfl::_v2::Lib_obj::__uncaughtExceptionHandler_dyn() != null()))) ? bool(::openfl::_v2::Lib_obj::__uncaughtExceptionHandler(event)) : bool(false) ))){
-			HX_STACK_LINE(295)
+			HX_STACK_LINE(319)
 			return null();
 		}
-		HX_STACK_LINE(299)
+		HX_STACK_LINE(323)
 		::openfl::_v2::Lib_obj::get_current()->loaderInfo->uncaughtErrorEvents->dispatchEvent(event);
-		HX_STACK_LINE(301)
+		HX_STACK_LINE(325)
 		if ((!(event->__getIsCancelled()))){
-			HX_STACK_LINE(303)
+			HX_STACK_LINE(327)
 			::String message = HX_CSTRING("");		HX_STACK_VAR(message,"message");
-			HX_STACK_LINE(305)
+			HX_STACK_LINE(329)
 			if (((bool((error != null())) && bool((error != HX_CSTRING("")))))){
-				HX_STACK_LINE(307)
+				HX_STACK_LINE(331)
 				::String _g = ::Std_obj::string(error);		HX_STACK_VAR(_g,"_g");
-				HX_STACK_LINE(307)
+				HX_STACK_LINE(331)
 				::String _g1 = (_g + HX_CSTRING(""));		HX_STACK_VAR(_g1,"_g1");
-				HX_STACK_LINE(307)
+				HX_STACK_LINE(331)
 				message = _g1;
 			}
-			HX_STACK_LINE(311)
+			HX_STACK_LINE(335)
 			Array< ::Dynamic > stack = ::haxe::CallStack_obj::exceptionStack();		HX_STACK_VAR(stack,"stack");
-			HX_STACK_LINE(313)
+			HX_STACK_LINE(337)
 			if (((stack->length > (int)0))){
-				HX_STACK_LINE(315)
+				HX_STACK_LINE(339)
 				::String _g2 = ::haxe::CallStack_obj::toString(stack);		HX_STACK_VAR(_g2,"_g2");
-				HX_STACK_LINE(315)
+				HX_STACK_LINE(339)
 				::String _g3 = (_g2 + HX_CSTRING("\n"));		HX_STACK_VAR(_g3,"_g3");
-				HX_STACK_LINE(315)
+				HX_STACK_LINE(339)
 				hx::AddEq(message,_g3);
 			}
 			else{
-				HX_STACK_LINE(319)
+				HX_STACK_LINE(343)
 				hx::AddEq(message,HX_CSTRING("\n"));
 			}
-			HX_STACK_LINE(324)
-			::haxe::Log_obj::trace(message,hx::SourceInfo(HX_CSTRING("Lib.hx"),324,HX_CSTRING("openfl._v2.Lib"),HX_CSTRING("rethrow")));
-			HX_STACK_LINE(328)
+			HX_STACK_LINE(348)
+			::haxe::Log_obj::trace(message,hx::SourceInfo(HX_CSTRING("Lib.hx"),348,HX_CSTRING("openfl._v2.Lib"),HX_CSTRING("rethrow")));
+			HX_STACK_LINE(352)
 			::Sys_obj::exit((int)1);
 		}
 	}
@@ -610,9 +610,9 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(Lib_obj,rethrow,(void))
 
 Void Lib_obj::setUncaughtExceptionHandler( Dynamic f){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","setUncaughtExceptionHandler",0x6f7e19b8,"openfl._v2.Lib.setUncaughtExceptionHandler","openfl/_v2/Lib.hx",337,0x092451cc)
+		HX_STACK_FRAME("openfl._v2.Lib","setUncaughtExceptionHandler",0x6f7e19b8,"openfl._v2.Lib.setUncaughtExceptionHandler","openfl/_v2/Lib.hx",361,0x092451cc)
 		HX_STACK_ARG(f,"f")
-		HX_STACK_LINE(337)
+		HX_STACK_LINE(361)
 		::openfl::_v2::Lib_obj::__uncaughtExceptionHandler = f;
 	}
 return null();
@@ -622,10 +622,10 @@ return null();
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Lib_obj,setUncaughtExceptionHandler,(void))
 
 ::String Lib_obj::sysName( ){
-	HX_STACK_FRAME("openfl._v2.Lib","sysName",0x5f28defe,"openfl._v2.Lib.sysName","openfl/_v2/Lib.hx",342,0x092451cc)
-	HX_STACK_LINE(345)
+	HX_STACK_FRAME("openfl._v2.Lib","sysName",0x5f28defe,"openfl._v2.Lib.sysName","openfl/_v2/Lib.hx",366,0x092451cc)
+	HX_STACK_LINE(369)
 	Dynamic sys_string = ::cpp::Lib_obj::load(HX_CSTRING("std"),HX_CSTRING("sys_string"),(int)0);		HX_STACK_VAR(sys_string,"sys_string");
-	HX_STACK_LINE(346)
+	HX_STACK_LINE(370)
 	return sys_string().Cast< ::String >();
 }
 
@@ -633,25 +633,25 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(Lib_obj,setUncaughtExceptionHandler,(void))
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(Lib_obj,sysName,return )
 
 Dynamic Lib_obj::tryLoad( ::String name,::String library,::String func,int args){
-	HX_STACK_FRAME("openfl._v2.Lib","tryLoad",0x2f5e7207,"openfl._v2.Lib.tryLoad","openfl/_v2/Lib.hx",354,0x092451cc)
+	HX_STACK_FRAME("openfl._v2.Lib","tryLoad",0x2f5e7207,"openfl._v2.Lib.tryLoad","openfl/_v2/Lib.hx",378,0x092451cc)
 	HX_STACK_ARG(name,"name")
 	HX_STACK_ARG(library,"library")
 	HX_STACK_ARG(func,"func")
 	HX_STACK_ARG(args,"args")
-	HX_STACK_LINE(356)
+	HX_STACK_LINE(380)
 	try
 	{
 	HX_STACK_CATCHABLE(Dynamic, 0);
 	{
-		HX_STACK_LINE(359)
+		HX_STACK_LINE(383)
 		Dynamic result = ::cpp::Lib_obj::load(name,func,args);		HX_STACK_VAR(result,"result");
-		HX_STACK_LINE(366)
+		HX_STACK_LINE(390)
 		if (((result != null()))){
-			HX_STACK_LINE(368)
+			HX_STACK_LINE(392)
 			::openfl::_v2::Lib_obj::loaderTrace((HX_CSTRING("Got result ") + name));
-			HX_STACK_LINE(369)
+			HX_STACK_LINE(393)
 			::openfl::_v2::Lib_obj::__moduleNames->set(library,name);
-			HX_STACK_LINE(370)
+			HX_STACK_LINE(394)
 			return result;
 		}
 	}
@@ -660,12 +660,12 @@ Dynamic Lib_obj::tryLoad( ::String name,::String library,::String func,int args)
 		{
 			HX_STACK_BEGIN_CATCH
 			Dynamic e = __e;{
-				HX_STACK_LINE(376)
+				HX_STACK_LINE(400)
 				::openfl::_v2::Lib_obj::loaderTrace((HX_CSTRING("Failed to load : ") + name));
 			}
 		}
 	}
-	HX_STACK_LINE(380)
+	HX_STACK_LINE(404)
 	return null();
 }
 
@@ -674,17 +674,17 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC4(Lib_obj,tryLoad,return )
 
 Void Lib_obj::exit( ){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","exit",0xbd882e58,"openfl._v2.Lib.exit","openfl/_v2/Lib.hx",413,0x092451cc)
-		HX_STACK_LINE(415)
+		HX_STACK_FRAME("openfl._v2.Lib","exit",0xbd882e58,"openfl._v2.Lib.exit","openfl/_v2/Lib.hx",437,0x092451cc)
+		HX_STACK_LINE(439)
 		Dynamic quit = ::openfl::_v2::Lib_obj::get_stage()->onQuit;		HX_STACK_VAR(quit,"quit");
-		HX_STACK_LINE(417)
+		HX_STACK_LINE(441)
 		if (((quit != null()))){
-			HX_STACK_LINE(420)
+			HX_STACK_LINE(444)
 			if (((quit == ::openfl::_v2::Lib_obj::close_dyn()))){
-				HX_STACK_LINE(422)
+				HX_STACK_LINE(446)
 				::Sys_obj::exit((int)0);
 			}
-			HX_STACK_LINE(427)
+			HX_STACK_LINE(451)
 			quit().Cast< Void >();
 		}
 	}
@@ -696,10 +696,10 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC0(Lib_obj,exit,(void))
 
 Void Lib_obj::forceClose( ){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","forceClose",0x8d826087,"openfl._v2.Lib.forceClose","openfl/_v2/Lib.hx",434,0x092451cc)
-		HX_STACK_LINE(436)
+		HX_STACK_FRAME("openfl._v2.Lib","forceClose",0x8d826087,"openfl._v2.Lib.forceClose","openfl/_v2/Lib.hx",458,0x092451cc)
+		HX_STACK_LINE(460)
 		Dynamic terminate = ::openfl::_v2::Lib_obj::load(HX_CSTRING("lime"),HX_CSTRING("lime_terminate"),(int)0);		HX_STACK_VAR(terminate,"terminate");
-		HX_STACK_LINE(437)
+		HX_STACK_LINE(461)
 		terminate();
 	}
 return null();
@@ -709,12 +709,12 @@ return null();
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(Lib_obj,forceClose,(void))
 
 int Lib_obj::getTimer( ){
-	HX_STACK_FRAME("openfl._v2.Lib","getTimer",0xd69c2b89,"openfl._v2.Lib.getTimer","openfl/_v2/Lib.hx",442,0x092451cc)
-	HX_STACK_LINE(446)
+	HX_STACK_FRAME("openfl._v2.Lib","getTimer",0xd69c2b89,"openfl._v2.Lib.getTimer","openfl/_v2/Lib.hx",466,0x092451cc)
+	HX_STACK_LINE(470)
 	Float _g = ::haxe::Timer_obj::stamp();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(446)
+	HX_STACK_LINE(470)
 	Float _g1 = (_g * 1000.0);		HX_STACK_VAR(_g1,"_g1");
-	HX_STACK_LINE(446)
+	HX_STACK_LINE(470)
 	return ::Std_obj::_int(_g1);
 }
 
@@ -723,10 +723,10 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC0(Lib_obj,getTimer,return )
 
 Void Lib_obj::getURL( ::openfl::_v2::net::URLRequest url,::String target){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","getURL",0x35fa4233,"openfl._v2.Lib.getURL","openfl/_v2/Lib.hx",453,0x092451cc)
+		HX_STACK_FRAME("openfl._v2.Lib","getURL",0x35fa4233,"openfl._v2.Lib.getURL","openfl/_v2/Lib.hx",477,0x092451cc)
 		HX_STACK_ARG(url,"url")
 		HX_STACK_ARG(target,"target")
-		HX_STACK_LINE(453)
+		HX_STACK_LINE(477)
 		::openfl::_v2::Lib_obj::lime_get_url(url->url);
 	}
 return null();
@@ -737,8 +737,8 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC2(Lib_obj,getURL,(void))
 
 Void Lib_obj::pause( ){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","pause",0x5fddf27c,"openfl._v2.Lib.pause","openfl/_v2/Lib.hx",460,0x092451cc)
-		HX_STACK_LINE(460)
+		HX_STACK_FRAME("openfl._v2.Lib","pause",0x5fddf27c,"openfl._v2.Lib.pause","openfl/_v2/Lib.hx",484,0x092451cc)
+		HX_STACK_LINE(484)
 		::openfl::_v2::Lib_obj::lime_pause_animation();
 	}
 return null();
@@ -749,9 +749,9 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC0(Lib_obj,pause,(void))
 
 Void Lib_obj::postUICallback( Dynamic inCallback){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","postUICallback",0x0eb41453,"openfl._v2.Lib.postUICallback","openfl/_v2/Lib.hx",468,0x092451cc)
+		HX_STACK_FRAME("openfl._v2.Lib","postUICallback",0x0eb41453,"openfl._v2.Lib.postUICallback","openfl/_v2/Lib.hx",492,0x092451cc)
 		HX_STACK_ARG(inCallback,"inCallback")
-		HX_STACK_LINE(468)
+		HX_STACK_LINE(492)
 		::openfl::_v2::Lib_obj::lime_post_ui_callback(inCallback);
 	}
 return null();
@@ -762,8 +762,8 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(Lib_obj,postUICallback,(void))
 
 Void Lib_obj::resume( ){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","resume",0x9b566367,"openfl._v2.Lib.resume","openfl/_v2/Lib.hx",478,0x092451cc)
-		HX_STACK_LINE(478)
+		HX_STACK_FRAME("openfl._v2.Lib","resume",0x9b566367,"openfl._v2.Lib.resume","openfl/_v2/Lib.hx",502,0x092451cc)
+		HX_STACK_LINE(502)
 		::openfl::_v2::Lib_obj::lime_resume_animation();
 	}
 return null();
@@ -774,11 +774,11 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC0(Lib_obj,resume,(void))
 
 Void Lib_obj::setIcon( ::String path){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","setIcon",0xf01fb141,"openfl._v2.Lib.setIcon","openfl/_v2/Lib.hx",483,0x092451cc)
+		HX_STACK_FRAME("openfl._v2.Lib","setIcon",0xf01fb141,"openfl._v2.Lib.setIcon","openfl/_v2/Lib.hx",507,0x092451cc)
 		HX_STACK_ARG(path,"path")
-		HX_STACK_LINE(485)
+		HX_STACK_LINE(509)
 		Dynamic set_icon = ::openfl::_v2::Lib_obj::load(HX_CSTRING("lime"),HX_CSTRING("lime_set_icon"),(int)1);		HX_STACK_VAR(set_icon,"set_icon");
-		HX_STACK_LINE(486)
+		HX_STACK_LINE(510)
 		set_icon(path);
 	}
 return null();
@@ -789,20 +789,20 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(Lib_obj,setIcon,(void))
 
 Void Lib_obj::setPackage( ::String company,::String file,::String packageName,::String version){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","setPackage",0x42daaebe,"openfl._v2.Lib.setPackage","openfl/_v2/Lib.hx",491,0x092451cc)
+		HX_STACK_FRAME("openfl._v2.Lib","setPackage",0x42daaebe,"openfl._v2.Lib.setPackage","openfl/_v2/Lib.hx",515,0x092451cc)
 		HX_STACK_ARG(company,"company")
 		HX_STACK_ARG(file,"file")
 		HX_STACK_ARG(packageName,"packageName")
 		HX_STACK_ARG(version,"version")
-		HX_STACK_LINE(493)
+		HX_STACK_LINE(517)
 		::openfl::_v2::Lib_obj::company = company;
-		HX_STACK_LINE(494)
+		HX_STACK_LINE(518)
 		::openfl::_v2::Lib_obj::file = file;
-		HX_STACK_LINE(495)
+		HX_STACK_LINE(519)
 		::openfl::_v2::Lib_obj::packageName = packageName;
-		HX_STACK_LINE(496)
+		HX_STACK_LINE(520)
 		::openfl::_v2::Lib_obj::version = version;
-		HX_STACK_LINE(498)
+		HX_STACK_LINE(522)
 		::openfl::_v2::Lib_obj::lime_set_package(company,file,packageName,version);
 	}
 return null();
@@ -813,9 +813,9 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC4(Lib_obj,setPackage,(void))
 
 Void Lib_obj::__setCurrentStage( ::openfl::_v2::display::Stage stage){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","__setCurrentStage",0x90ab9fed,"openfl._v2.Lib.__setCurrentStage","openfl/_v2/Lib.hx",505,0x092451cc)
+		HX_STACK_FRAME("openfl._v2.Lib","__setCurrentStage",0x90ab9fed,"openfl._v2.Lib.__setCurrentStage","openfl/_v2/Lib.hx",529,0x092451cc)
 		HX_STACK_ARG(stage,"stage")
-		HX_STACK_LINE(505)
+		HX_STACK_LINE(529)
 		::openfl::_v2::Lib_obj::__stage = stage;
 	}
 return null();
@@ -826,10 +826,10 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(Lib_obj,__setCurrentStage,(void))
 
 Void Lib_obj::trace( Dynamic arg){
 {
-		HX_STACK_FRAME("openfl._v2.Lib","trace",0xb8a5aa0b,"openfl._v2.Lib.trace","openfl/_v2/Lib.hx",512,0x092451cc)
+		HX_STACK_FRAME("openfl._v2.Lib","trace",0xb8a5aa0b,"openfl._v2.Lib.trace","openfl/_v2/Lib.hx",536,0x092451cc)
 		HX_STACK_ARG(arg,"arg")
-		HX_STACK_LINE(512)
-		::haxe::Log_obj::trace(arg,hx::SourceInfo(HX_CSTRING("Lib.hx"),512,HX_CSTRING("openfl._v2.Lib"),HX_CSTRING("trace")));
+		HX_STACK_LINE(536)
+		::haxe::Log_obj::trace(arg,hx::SourceInfo(HX_CSTRING("Lib.hx"),536,HX_CSTRING("openfl._v2.Lib"),HX_CSTRING("trace")));
 	}
 return null();
 }
@@ -838,20 +838,20 @@ return null();
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Lib_obj,trace,(void))
 
 ::openfl::_v2::display::MovieClip Lib_obj::get_current( ){
-	HX_STACK_FRAME("openfl._v2.Lib","get_current",0x24a68056,"openfl._v2.Lib.get_current","openfl/_v2/Lib.hx",524,0x092451cc)
-	HX_STACK_LINE(526)
+	HX_STACK_FRAME("openfl._v2.Lib","get_current",0x24a68056,"openfl._v2.Lib.get_current","openfl/_v2/Lib.hx",548,0x092451cc)
+	HX_STACK_LINE(550)
 	if (((::openfl::_v2::Lib_obj::__current == null()))){
-		HX_STACK_LINE(528)
+		HX_STACK_LINE(552)
 		::openfl::_v2::display::MovieClip _g = ::openfl::_v2::display::MovieClip_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(528)
+		HX_STACK_LINE(552)
 		::openfl::_v2::Lib_obj::__current = _g;
-		HX_STACK_LINE(530)
+		HX_STACK_LINE(554)
 		if (((::openfl::_v2::Lib_obj::__stage != null()))){
-			HX_STACK_LINE(532)
+			HX_STACK_LINE(556)
 			::openfl::_v2::Lib_obj::__stage->addChild(::openfl::_v2::Lib_obj::__current);
 		}
 	}
-	HX_STACK_LINE(538)
+	HX_STACK_LINE(562)
 	return ::openfl::_v2::Lib_obj::__current;
 }
 
@@ -859,13 +859,13 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(Lib_obj,trace,(void))
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(Lib_obj,get_current,return )
 
 ::openfl::_v2::display::Stage Lib_obj::get_stage( ){
-	HX_STACK_FRAME("openfl._v2.Lib","get_stage",0x1e961d9b,"openfl._v2.Lib.get_stage","openfl/_v2/Lib.hx",543,0x092451cc)
-	HX_STACK_LINE(545)
+	HX_STACK_FRAME("openfl._v2.Lib","get_stage",0x1e961d9b,"openfl._v2.Lib.get_stage","openfl/_v2/Lib.hx",567,0x092451cc)
+	HX_STACK_LINE(569)
 	if (((::openfl::_v2::Lib_obj::__stage == null()))){
-		HX_STACK_LINE(547)
+		HX_STACK_LINE(571)
 		HX_STACK_DO_THROW(HX_CSTRING("Error : stage can't be accessed until init is called"));
 	}
-	HX_STACK_LINE(551)
+	HX_STACK_LINE(575)
 	return ::openfl::_v2::Lib_obj::__stage;
 }
 

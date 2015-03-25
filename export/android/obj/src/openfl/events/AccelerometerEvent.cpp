@@ -14,7 +14,7 @@ namespace events{
 
 Void AccelerometerEvent_obj::__construct(::String type,hx::Null< bool >  __o_bubbles,hx::Null< bool >  __o_cancelable,hx::Null< Float >  __o_timestamp,hx::Null< Float >  __o_accelerationX,hx::Null< Float >  __o_accelerationY,hx::Null< Float >  __o_accelerationZ)
 {
-HX_STACK_FRAME("openfl.events.AccelerometerEvent","new",0x41c806b4,"openfl.events.AccelerometerEvent.new","openfl/events/AccelerometerEvent.hx",18,0xf933e51c)
+HX_STACK_FRAME("openfl.events.AccelerometerEvent","new",0x41c806b4,"openfl.events.AccelerometerEvent.new","openfl/events/AccelerometerEvent.hx",81,0xf933e51c)
 HX_STACK_THIS(this)
 HX_STACK_ARG(type,"type")
 HX_STACK_ARG(__o_bubbles,"bubbles")
@@ -30,15 +30,15 @@ Float accelerationX = __o_accelerationX.Default(0);
 Float accelerationY = __o_accelerationY.Default(0);
 Float accelerationZ = __o_accelerationZ.Default(0);
 {
-	HX_STACK_LINE(20)
+	HX_STACK_LINE(83)
 	super::__construct(type,bubbles,cancelable);
-	HX_STACK_LINE(22)
+	HX_STACK_LINE(85)
 	this->timestamp = timestamp;
-	HX_STACK_LINE(23)
+	HX_STACK_LINE(86)
 	this->accelerationX = accelerationX;
-	HX_STACK_LINE(24)
+	HX_STACK_LINE(87)
 	this->accelerationY = accelerationY;
-	HX_STACK_LINE(25)
+	HX_STACK_LINE(88)
 	this->accelerationZ = accelerationZ;
 }
 ;
@@ -59,59 +59,59 @@ Dynamic AccelerometerEvent_obj::__Create(hx::DynamicArray inArgs)
 	return result;}
 
 ::openfl::_v2::events::Event AccelerometerEvent_obj::clone( ){
-	HX_STACK_FRAME("openfl.events.AccelerometerEvent","clone",0xf81086b1,"openfl.events.AccelerometerEvent.clone","openfl/events/AccelerometerEvent.hx",30,0xf933e51c)
+	HX_STACK_FRAME("openfl.events.AccelerometerEvent","clone",0xf81086b1,"openfl.events.AccelerometerEvent.clone","openfl/events/AccelerometerEvent.hx",93,0xf933e51c)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(32)
+	HX_STACK_LINE(95)
 	::String _g = this->get_type();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(32)
+	HX_STACK_LINE(95)
 	bool _g1 = this->get_bubbles();		HX_STACK_VAR(_g1,"_g1");
-	HX_STACK_LINE(32)
+	HX_STACK_LINE(95)
 	bool _g2 = this->get_cancelable();		HX_STACK_VAR(_g2,"_g2");
-	HX_STACK_LINE(32)
+	HX_STACK_LINE(95)
 	return ::openfl::events::AccelerometerEvent_obj::__new(_g,_g1,_g2,this->timestamp,this->accelerationX,this->accelerationY,this->accelerationZ);
 }
 
 
 ::String AccelerometerEvent_obj::toString( ){
-	HX_STACK_FRAME("openfl.events.AccelerometerEvent","toString",0x0df129d8,"openfl.events.AccelerometerEvent.toString","openfl/events/AccelerometerEvent.hx",37,0xf933e51c)
+	HX_STACK_FRAME("openfl.events.AccelerometerEvent","toString",0x0df129d8,"openfl.events.AccelerometerEvent.toString","openfl/events/AccelerometerEvent.hx",100,0xf933e51c)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g = this->get_type();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g1 = (HX_CSTRING("[AccelerometerEvent type=") + _g);		HX_STACK_VAR(_g1,"_g1");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g2 = (_g1 + HX_CSTRING(" bubbles="));		HX_STACK_VAR(_g2,"_g2");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	bool _g3 = this->get_bubbles();		HX_STACK_VAR(_g3,"_g3");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g4 = ::Std_obj::string(_g3);		HX_STACK_VAR(_g4,"_g4");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g5 = (_g2 + _g4);		HX_STACK_VAR(_g5,"_g5");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g6 = (_g5 + HX_CSTRING(" cancelable="));		HX_STACK_VAR(_g6,"_g6");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	bool _g7 = this->get_cancelable();		HX_STACK_VAR(_g7,"_g7");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g8 = ::Std_obj::string(_g7);		HX_STACK_VAR(_g8,"_g8");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g9 = (_g6 + _g8);		HX_STACK_VAR(_g9,"_g9");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g10 = (_g9 + HX_CSTRING(" timestamp="));		HX_STACK_VAR(_g10,"_g10");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g11 = (_g10 + this->timestamp);		HX_STACK_VAR(_g11,"_g11");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g12 = (_g11 + HX_CSTRING(" accelerationX="));		HX_STACK_VAR(_g12,"_g12");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g13 = (_g12 + this->accelerationX);		HX_STACK_VAR(_g13,"_g13");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g14 = (_g13 + HX_CSTRING(" accelerationY="));		HX_STACK_VAR(_g14,"_g14");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g15 = (_g14 + this->accelerationY);		HX_STACK_VAR(_g15,"_g15");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g16 = (_g15 + HX_CSTRING(" accelerationZ="));		HX_STACK_VAR(_g16,"_g16");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	::String _g17 = (_g16 + this->accelerationZ);		HX_STACK_VAR(_g17,"_g17");
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(102)
 	return (_g17 + HX_CSTRING("]"));
 }
 

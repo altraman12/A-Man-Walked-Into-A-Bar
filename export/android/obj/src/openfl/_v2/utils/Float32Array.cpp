@@ -3,11 +3,23 @@
 #ifndef INCLUDED_Std
 #include <Std.h>
 #endif
+#ifndef INCLUDED_haxe_io_Bytes
+#include <haxe/io/Bytes.h>
+#endif
 #ifndef INCLUDED_openfl__v2_utils_ArrayBufferView
 #include <openfl/_v2/utils/ArrayBufferView.h>
 #endif
+#ifndef INCLUDED_openfl__v2_utils_ByteArray
+#include <openfl/_v2/utils/ByteArray.h>
+#endif
 #ifndef INCLUDED_openfl__v2_utils_Float32Array
 #include <openfl/_v2/utils/Float32Array.h>
+#endif
+#ifndef INCLUDED_openfl__v2_utils_IDataInput
+#include <openfl/_v2/utils/IDataInput.h>
+#endif
+#ifndef INCLUDED_openfl__v2_utils_IDataOutput
+#include <openfl/_v2/utils/IDataOutput.h>
 #endif
 #ifndef INCLUDED_openfl__v2_utils_IMemoryRange
 #include <openfl/_v2/utils/IMemoryRange.h>
@@ -114,11 +126,29 @@ Dynamic Float32Array_obj::__Create(hx::DynamicArray inArgs)
 	result->__construct(inArgs[0],inArgs[1],inArgs[2]);
 	return result;}
 
+Void Float32Array_obj::__setLength( int nbFloat){
+{
+		HX_STACK_FRAME("openfl._v2.utils.Float32Array","__setLength",0x45191706,"openfl._v2.utils.Float32Array.__setLength","openfl/_v2/utils/Float32Array.hx",116,0x528de82f)
+		HX_STACK_THIS(this)
+		HX_STACK_ARG(nbFloat,"nbFloat")
+		HX_STACK_LINE(117)
+		this->length = nbFloat;
+		HX_STACK_LINE(118)
+		this->byteLength = (int(nbFloat) << int((int)2));
+		HX_STACK_LINE(119)
+		this->buffer->setLength(this->byteLength);
+	}
+return null();
+}
+
+
+HX_DEFINE_DYNAMIC_FUNC1(Float32Array_obj,__setLength,(void))
+
 Float Float32Array_obj::__get( int index){
-	HX_STACK_FRAME("openfl._v2.utils.Float32Array","__get",0x5f1572f4,"openfl._v2.utils.Float32Array.__get","openfl/_v2/utils/Float32Array.hx",124,0x528de82f)
+	HX_STACK_FRAME("openfl._v2.utils.Float32Array","__get",0x5f1572f4,"openfl._v2.utils.Float32Array.__get","openfl/_v2/utils/Float32Array.hx",129,0x528de82f)
 	HX_STACK_THIS(this)
 	HX_STACK_ARG(index,"index")
-	HX_STACK_LINE(124)
+	HX_STACK_LINE(129)
 	return ::__hxcpp_memory_get_float(this->bytes,(((int(index) << int((int)2))) + this->byteOffset));
 }
 
@@ -127,11 +157,11 @@ HX_DEFINE_DYNAMIC_FUNC1(Float32Array_obj,__get,return )
 
 Void Float32Array_obj::__set( int index,Float value){
 {
-		HX_STACK_FRAME("openfl._v2.utils.Float32Array","__set",0x5f1e8e00,"openfl._v2.utils.Float32Array.__set","openfl/_v2/utils/Float32Array.hx",125,0x528de82f)
+		HX_STACK_FRAME("openfl._v2.utils.Float32Array","__set",0x5f1e8e00,"openfl._v2.utils.Float32Array.__set","openfl/_v2/utils/Float32Array.hx",130,0x528de82f)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(index,"index")
 		HX_STACK_ARG(value,"value")
-		HX_STACK_LINE(125)
+		HX_STACK_LINE(130)
 		::__hxcpp_memory_set_float(this->bytes,(((int(index) << int((int)2))) + this->byteOffset),value);
 	}
 return null();
@@ -143,9 +173,9 @@ HX_DEFINE_DYNAMIC_FUNC2(Float32Array_obj,__set,(void))
 int Float32Array_obj::SBYTES_PER_ELEMENT;
 
 ::openfl::_v2::utils::Float32Array Float32Array_obj::fromMatrix( ::openfl::geom::Matrix3D matrix){
-	HX_STACK_FRAME("openfl._v2.utils.Float32Array","fromMatrix",0xa22b810d,"openfl._v2.utils.Float32Array.fromMatrix","openfl/_v2/utils/Float32Array.hx",119,0x528de82f)
+	HX_STACK_FRAME("openfl._v2.utils.Float32Array","fromMatrix",0xa22b810d,"openfl._v2.utils.Float32Array.fromMatrix","openfl/_v2/utils/Float32Array.hx",124,0x528de82f)
 	HX_STACK_ARG(matrix,"matrix")
-	HX_STACK_LINE(119)
+	HX_STACK_LINE(124)
 	return ::openfl::_v2::utils::Float32Array_obj::__new(matrix->rawData,null(),null());
 }
 
@@ -169,6 +199,9 @@ Dynamic Float32Array_obj::__Field(const ::String &inName,bool inCallProp)
 		break;
 	case 10:
 		if (HX_FIELD_EQ(inName,"fromMatrix") ) { return fromMatrix_dyn(); }
+		break;
+	case 11:
+		if (HX_FIELD_EQ(inName,"__setLength") ) { return __setLength_dyn(); }
 		break;
 	case 17:
 		if (HX_FIELD_EQ(inName,"BYTES_PER_ELEMENT") ) { return BYTES_PER_ELEMENT; }
@@ -211,6 +244,7 @@ static hx::StorageInfo sMemberStorageInfo[] = {
 static ::String sMemberFields[] = {
 	HX_CSTRING("BYTES_PER_ELEMENT"),
 	HX_CSTRING("length"),
+	HX_CSTRING("__setLength"),
 	HX_CSTRING("__get"),
 	HX_CSTRING("__set"),
 	String(null()) };

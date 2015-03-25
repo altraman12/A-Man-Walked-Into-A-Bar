@@ -293,6 +293,8 @@ class MainView extends GLSurfaceView {
 			
 		};
 		
+		outAttrs.imeOptions = EditorInfo.IME_FLAG_NO_EXTRACT_UI | 33554432 /* API 11: EditorInfo.IME_FLAG_NO_FULLSCREEN */;
+		
 		return inputConnection;
 		
 	}
@@ -714,6 +716,9 @@ class MainView extends GLSurfaceView {
 		public void onSurfaceChanged (GL10 gl, int width, int height) {
 			
 			
+			Log.v("VIEW","onSurfaceChanged " + width +"," + height);
+			Log.v("VIEW", "Thread = " + java.lang.Thread.currentThread ().getId ());
+			
 			
 			mMainView.HandleResult (Lime.onResize (width, height));
 			
@@ -730,6 +735,9 @@ class MainView extends GLSurfaceView {
 			
 			mMainView.isPollImminent = false;
 			mMainView.renderPending = false;
+			
+			Log.v("VIEW","onSurfaceCreated");
+			Log.v("VIEW", "Thread = " + java.lang.Thread.currentThread ().getId ());
 			
 			mMainView.HandleResult (Lime.onContextLost ());
 			

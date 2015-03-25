@@ -66,6 +66,7 @@ class HXCPP_CLASS_ATTRIBUTES  Stage_obj : public ::openfl::_v2::display::Display
 		bool pauseWhenDeactivated;
 		Dynamic renderRequest;
 		Dynamic &renderRequest_dyn() { return renderRequest;}
+		::openfl::_v2::geom::Rectangle softKeyboardRect;
 		Array< ::Dynamic > stage3Ds;
 		int stageHeight;
 		int stageWidth;
@@ -83,6 +84,7 @@ class HXCPP_CLASS_ATTRIBUTES  Stage_obj : public ::openfl::_v2::display::Display
 		Float __lastRender;
 		Array< ::Dynamic > __mouseOverObjects;
 		Float __nextRender;
+		::openfl::_v2::geom::Rectangle __softKeyboardRect;
 		::haxe::ds::IntMap __touchInfo;
 		virtual Void invalidate( );
 		Dynamic invalidate_dyn();
@@ -216,6 +218,9 @@ class HXCPP_CLASS_ATTRIBUTES  Stage_obj : public ::openfl::_v2::display::Display
 		virtual ::openfl::display::StageScaleMode set_scaleMode( ::openfl::display::StageScaleMode value);
 		Dynamic set_scaleMode_dyn();
 
+		virtual ::openfl::_v2::geom::Rectangle get_softKeyboardRect( );
+		Dynamic get_softKeyboardRect_dyn();
+
 		virtual ::openfl::_v2::display::Stage get_stage( );
 
 		virtual bool get_stageFocusRect( );
@@ -331,6 +336,8 @@ class HXCPP_CLASS_ATTRIBUTES  Stage_obj : public ::openfl::_v2::display::Display
 		static Dynamic &lime_stage_get_orientation_dyn() { return lime_stage_get_orientation;}
 		static Dynamic lime_stage_get_normal_orientation;
 		static Dynamic &lime_stage_get_normal_orientation_dyn() { return lime_stage_get_normal_orientation;}
+		static Dynamic lime_get_softkeyboardheight;
+		static Dynamic &lime_get_softkeyboardheight_dyn() { return lime_get_softkeyboardheight;}
 };
 
 } // end namespace openfl

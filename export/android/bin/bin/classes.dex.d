@@ -5,6 +5,7 @@ C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\cla
 C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\com\example\myapp\R$drawable.class \
 C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\com\example\myapp\R.class \
 C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\GameActivity$1.class \
+C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\GameActivity$2.class \
 C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\GameActivity.class \
 C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$1.class \
 C:\Users\Adu\Documents\Github\A-Man-Walked-Into-A-Bar\export\android\bin\bin\classes\org\haxe\lime\MainView$10.class \

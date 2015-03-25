@@ -348,6 +348,7 @@ class HXCPP_CLASS_ATTRIBUTES  GL_obj : public hx::Object{
 		static int drawingBufferHeight;
 		static int drawingBufferWidth;
 		static int version;
+		static ::openfl::_v2::gl::GLFramebuffer defaultFramebuffer;
 		static Void activeTexture( int texture);
 		static Dynamic activeTexture_dyn();
 

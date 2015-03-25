@@ -1,5 +1,8 @@
 #include <hxcpp.h>
 
+#ifndef INCLUDED_openfl__v2_gl_GL
+#include <openfl/_v2/gl/GL.h>
+#endif
 #ifndef INCLUDED_openfl__v2_gl_GLObject
 #include <openfl/_v2/gl/GLObject.h>
 #endif
@@ -45,6 +48,25 @@ Dynamic GLShader_obj::__Create(hx::DynamicArray inArgs)
 }
 
 
+bool GLShader_obj::isValid( ){
+	HX_STACK_FRAME("openfl._v2.gl.GLShader","isValid",0x9b2fd226,"openfl._v2.gl.GLShader.isValid","openfl/_v2/gl/GLShader.hx",23,0x059937bd)
+	HX_STACK_THIS(this)
+	HX_STACK_LINE(23)
+	if (((bool((this->id != (int)0)) && bool((this->id != null()))))){
+		HX_STACK_LINE(23)
+		int _g = ::openfl::_v2::gl::GL_obj::get_version();		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(23)
+		return (this->version == _g);
+	}
+	else{
+		HX_STACK_LINE(23)
+		return false;
+	}
+	HX_STACK_LINE(23)
+	return false;
+}
+
+
 
 GLShader_obj::GLShader_obj()
 {
@@ -55,6 +77,7 @@ Dynamic GLShader_obj::__Field(const ::String &inName,bool inCallProp)
 	switch(inName.length) {
 	case 7:
 		if (HX_FIELD_EQ(inName,"getType") ) { return getType_dyn(); }
+		if (HX_FIELD_EQ(inName,"isValid") ) { return isValid_dyn(); }
 	}
 	return super::__Field(inName,inCallProp);
 }
@@ -78,6 +101,7 @@ static hx::StorageInfo *sMemberStorageInfo = 0;
 
 static ::String sMemberFields[] = {
 	HX_CSTRING("getType"),
+	HX_CSTRING("isValid"),
 	String(null()) };
 
 static void sMarkStatics(HX_MARK_PARAMS) {

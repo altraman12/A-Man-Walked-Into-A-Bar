@@ -64,62 +64,96 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage1/cutscene bubbles 2.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage1/cutscene bubbles.png", __ASSET__assets_images_stage1_cutscene_bubbles_png);
 		type.set ("assets/images/Stage1/cutscene bubbles.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/car.png", __ASSET__assets_images_stage2_car_png);
-		type.set ("assets/images/Stage2/car.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage1/lose bubbles.png", __ASSET__assets_images_stage1_lose_bubbles_png);
+		type.set ("assets/images/Stage1/lose bubbles.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage2/car1left.png", __ASSET__assets_images_stage2_car1left_png);
 		type.set ("assets/images/Stage2/car1left.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car1left1.png", __ASSET__assets_images_stage2_car1left1_png);
+		type.set ("assets/images/Stage2/car1left1.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage2/car1left2.png", __ASSET__assets_images_stage2_car1left2_png);
 		type.set ("assets/images/Stage2/car1left2.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/car1left3.png", __ASSET__assets_images_stage2_car1left3_png);
-		type.set ("assets/images/Stage2/car1left3.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage2/car1right.png", __ASSET__assets_images_stage2_car1right_png);
 		type.set ("assets/images/Stage2/car1right.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car1right1.png", __ASSET__assets_images_stage2_car1right1_png);
+		type.set ("assets/images/Stage2/car1right1.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage2/car1right2.png", __ASSET__assets_images_stage2_car1right2_png);
 		type.set ("assets/images/Stage2/car1right2.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/car1right3.png", __ASSET__assets_images_stage2_car1right3_png);
-		type.set ("assets/images/Stage2/car1right3.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage2/car2left.png", __ASSET__assets_images_stage2_car2left_png);
 		type.set ("assets/images/Stage2/car2left.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car2left1.png", __ASSET__assets_images_stage2_car2left1_png);
+		type.set ("assets/images/Stage2/car2left1.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage2/car2left2.png", __ASSET__assets_images_stage2_car2left2_png);
 		type.set ("assets/images/Stage2/car2left2.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/car2left3.png", __ASSET__assets_images_stage2_car2left3_png);
-		type.set ("assets/images/Stage2/car2left3.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage2/car2right.png", __ASSET__assets_images_stage2_car2right_png);
 		type.set ("assets/images/Stage2/car2right.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car2right1.png", __ASSET__assets_images_stage2_car2right1_png);
+		type.set ("assets/images/Stage2/car2right1.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage2/car2right2.png", __ASSET__assets_images_stage2_car2right2_png);
 		type.set ("assets/images/Stage2/car2right2.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/car2right3.png", __ASSET__assets_images_stage2_car2right3_png);
-		type.set ("assets/images/Stage2/car2right3.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/CarGoingLeftTemp.png", __ASSET__assets_images_stage2_cargoinglefttemp_png);
-		type.set ("assets/images/Stage2/CarGoingLeftTemp.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/CarGoingLeftTemp2.png", __ASSET__assets_images_stage2_cargoinglefttemp2_png);
-		type.set ("assets/images/Stage2/CarGoingLeftTemp2.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/CarGoingLeftTemp2Copy.png", __ASSET__assets_images_stage2_cargoinglefttemp2copy_png);
-		type.set ("assets/images/Stage2/CarGoingLeftTemp2Copy.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/CarGoingLeftTemp2Copy2.png", __ASSET__assets_images_stage2_cargoinglefttemp2copy2_png);
-		type.set ("assets/images/Stage2/CarGoingLeftTemp2Copy2.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/CarGoingLeftTempCopy.png", __ASSET__assets_images_stage2_cargoinglefttempcopy_png);
-		type.set ("assets/images/Stage2/CarGoingLeftTempCopy.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/CarGoingLeftTempCopy2.png", __ASSET__assets_images_stage2_cargoinglefttempcopy2_png);
-		type.set ("assets/images/Stage2/CarGoingLeftTempCopy2.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/CarGoingRightTemp.png", __ASSET__assets_images_stage2_cargoingrighttemp_png);
-		type.set ("assets/images/Stage2/CarGoingRightTemp.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/CarGoingRightTemp2.png", __ASSET__assets_images_stage2_cargoingrighttemp2_png);
-		type.set ("assets/images/Stage2/CarGoingRightTemp2.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/CarGoingRightTemp2Copy.png", __ASSET__assets_images_stage2_cargoingrighttemp2copy_png);
-		type.set ("assets/images/Stage2/CarGoingRightTemp2Copy.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/CarGoingRightTemp2Copy2.png", __ASSET__assets_images_stage2_cargoingrighttemp2copy2_png);
-		type.set ("assets/images/Stage2/CarGoingRightTemp2Copy2.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/CarGoingRightTempCopy.png", __ASSET__assets_images_stage2_cargoingrighttempcopy_png);
-		type.set ("assets/images/Stage2/CarGoingRightTempCopy.png", AssetType.IMAGE);
-		className.set ("assets/images/Stage2/CarGoingRightTempCopy2.png", __ASSET__assets_images_stage2_cargoingrighttempcopy2_png);
-		type.set ("assets/images/Stage2/CarGoingRightTempCopy2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car3left.png", __ASSET__assets_images_stage2_car3left_png);
+		type.set ("assets/images/Stage2/car3left.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car3left1.png", __ASSET__assets_images_stage2_car3left1_png);
+		type.set ("assets/images/Stage2/car3left1.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car3left2.png", __ASSET__assets_images_stage2_car3left2_png);
+		type.set ("assets/images/Stage2/car3left2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car3right.png", __ASSET__assets_images_stage2_car3right_png);
+		type.set ("assets/images/Stage2/car3right.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car3right1.png", __ASSET__assets_images_stage2_car3right1_png);
+		type.set ("assets/images/Stage2/car3right1.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car3right2.png", __ASSET__assets_images_stage2_car3right2_png);
+		type.set ("assets/images/Stage2/car3right2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car4left.png", __ASSET__assets_images_stage2_car4left_png);
+		type.set ("assets/images/Stage2/car4left.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car4left1.png", __ASSET__assets_images_stage2_car4left1_png);
+		type.set ("assets/images/Stage2/car4left1.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car4left2.png", __ASSET__assets_images_stage2_car4left2_png);
+		type.set ("assets/images/Stage2/car4left2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car4right.png", __ASSET__assets_images_stage2_car4right_png);
+		type.set ("assets/images/Stage2/car4right.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car4right1.png", __ASSET__assets_images_stage2_car4right1_png);
+		type.set ("assets/images/Stage2/car4right1.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car4right2.png", __ASSET__assets_images_stage2_car4right2_png);
+		type.set ("assets/images/Stage2/car4right2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car5left.png", __ASSET__assets_images_stage2_car5left_png);
+		type.set ("assets/images/Stage2/car5left.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car5left1.png", __ASSET__assets_images_stage2_car5left1_png);
+		type.set ("assets/images/Stage2/car5left1.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car5left2.png", __ASSET__assets_images_stage2_car5left2_png);
+		type.set ("assets/images/Stage2/car5left2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car5right.png", __ASSET__assets_images_stage2_car5right_png);
+		type.set ("assets/images/Stage2/car5right.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car5right1.png", __ASSET__assets_images_stage2_car5right1_png);
+		type.set ("assets/images/Stage2/car5right1.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car5right2.png", __ASSET__assets_images_stage2_car5right2_png);
+		type.set ("assets/images/Stage2/car5right2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car6left.png", __ASSET__assets_images_stage2_car6left_png);
+		type.set ("assets/images/Stage2/car6left.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car6left1.png", __ASSET__assets_images_stage2_car6left1_png);
+		type.set ("assets/images/Stage2/car6left1.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car6left2.png", __ASSET__assets_images_stage2_car6left2_png);
+		type.set ("assets/images/Stage2/car6left2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car6right.png", __ASSET__assets_images_stage2_car6right_png);
+		type.set ("assets/images/Stage2/car6right.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car6right1.png", __ASSET__assets_images_stage2_car6right1_png);
+		type.set ("assets/images/Stage2/car6right1.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car6right2.png", __ASSET__assets_images_stage2_car6right2_png);
+		type.set ("assets/images/Stage2/car6right2.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage2/chicken.png", __ASSET__assets_images_stage2_chicken_png);
 		type.set ("assets/images/Stage2/chicken.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/chickensprite.png", __ASSET__assets_images_stage2_chickensprite_png);
+		type.set ("assets/images/Stage2/chickensprite.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage2/ChickenTemp.png", __ASSET__assets_images_stage2_chickentemp_png);
 		type.set ("assets/images/Stage2/ChickenTemp.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/froggerbg.png", __ASSET__assets_images_stage2_froggerbg_png);
+		type.set ("assets/images/Stage2/froggerbg.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/RealChicken.jpg", __ASSET__assets_images_stage2_realchicken_jpg);
+		type.set ("assets/images/Stage2/RealChicken.jpg", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/road tile.png", __ASSET__assets_images_stage2_road_tile_png);
+		type.set ("assets/images/Stage2/road tile.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage3/789 door.png", __ASSET__assets_images_stage3_789_door_png);
 		type.set ("assets/images/Stage3/789 door.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage3/ascension.png", __ASSET__assets_images_stage3_ascension_png);
+		type.set ("assets/images/Stage3/ascension.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage3/chicken ghost.png", __ASSET__assets_images_stage3_chicken_ghost_png);
 		type.set ("assets/images/Stage3/chicken ghost.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage3/door.png", __ASSET__assets_images_stage3_door_png);
@@ -189,7 +223,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/car.png";
+		id = "assets/images/Stage1/lose bubbles.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -197,11 +231,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/car1left2.png";
+		id = "assets/images/Stage2/car1left1.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/car1left3.png";
+		id = "assets/images/Stage2/car1left2.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -209,11 +243,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/car1right2.png";
+		id = "assets/images/Stage2/car1right1.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/car1right3.png";
+		id = "assets/images/Stage2/car1right2.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -221,11 +255,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/car2left2.png";
+		id = "assets/images/Stage2/car2left1.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/car2left3.png";
+		id = "assets/images/Stage2/car2left2.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -233,59 +267,107 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car2right1.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage2/car2right2.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/car2right3.png";
+		id = "assets/images/Stage2/car3left.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingLeftTemp.png";
+		id = "assets/images/Stage2/car3left1.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingLeftTemp2.png";
+		id = "assets/images/Stage2/car3left2.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingLeftTemp2Copy.png";
+		id = "assets/images/Stage2/car3right.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingLeftTemp2Copy2.png";
+		id = "assets/images/Stage2/car3right1.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingLeftTempCopy.png";
+		id = "assets/images/Stage2/car3right2.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingLeftTempCopy2.png";
+		id = "assets/images/Stage2/car4left.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingRightTemp.png";
+		id = "assets/images/Stage2/car4left1.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingRightTemp2.png";
+		id = "assets/images/Stage2/car4left2.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingRightTemp2Copy.png";
+		id = "assets/images/Stage2/car4right.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingRightTemp2Copy2.png";
+		id = "assets/images/Stage2/car4right1.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingRightTempCopy.png";
+		id = "assets/images/Stage2/car4right2.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/CarGoingRightTempCopy2.png";
+		id = "assets/images/Stage2/car5left.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car5left1.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car5left2.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car5right.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car5right1.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car5right2.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car6left.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car6left1.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car6left2.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car6right.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car6right1.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/car6right2.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -293,11 +375,31 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/chickensprite.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage2/ChickenTemp.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/froggerbg.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/RealChicken.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage2/road tile.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage3/789 door.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage3/ascension.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -413,6 +515,23 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		#end
 		
 		#if (windows || mac || linux)
@@ -449,89 +568,140 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/Stage1/cutscene bubbles.png", __ASSET__assets_images_stage1_cutscene_bubbles_png);
 		type.set ("assets/images/Stage1/cutscene bubbles.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/car.png", __ASSET__assets_images_stage2_car_png);
-		type.set ("assets/images/Stage2/car.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage1/lose bubbles.png", __ASSET__assets_images_stage1_lose_bubbles_png);
+		type.set ("assets/images/Stage1/lose bubbles.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/Stage2/car1left.png", __ASSET__assets_images_stage2_car1left_png);
 		type.set ("assets/images/Stage2/car1left.png", AssetType.IMAGE);
 		
+		className.set ("assets/images/Stage2/car1left1.png", __ASSET__assets_images_stage2_car1left1_png);
+		type.set ("assets/images/Stage2/car1left1.png", AssetType.IMAGE);
+		
 		className.set ("assets/images/Stage2/car1left2.png", __ASSET__assets_images_stage2_car1left2_png);
 		type.set ("assets/images/Stage2/car1left2.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/Stage2/car1left3.png", __ASSET__assets_images_stage2_car1left3_png);
-		type.set ("assets/images/Stage2/car1left3.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/Stage2/car1right.png", __ASSET__assets_images_stage2_car1right_png);
 		type.set ("assets/images/Stage2/car1right.png", AssetType.IMAGE);
 		
+		className.set ("assets/images/Stage2/car1right1.png", __ASSET__assets_images_stage2_car1right1_png);
+		type.set ("assets/images/Stage2/car1right1.png", AssetType.IMAGE);
+		
 		className.set ("assets/images/Stage2/car1right2.png", __ASSET__assets_images_stage2_car1right2_png);
 		type.set ("assets/images/Stage2/car1right2.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/Stage2/car1right3.png", __ASSET__assets_images_stage2_car1right3_png);
-		type.set ("assets/images/Stage2/car1right3.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/Stage2/car2left.png", __ASSET__assets_images_stage2_car2left_png);
 		type.set ("assets/images/Stage2/car2left.png", AssetType.IMAGE);
 		
+		className.set ("assets/images/Stage2/car2left1.png", __ASSET__assets_images_stage2_car2left1_png);
+		type.set ("assets/images/Stage2/car2left1.png", AssetType.IMAGE);
+		
 		className.set ("assets/images/Stage2/car2left2.png", __ASSET__assets_images_stage2_car2left2_png);
 		type.set ("assets/images/Stage2/car2left2.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/Stage2/car2left3.png", __ASSET__assets_images_stage2_car2left3_png);
-		type.set ("assets/images/Stage2/car2left3.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/Stage2/car2right.png", __ASSET__assets_images_stage2_car2right_png);
 		type.set ("assets/images/Stage2/car2right.png", AssetType.IMAGE);
 		
+		className.set ("assets/images/Stage2/car2right1.png", __ASSET__assets_images_stage2_car2right1_png);
+		type.set ("assets/images/Stage2/car2right1.png", AssetType.IMAGE);
+		
 		className.set ("assets/images/Stage2/car2right2.png", __ASSET__assets_images_stage2_car2right2_png);
 		type.set ("assets/images/Stage2/car2right2.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/car2right3.png", __ASSET__assets_images_stage2_car2right3_png);
-		type.set ("assets/images/Stage2/car2right3.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car3left.png", __ASSET__assets_images_stage2_car3left_png);
+		type.set ("assets/images/Stage2/car3left.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/CarGoingLeftTemp.png", __ASSET__assets_images_stage2_cargoinglefttemp_png);
-		type.set ("assets/images/Stage2/CarGoingLeftTemp.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car3left1.png", __ASSET__assets_images_stage2_car3left1_png);
+		type.set ("assets/images/Stage2/car3left1.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/CarGoingLeftTemp2.png", __ASSET__assets_images_stage2_cargoinglefttemp2_png);
-		type.set ("assets/images/Stage2/CarGoingLeftTemp2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car3left2.png", __ASSET__assets_images_stage2_car3left2_png);
+		type.set ("assets/images/Stage2/car3left2.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/CarGoingLeftTemp2Copy.png", __ASSET__assets_images_stage2_cargoinglefttemp2copy_png);
-		type.set ("assets/images/Stage2/CarGoingLeftTemp2Copy.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car3right.png", __ASSET__assets_images_stage2_car3right_png);
+		type.set ("assets/images/Stage2/car3right.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/CarGoingLeftTemp2Copy2.png", __ASSET__assets_images_stage2_cargoinglefttemp2copy2_png);
-		type.set ("assets/images/Stage2/CarGoingLeftTemp2Copy2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car3right1.png", __ASSET__assets_images_stage2_car3right1_png);
+		type.set ("assets/images/Stage2/car3right1.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/CarGoingLeftTempCopy.png", __ASSET__assets_images_stage2_cargoinglefttempcopy_png);
-		type.set ("assets/images/Stage2/CarGoingLeftTempCopy.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car3right2.png", __ASSET__assets_images_stage2_car3right2_png);
+		type.set ("assets/images/Stage2/car3right2.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/CarGoingLeftTempCopy2.png", __ASSET__assets_images_stage2_cargoinglefttempcopy2_png);
-		type.set ("assets/images/Stage2/CarGoingLeftTempCopy2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car4left.png", __ASSET__assets_images_stage2_car4left_png);
+		type.set ("assets/images/Stage2/car4left.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/CarGoingRightTemp.png", __ASSET__assets_images_stage2_cargoingrighttemp_png);
-		type.set ("assets/images/Stage2/CarGoingRightTemp.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car4left1.png", __ASSET__assets_images_stage2_car4left1_png);
+		type.set ("assets/images/Stage2/car4left1.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/CarGoingRightTemp2.png", __ASSET__assets_images_stage2_cargoingrighttemp2_png);
-		type.set ("assets/images/Stage2/CarGoingRightTemp2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car4left2.png", __ASSET__assets_images_stage2_car4left2_png);
+		type.set ("assets/images/Stage2/car4left2.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/CarGoingRightTemp2Copy.png", __ASSET__assets_images_stage2_cargoingrighttemp2copy_png);
-		type.set ("assets/images/Stage2/CarGoingRightTemp2Copy.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car4right.png", __ASSET__assets_images_stage2_car4right_png);
+		type.set ("assets/images/Stage2/car4right.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/CarGoingRightTemp2Copy2.png", __ASSET__assets_images_stage2_cargoingrighttemp2copy2_png);
-		type.set ("assets/images/Stage2/CarGoingRightTemp2Copy2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car4right1.png", __ASSET__assets_images_stage2_car4right1_png);
+		type.set ("assets/images/Stage2/car4right1.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/CarGoingRightTempCopy.png", __ASSET__assets_images_stage2_cargoingrighttempcopy_png);
-		type.set ("assets/images/Stage2/CarGoingRightTempCopy.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car4right2.png", __ASSET__assets_images_stage2_car4right2_png);
+		type.set ("assets/images/Stage2/car4right2.png", AssetType.IMAGE);
 		
-		className.set ("assets/images/Stage2/CarGoingRightTempCopy2.png", __ASSET__assets_images_stage2_cargoingrighttempcopy2_png);
-		type.set ("assets/images/Stage2/CarGoingRightTempCopy2.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage2/car5left.png", __ASSET__assets_images_stage2_car5left_png);
+		type.set ("assets/images/Stage2/car5left.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/car5left1.png", __ASSET__assets_images_stage2_car5left1_png);
+		type.set ("assets/images/Stage2/car5left1.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/car5left2.png", __ASSET__assets_images_stage2_car5left2_png);
+		type.set ("assets/images/Stage2/car5left2.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/car5right.png", __ASSET__assets_images_stage2_car5right_png);
+		type.set ("assets/images/Stage2/car5right.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/car5right1.png", __ASSET__assets_images_stage2_car5right1_png);
+		type.set ("assets/images/Stage2/car5right1.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/car5right2.png", __ASSET__assets_images_stage2_car5right2_png);
+		type.set ("assets/images/Stage2/car5right2.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/car6left.png", __ASSET__assets_images_stage2_car6left_png);
+		type.set ("assets/images/Stage2/car6left.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/car6left1.png", __ASSET__assets_images_stage2_car6left1_png);
+		type.set ("assets/images/Stage2/car6left1.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/car6left2.png", __ASSET__assets_images_stage2_car6left2_png);
+		type.set ("assets/images/Stage2/car6left2.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/car6right.png", __ASSET__assets_images_stage2_car6right_png);
+		type.set ("assets/images/Stage2/car6right.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/car6right1.png", __ASSET__assets_images_stage2_car6right1_png);
+		type.set ("assets/images/Stage2/car6right1.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/car6right2.png", __ASSET__assets_images_stage2_car6right2_png);
+		type.set ("assets/images/Stage2/car6right2.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/Stage2/chicken.png", __ASSET__assets_images_stage2_chicken_png);
 		type.set ("assets/images/Stage2/chicken.png", AssetType.IMAGE);
 		
+		className.set ("assets/images/Stage2/chickensprite.png", __ASSET__assets_images_stage2_chickensprite_png);
+		type.set ("assets/images/Stage2/chickensprite.png", AssetType.IMAGE);
+		
 		className.set ("assets/images/Stage2/ChickenTemp.png", __ASSET__assets_images_stage2_chickentemp_png);
 		type.set ("assets/images/Stage2/ChickenTemp.png", AssetType.IMAGE);
 		
+		className.set ("assets/images/Stage2/froggerbg.png", __ASSET__assets_images_stage2_froggerbg_png);
+		type.set ("assets/images/Stage2/froggerbg.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/RealChicken.jpg", __ASSET__assets_images_stage2_realchicken_jpg);
+		type.set ("assets/images/Stage2/RealChicken.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage2/road tile.png", __ASSET__assets_images_stage2_road_tile_png);
+		type.set ("assets/images/Stage2/road tile.png", AssetType.IMAGE);
+		
 		className.set ("assets/images/Stage3/789 door.png", __ASSET__assets_images_stage3_789_door_png);
 		type.set ("assets/images/Stage3/789 door.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage3/ascension.png", __ASSET__assets_images_stage3_ascension_png);
+		type.set ("assets/images/Stage3/ascension.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/Stage3/chicken ghost.png", __ASSET__assets_images_stage3_chicken_ghost_png);
 		type.set ("assets/images/Stage3/chicken ghost.png", AssetType.IMAGE);
@@ -1147,34 +1317,51 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage1_bg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage1_cutscene_bubbles_2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage1_cutscene_bubbles_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage1_lose_bubbles_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car1left_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car1left1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car1left2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car1left3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car1right_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car1right1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car1right2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car1right3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car2left_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car2left1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car2left2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car2left3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car2right_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car2right1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car2right2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car2right3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_cargoinglefttemp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_cargoinglefttemp2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_cargoinglefttemp2copy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_cargoinglefttemp2copy2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_cargoinglefttempcopy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_cargoinglefttempcopy2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_cargoingrighttemp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_cargoingrighttemp2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_cargoingrighttemp2copy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_cargoingrighttemp2copy2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_cargoingrighttempcopy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_cargoingrighttempcopy2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car3left_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car3left1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car3left2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car3right_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car3right1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car3right2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car4left_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car4left1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car4left2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car4right_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car4right1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car4right2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car5left_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car5left1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car5left2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car5right_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car5right1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car5right2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car6left_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car6left1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car6left2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car6right_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car6right1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_car6right2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage2_chicken_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_chickensprite_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage2_chickentemp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_froggerbg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_realchicken_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage2_road_tile_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage3_789_door_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage3_ascension_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage3_chicken_ghost_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage3_door_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage3_hall_wall_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -1192,6 +1379,23 @@ class DefaultAssetLibrary extends AssetLibrary {
 #elseif html5
 
 #if openfl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1264,34 +1468,51 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:bitmap("assets/images/Stage1/bg.png") class __ASSET__assets_images_stage1_bg_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage1/cutscene bubbles 2.png") class __ASSET__assets_images_stage1_cutscene_bubbles_2_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage1/cutscene bubbles.png") class __ASSET__assets_images_stage1_cutscene_bubbles_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/car.png") class __ASSET__assets_images_stage2_car_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage1/lose bubbles.png") class __ASSET__assets_images_stage1_lose_bubbles_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage2/car1left.png") class __ASSET__assets_images_stage2_car1left_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car1left1.png") class __ASSET__assets_images_stage2_car1left1_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage2/car1left2.png") class __ASSET__assets_images_stage2_car1left2_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/car1left3.png") class __ASSET__assets_images_stage2_car1left3_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage2/car1right.png") class __ASSET__assets_images_stage2_car1right_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car1right1.png") class __ASSET__assets_images_stage2_car1right1_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage2/car1right2.png") class __ASSET__assets_images_stage2_car1right2_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/car1right3.png") class __ASSET__assets_images_stage2_car1right3_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage2/car2left.png") class __ASSET__assets_images_stage2_car2left_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car2left1.png") class __ASSET__assets_images_stage2_car2left1_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage2/car2left2.png") class __ASSET__assets_images_stage2_car2left2_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/car2left3.png") class __ASSET__assets_images_stage2_car2left3_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage2/car2right.png") class __ASSET__assets_images_stage2_car2right_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car2right1.png") class __ASSET__assets_images_stage2_car2right1_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage2/car2right2.png") class __ASSET__assets_images_stage2_car2right2_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/car2right3.png") class __ASSET__assets_images_stage2_car2right3_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/CarGoingLeftTemp.png") class __ASSET__assets_images_stage2_cargoinglefttemp_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/CarGoingLeftTemp2.png") class __ASSET__assets_images_stage2_cargoinglefttemp2_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/CarGoingLeftTemp2Copy.png") class __ASSET__assets_images_stage2_cargoinglefttemp2copy_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/CarGoingLeftTemp2Copy2.png") class __ASSET__assets_images_stage2_cargoinglefttemp2copy2_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/CarGoingLeftTempCopy.png") class __ASSET__assets_images_stage2_cargoinglefttempcopy_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/CarGoingLeftTempCopy2.png") class __ASSET__assets_images_stage2_cargoinglefttempcopy2_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/CarGoingRightTemp.png") class __ASSET__assets_images_stage2_cargoingrighttemp_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/CarGoingRightTemp2.png") class __ASSET__assets_images_stage2_cargoingrighttemp2_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/CarGoingRightTemp2Copy.png") class __ASSET__assets_images_stage2_cargoingrighttemp2copy_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/CarGoingRightTemp2Copy2.png") class __ASSET__assets_images_stage2_cargoingrighttemp2copy2_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/CarGoingRightTempCopy.png") class __ASSET__assets_images_stage2_cargoingrighttempcopy_png extends lime.graphics.Image {}
-@:bitmap("assets/images/Stage2/CarGoingRightTempCopy2.png") class __ASSET__assets_images_stage2_cargoingrighttempcopy2_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car3left.png") class __ASSET__assets_images_stage2_car3left_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car3left1.png") class __ASSET__assets_images_stage2_car3left1_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car3left2.png") class __ASSET__assets_images_stage2_car3left2_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car3right.png") class __ASSET__assets_images_stage2_car3right_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car3right1.png") class __ASSET__assets_images_stage2_car3right1_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car3right2.png") class __ASSET__assets_images_stage2_car3right2_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car4left.png") class __ASSET__assets_images_stage2_car4left_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car4left1.png") class __ASSET__assets_images_stage2_car4left1_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car4left2.png") class __ASSET__assets_images_stage2_car4left2_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car4right.png") class __ASSET__assets_images_stage2_car4right_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car4right1.png") class __ASSET__assets_images_stage2_car4right1_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car4right2.png") class __ASSET__assets_images_stage2_car4right2_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car5left.png") class __ASSET__assets_images_stage2_car5left_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car5left1.png") class __ASSET__assets_images_stage2_car5left1_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car5left2.png") class __ASSET__assets_images_stage2_car5left2_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car5right.png") class __ASSET__assets_images_stage2_car5right_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car5right1.png") class __ASSET__assets_images_stage2_car5right1_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car5right2.png") class __ASSET__assets_images_stage2_car5right2_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car6left.png") class __ASSET__assets_images_stage2_car6left_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car6left1.png") class __ASSET__assets_images_stage2_car6left1_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car6left2.png") class __ASSET__assets_images_stage2_car6left2_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car6right.png") class __ASSET__assets_images_stage2_car6right_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car6right1.png") class __ASSET__assets_images_stage2_car6right1_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/car6right2.png") class __ASSET__assets_images_stage2_car6right2_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage2/chicken.png") class __ASSET__assets_images_stage2_chicken_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/chickensprite.png") class __ASSET__assets_images_stage2_chickensprite_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage2/ChickenTemp.png") class __ASSET__assets_images_stage2_chickentemp_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/froggerbg.png") class __ASSET__assets_images_stage2_froggerbg_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/RealChicken.jpg") class __ASSET__assets_images_stage2_realchicken_jpg extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage2/road tile.png") class __ASSET__assets_images_stage2_road_tile_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage3/789 door.png") class __ASSET__assets_images_stage3_789_door_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage3/ascension.png") class __ASSET__assets_images_stage3_ascension_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage3/chicken ghost.png") class __ASSET__assets_images_stage3_chicken_ghost_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage3/door.png") class __ASSET__assets_images_stage3_door_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage3/hall wall.png") class __ASSET__assets_images_stage3_hall_wall_png extends lime.graphics.Image {}

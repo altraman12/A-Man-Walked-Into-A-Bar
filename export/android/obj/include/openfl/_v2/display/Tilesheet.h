@@ -71,6 +71,7 @@ class HXCPP_CLASS_ATTRIBUTES  Tilesheet_obj : public hx::Object{
 		static int TILE_BLEND_ADD;
 		static int TILE_BLEND_MULTIPLY;
 		static int TILE_BLEND_SCREEN;
+		static int TILE_BLEND_SUBTRACT;
 		static ::openfl::_v2::geom::Point defaultRatio;
 		static Dynamic lime_tilesheet_create;
 		static Dynamic &lime_tilesheet_create_dyn() { return lime_tilesheet_create;}

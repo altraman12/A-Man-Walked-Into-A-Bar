@@ -65,7 +65,7 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/car.png");
+		urls.push ("assets/images/Stage1/lose bubbles.png");
 		types.push (AssetType.IMAGE);
 		
 		
@@ -73,11 +73,11 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/car1left2.png");
+		urls.push ("assets/images/Stage2/car1left1.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/car1left3.png");
+		urls.push ("assets/images/Stage2/car1left2.png");
 		types.push (AssetType.IMAGE);
 		
 		
@@ -85,11 +85,11 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/car1right2.png");
+		urls.push ("assets/images/Stage2/car1right1.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/car1right3.png");
+		urls.push ("assets/images/Stage2/car1right2.png");
 		types.push (AssetType.IMAGE);
 		
 		
@@ -97,11 +97,11 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/car2left2.png");
+		urls.push ("assets/images/Stage2/car2left1.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/car2left3.png");
+		urls.push ("assets/images/Stage2/car2left2.png");
 		types.push (AssetType.IMAGE);
 		
 		
@@ -109,59 +109,107 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/Stage2/car2right1.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/Stage2/car2right2.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/car2right3.png");
+		urls.push ("assets/images/Stage2/car3left.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/CarGoingLeftTemp.png");
+		urls.push ("assets/images/Stage2/car3left1.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/CarGoingLeftTemp2.png");
+		urls.push ("assets/images/Stage2/car3left2.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/CarGoingLeftTemp2Copy.png");
+		urls.push ("assets/images/Stage2/car3right.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/CarGoingLeftTemp2Copy2.png");
+		urls.push ("assets/images/Stage2/car3right1.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/CarGoingLeftTempCopy.png");
+		urls.push ("assets/images/Stage2/car3right2.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/CarGoingLeftTempCopy2.png");
+		urls.push ("assets/images/Stage2/car4left.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/CarGoingRightTemp.png");
+		urls.push ("assets/images/Stage2/car4left1.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/CarGoingRightTemp2.png");
+		urls.push ("assets/images/Stage2/car4left2.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/CarGoingRightTemp2Copy.png");
+		urls.push ("assets/images/Stage2/car4right.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/CarGoingRightTemp2Copy2.png");
+		urls.push ("assets/images/Stage2/car4right1.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/CarGoingRightTempCopy.png");
+		urls.push ("assets/images/Stage2/car4right2.png");
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/CarGoingRightTempCopy2.png");
+		urls.push ("assets/images/Stage2/car5left.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car5left1.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car5left2.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car5right.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car5right1.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car5right2.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car6left.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car6left1.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car6left2.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car6right.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car6right1.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/car6right2.png");
 		types.push (AssetType.IMAGE);
 		
 		
@@ -169,11 +217,31 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/Stage2/chickensprite.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/Stage2/ChickenTemp.png");
 		types.push (AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/Stage2/froggerbg.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/RealChicken.jpg");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage2/road tile.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/Stage3/789 door.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage3/ascension.png");
 		types.push (AssetType.IMAGE);
 		
 		

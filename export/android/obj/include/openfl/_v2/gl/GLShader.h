@@ -35,6 +35,8 @@ class HXCPP_CLASS_ATTRIBUTES  GLShader_obj : public ::openfl::_v2::gl::GLObject_
 
 		virtual ::String getType( );
 
+		virtual bool isValid( );
+
 };
 
 } // end namespace openfl

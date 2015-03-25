@@ -48,9 +48,9 @@ Dynamic Float32Data_Impl__obj::__Create(hx::DynamicArray inArgs)
 	return result;}
 
 Dynamic Float32Data_Impl__obj::_new( Dynamic data){
-	HX_STACK_FRAME("openfl._v2.gl._GL.Float32Data_Impl_","_new",0x5a362ecc,"openfl._v2.gl._GL.Float32Data_Impl_._new","openfl/_v2/gl/GL.hx",1331,0x4b5f1ee2)
+	HX_STACK_FRAME("openfl._v2.gl._GL.Float32Data_Impl_","_new",0x5a362ecc,"openfl._v2.gl._GL.Float32Data_Impl_._new","openfl/_v2/gl/GL.hx",1336,0x4b5f1ee2)
 	HX_STACK_ARG(data,"data")
-	HX_STACK_LINE(1331)
+	HX_STACK_LINE(1336)
 	return data;
 }
 
@@ -58,9 +58,9 @@ Dynamic Float32Data_Impl__obj::_new( Dynamic data){
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Float32Data_Impl__obj,_new,return )
 
 Array< Float > Float32Data_Impl__obj::toDynamic( Dynamic this1){
-	HX_STACK_FRAME("openfl._v2.gl._GL.Float32Data_Impl_","toDynamic",0x6b67b9f9,"openfl._v2.gl._GL.Float32Data_Impl_.toDynamic","openfl/_v2/gl/GL.hx",1332,0x4b5f1ee2)
+	HX_STACK_FRAME("openfl._v2.gl._GL.Float32Data_Impl_","toDynamic",0x6b67b9f9,"openfl._v2.gl._GL.Float32Data_Impl_.toDynamic","openfl/_v2/gl/GL.hx",1337,0x4b5f1ee2)
 	HX_STACK_ARG(this1,"this1")
-	HX_STACK_LINE(1332)
+	HX_STACK_LINE(1337)
 	return this1;
 }
 
@@ -68,11 +68,11 @@ Array< Float > Float32Data_Impl__obj::toDynamic( Dynamic this1){
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Float32Data_Impl__obj,toDynamic,return )
 
 Dynamic Float32Data_Impl__obj::fromFloat32Array( ::openfl::_v2::utils::Float32Array f){
-	HX_STACK_FRAME("openfl._v2.gl._GL.Float32Data_Impl_","fromFloat32Array",0x36ce6cd3,"openfl._v2.gl._GL.Float32Data_Impl_.fromFloat32Array","openfl/_v2/gl/GL.hx",1334,0x4b5f1ee2)
+	HX_STACK_FRAME("openfl._v2.gl._GL.Float32Data_Impl_","fromFloat32Array",0x36ce6cd3,"openfl._v2.gl._GL.Float32Data_Impl_.fromFloat32Array","openfl/_v2/gl/GL.hx",1339,0x4b5f1ee2)
 	HX_STACK_ARG(f,"f")
-	HX_STACK_LINE(1334)
+	HX_STACK_LINE(1339)
 	Dynamic data = f->getByteBuffer();		HX_STACK_VAR(data,"data");
-	HX_STACK_LINE(1334)
+	HX_STACK_LINE(1339)
 	return data;
 }
 
@@ -80,9 +80,9 @@ Dynamic Float32Data_Impl__obj::fromFloat32Array( ::openfl::_v2::utils::Float32Ar
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Float32Data_Impl__obj,fromFloat32Array,return )
 
 Dynamic Float32Data_Impl__obj::fromArrayFloat( Array< Float > f){
-	HX_STACK_FRAME("openfl._v2.gl._GL.Float32Data_Impl_","fromArrayFloat",0x08375c78,"openfl._v2.gl._GL.Float32Data_Impl_.fromArrayFloat","openfl/_v2/gl/GL.hx",1336,0x4b5f1ee2)
+	HX_STACK_FRAME("openfl._v2.gl._GL.Float32Data_Impl_","fromArrayFloat",0x08375c78,"openfl._v2.gl._GL.Float32Data_Impl_.fromArrayFloat","openfl/_v2/gl/GL.hx",1341,0x4b5f1ee2)
 	HX_STACK_ARG(f,"f")
-	HX_STACK_LINE(1336)
+	HX_STACK_LINE(1341)
 	return f;
 }
 

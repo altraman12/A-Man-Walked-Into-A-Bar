@@ -8,24 +8,24 @@ namespace media{
 
 Void SoundTransform_obj::__construct(hx::Null< Float >  __o_vol,hx::Null< Float >  __o_panning)
 {
-HX_STACK_FRAME("openfl.media.SoundTransform","new",0x75fea817,"openfl.media.SoundTransform.new","openfl/media/SoundTransform.hx",15,0xcbc8f637)
+HX_STACK_FRAME("openfl.media.SoundTransform","new",0x75fea817,"openfl.media.SoundTransform.new","openfl/media/SoundTransform.hx",55,0xcbc8f637)
 HX_STACK_THIS(this)
 HX_STACK_ARG(__o_vol,"vol")
 HX_STACK_ARG(__o_panning,"panning")
 Float vol = __o_vol.Default(1);
 Float panning = __o_panning.Default(0);
 {
-	HX_STACK_LINE(17)
+	HX_STACK_LINE(57)
 	this->volume = vol;
-	HX_STACK_LINE(18)
+	HX_STACK_LINE(58)
 	this->pan = panning;
-	HX_STACK_LINE(19)
+	HX_STACK_LINE(59)
 	this->leftToLeft = (int)0;
-	HX_STACK_LINE(20)
+	HX_STACK_LINE(60)
 	this->leftToRight = (int)0;
-	HX_STACK_LINE(21)
+	HX_STACK_LINE(61)
 	this->rightToLeft = (int)0;
-	HX_STACK_LINE(22)
+	HX_STACK_LINE(62)
 	this->rightToRight = (int)0;
 }
 ;
@@ -46,9 +46,9 @@ Dynamic SoundTransform_obj::__Create(hx::DynamicArray inArgs)
 	return result;}
 
 ::openfl::media::SoundTransform SoundTransform_obj::clone( ){
-	HX_STACK_FRAME("openfl.media.SoundTransform","clone",0xa03c86d4,"openfl.media.SoundTransform.clone","openfl/media/SoundTransform.hx",29,0xcbc8f637)
+	HX_STACK_FRAME("openfl.media.SoundTransform","clone",0xa03c86d4,"openfl.media.SoundTransform.clone","openfl/media/SoundTransform.hx",69,0xcbc8f637)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(29)
+	HX_STACK_LINE(69)
 	return ::openfl::media::SoundTransform_obj::__new(this->volume,this->pan);
 }
 

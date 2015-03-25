@@ -70,8 +70,6 @@ class HXCPP_CLASS_ATTRIBUTES  Context3D_obj : public hx::Object{
 		bool blendEnabled;
 		int blendSourceFactor;
 		::openfl::display3D::Program3D currentProgram;
-		::openfl::_v2::gl::GLRenderbuffer depthbuffer;
-		::openfl::_v2::gl::GLFramebuffer defaultFrameBuffer;
 		bool disposed;
 		bool drawing;
 		::openfl::_v2::gl::GLFramebuffer framebuffer;
