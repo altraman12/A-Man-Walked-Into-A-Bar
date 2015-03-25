@@ -115,8 +115,7 @@ class ChickenState extends FlxState
 		chicken.animation.add("right", [2], 30, false);
 		chicken.animation.add("down", [3], 30, false);
 		chicken.animation.add("dead", [4], 30, false);
-		
-		var f = new FlxTimer(1, startwait, 1);
+		startwait();
 		
 	//temporary menu button
 		var btnMenu:FlxButton;
@@ -536,10 +535,10 @@ class ChickenState extends FlxState
 		var z = new FlxTimer(1, endgame, 1);
 	}
 	
-	private function startwait(Timer:FlxTimer)
+	private function startwait()
 	{
 		canMove = false;
-		var s = new FlxTimer(1, startstart, 1);
+		var s = new FlxTimer(2, startstart, 1);
 	}
 	
 	private function startstart(Timer:FlxTimer)
