@@ -24,6 +24,8 @@ class GhostState extends FlxState
 	public var knockCount = 0;
 	public var doneWithThisDoor = false;
 	public var doorIndex = 0;
+	public var doorAnimIndex = 0;
+	public var playDoor = false;
 	
 	public function justPressed():Bool
 	{
@@ -142,6 +144,8 @@ class GhostState extends FlxState
 	
 	override public function update()
 	{
+		
+		super.update();
 		hall.x -= speed;
 		
 		/*	var i = 0;
@@ -160,7 +164,30 @@ class GhostState extends FlxState
 			nextDoor();
 		}
 		
-		super.update();
+		if (playDoor)
+		{
+			if (doorAnimIndex <= 8)
+			{
+				if (Math.round(doorAnimIndex/2)==doorAnimIndex/2)
+				{
+					trace(Math.round(doorAnimIndex));
+					trace(doorAnimIndex);
+					doors.members[doorIndex - 1].animation.play("open"+((doorAnimIndex/2)+1));
+					doorAnimIndex++;
+				}
+				else 
+				{
+					doorAnimIndex++;
+				}
+			}
+			else 
+			{
+				doorAnimIndex = 0;
+				playDoor = false;
+				nextDoor();
+			}
+		}
+		
 		
 		if (justPressed()&&!inTransit)
 		{
@@ -172,9 +199,9 @@ class GhostState extends FlxState
 				{
 					member.kill();
 				}
-				doors.members[doorIndex-1].open();
+				
+				playDoor = true;
 				FlxG.watch.add(this,"doorIndex");
-				nextDoor();
 			}
 			else 
 			{
@@ -182,6 +209,7 @@ class GhostState extends FlxState
 				knockCount++;
 			}
 		}
+		
 	}
 	
 }

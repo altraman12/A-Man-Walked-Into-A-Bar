@@ -48,8 +48,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
-		path.set ("assets/images/GameTitleTemp.png", "assets/images/GameTitleTemp.png");
-		type.set ("assets/images/GameTitleTemp.png", AssetType.IMAGE);
 		path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
 		path.set ("assets/images/Stage1/alcolholbar.png", "assets/images/Stage1/alcolholbar.png");
@@ -140,16 +138,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage2/car6right1.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/car6right2.png", "assets/images/Stage2/car6right2.png");
 		type.set ("assets/images/Stage2/car6right2.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/chicken.png", "assets/images/Stage2/chicken.png");
-		type.set ("assets/images/Stage2/chicken.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/chickensprite.png", "assets/images/Stage2/chickensprite.png");
 		type.set ("assets/images/Stage2/chickensprite.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/ChickenTemp.png", "assets/images/Stage2/ChickenTemp.png");
-		type.set ("assets/images/Stage2/ChickenTemp.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/froggerbg.png", "assets/images/Stage2/froggerbg.png");
-		type.set ("assets/images/Stage2/froggerbg.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage2/RealChicken.jpg", "assets/images/Stage2/RealChicken.jpg");
-		type.set ("assets/images/Stage2/RealChicken.jpg", AssetType.IMAGE);
 		path.set ("assets/images/Stage2/road tile.png", "assets/images/Stage2/road tile.png");
 		type.set ("assets/images/Stage2/road tile.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage3/789 door.png", "assets/images/Stage3/789 door.png");
@@ -170,8 +160,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage4/69.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage4/7.png", "assets/images/Stage4/7.png");
 		type.set ("assets/images/Stage4/7.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage4/background.png", "assets/images/Stage4/background.png");
-		type.set ("assets/images/Stage4/background.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage4/bg.png", "assets/images/Stage4/bg.png");
+		type.set ("assets/images/Stage4/bg.png", AssetType.IMAGE);
 		path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/sounds/sounds-go-here.txt", "assets/sounds/sounds-go-here.txt");
@@ -188,9 +178,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/data/data-goes-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
-		id = "assets/images/GameTitleTemp.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
 		id = "assets/images/images-go-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
@@ -326,19 +313,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/Stage2/car6right2.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/chicken.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage2/chickensprite.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/ChickenTemp.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/froggerbg.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage2/RealChicken.jpg";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage2/road tile.png";
@@ -371,7 +346,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/Stage4/7.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage4/background.png";
+		id = "assets/images/Stage4/bg.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/music/music-goes-here.txt";
@@ -455,19 +430,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-		
-		
-		
-		
-		
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1211,17 +1176,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
-
-
-
-
-
 #elseif html5
-
-
-
-
-
 
 
 
