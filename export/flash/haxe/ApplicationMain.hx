@@ -29,10 +29,6 @@ class ApplicationMain {
 		types.push (AssetType.TEXT);
 		
 		
-		urls.push ("assets/images/GameTitleTemp.png");
-		types.push (AssetType.IMAGE);
-		
-		
 		urls.push ("assets/images/images-go-here.txt");
 		types.push (AssetType.TEXT);
 		
@@ -213,23 +209,7 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage2/chicken.png");
-		types.push (AssetType.IMAGE);
-		
-		
 		urls.push ("assets/images/Stage2/chickensprite.png");
-		types.push (AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/Stage2/ChickenTemp.png");
-		types.push (AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/Stage2/froggerbg.png");
-		types.push (AssetType.IMAGE);
-		
-		
-		urls.push ("assets/images/Stage2/RealChicken.jpg");
 		types.push (AssetType.IMAGE);
 		
 		
@@ -273,7 +253,7 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage4/background.png");
+		urls.push ("assets/images/Stage4/bg.png");
 		types.push (AssetType.IMAGE);
 		
 		
