@@ -19,7 +19,7 @@ class MenuState extends FlxState
 		titleTxt.autoSize = true;
 		titleTxt.text = "A Man Walks Into A Bar";
 		titleTxt.setFormat(42, FlxColor.WHITE);
-		titleTxt.x = (FlxG.width / 2) - (titleTxt.width / 2);
+		titleTxt.x = (256 + 64 + 32);
 		add(titleTxt);
 		
 		var btnPlay:FlxButton;

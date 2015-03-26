@@ -108,14 +108,6 @@ class PlayState extends FlxState
 	 
 	override public function create():Void
 	{
-		//temporary level skip button
-		var btnChicken:FlxButton;
-		btnChicken = new FlxButton(FlxG.width - 80, 0, "Level 2", clickChicken);
-		
-		//temporary menu button
-		var btnMenu:FlxButton;
-		btnMenu = new FlxButton(0, 0, "Main Menu", clickMenu);
-		
 		bg = new FlxBackdrop("assets/images/Stage1/bg.png", 1, 0, true, false);
 		add(bg);
 		

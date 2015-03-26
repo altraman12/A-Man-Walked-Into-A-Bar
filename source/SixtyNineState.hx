@@ -89,7 +89,7 @@ class SixtyNineState extends FlxState
 	{
 		canMove = true;
 		speedleft = 4;
-		speedright = 8;
+		speedright = speedleft + 6;
 		speedLSD = 4;
 		
 	//background defining
@@ -195,7 +195,7 @@ class SixtyNineState extends FlxState
 					sevenright.y = (FlxG.height / 2);
 					sevenright.animation.play("down", false, 0);
 				}
-				if (speedright < 20)
+				if (speedright < 22)
 				{
 					speedright++;
 				}

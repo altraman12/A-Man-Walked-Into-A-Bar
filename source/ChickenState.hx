@@ -117,18 +117,10 @@ class ChickenState extends FlxState
 		chicken.animation.add("dead", [4], 30, false);
 		startwait();
 		
-	//temporary menu button
-		var btnMenu:FlxButton;
-		btnMenu = new FlxButton(0, 0, "Main Menu", clickMenu);
-		
 	//boolean setting
 		firstpass = true;
 		canMove = true;
 		
-	//temporary level skip button
-		var btnSkip:FlxButton;
-		btnSkip = new FlxButton(FlxG.width - 200, 0, "Next Level", clickSkip);
-	
 	//kill car
 		killcar = new FlxSprite( -128, 32);
 		killcar.loadGraphic("assets/images/Stage2/car2right.png", false, 128, 64, true);
