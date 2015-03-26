@@ -1,12 +1,14 @@
 package;
 
 import flixel.addons.display.FlxBackdrop;
+import flixel.addons.ui.FlxButtonPlus;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.FlxG;
 import flixel.group.FlxTypedGroup;
 import flixel.group.FlxTypedGroupIterator;
 import flixel.text.FlxText;
+import flixel.ui.FlxButton;
 import flixel.util.FlxPoint;
 /**
  * ...
@@ -100,6 +102,11 @@ class GhostState extends FlxState
 		
 		doors = new FlxTypedGroup<Door> ();
 		add(doors);
+		
+		//temporary button
+		var btnskip:FlxButton;
+		btnskip = new FlxButton(FlxG.width - 200, 0, "Skip Level", levelskip);
+		add(btnskip);
 		
 		scoreText = new FlxText(FlxG.width / 2, 0, 0, "150", 20, true);
 		add(scoreText);
@@ -260,7 +267,11 @@ class GhostState extends FlxState
 				}
 			}
 		}
-		
+	}
+	
+	private function levelskip()
+	{
+		FlxG.switchState(new SixtyNineState());
 	}
 	
 }
