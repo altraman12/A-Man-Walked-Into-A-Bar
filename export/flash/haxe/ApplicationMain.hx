@@ -241,7 +241,15 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/Stage3/redascension.png");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/Stage3/surprised.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage3/x.png");
 		types.push (AssetType.IMAGE);
 		
 		
@@ -250,6 +258,14 @@ class ApplicationMain {
 		
 		
 		urls.push ("assets/images/Stage4/7.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage4/7left.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Stage4/7right.png");
 		types.push (AssetType.IMAGE);
 		
 		

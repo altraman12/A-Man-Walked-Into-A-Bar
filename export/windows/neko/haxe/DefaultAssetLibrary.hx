@@ -154,12 +154,20 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage3/hall wall.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage3/hall.png", "assets/images/Stage3/hall.png");
 		type.set ("assets/images/Stage3/hall.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage3/redascension.png", "assets/images/Stage3/redascension.png");
+		type.set ("assets/images/Stage3/redascension.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage3/surprised.png", "assets/images/Stage3/surprised.png");
 		type.set ("assets/images/Stage3/surprised.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage3/x.png", "assets/images/Stage3/x.png");
+		type.set ("assets/images/Stage3/x.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage4/69.png", "assets/images/Stage4/69.png");
 		type.set ("assets/images/Stage4/69.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage4/7.png", "assets/images/Stage4/7.png");
 		type.set ("assets/images/Stage4/7.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage4/7left.png", "assets/images/Stage4/7left.png");
+		type.set ("assets/images/Stage4/7left.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage4/7right.png", "assets/images/Stage4/7right.png");
+		type.set ("assets/images/Stage4/7right.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage4/bg.png", "assets/images/Stage4/bg.png");
 		type.set ("assets/images/Stage4/bg.png", AssetType.IMAGE);
 		path.set ("assets/music/music-goes-here.txt", "assets/music/music-goes-here.txt");
@@ -337,13 +345,25 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/Stage3/hall.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage3/redascension.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage3/surprised.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage3/x.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage4/69.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage4/7.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage4/7left.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage4/7right.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage4/bg.png";
@@ -430,9 +450,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1176,7 +1204,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
+
 #elseif html5
+
+
+
+
 
 
 

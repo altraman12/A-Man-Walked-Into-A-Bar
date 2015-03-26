@@ -152,12 +152,20 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage3/hall wall.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage3/hall.png", __ASSET__assets_images_stage3_hall_png);
 		type.set ("assets/images/Stage3/hall.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage3/redascension.png", __ASSET__assets_images_stage3_redascension_png);
+		type.set ("assets/images/Stage3/redascension.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage3/surprised.png", __ASSET__assets_images_stage3_surprised_png);
 		type.set ("assets/images/Stage3/surprised.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage3/x.png", __ASSET__assets_images_stage3_x_png);
+		type.set ("assets/images/Stage3/x.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage4/69.png", __ASSET__assets_images_stage4_69_png);
 		type.set ("assets/images/Stage4/69.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage4/7.png", __ASSET__assets_images_stage4_7_png);
 		type.set ("assets/images/Stage4/7.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage4/7left.png", __ASSET__assets_images_stage4_7left_png);
+		type.set ("assets/images/Stage4/7left.png", AssetType.IMAGE);
+		className.set ("assets/images/Stage4/7right.png", __ASSET__assets_images_stage4_7right_png);
+		type.set ("assets/images/Stage4/7right.png", AssetType.IMAGE);
 		className.set ("assets/images/Stage4/bg.png", __ASSET__assets_images_stage4_bg_png);
 		type.set ("assets/images/Stage4/bg.png", AssetType.IMAGE);
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
@@ -389,7 +397,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage3/redascension.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage3/surprised.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage3/x.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -398,6 +414,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage4/7.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage4/7left.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Stage4/7right.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -433,6 +457,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#else
 		
 		#if openfl
+		
+		
+		
+		
 		
 		
 		
@@ -665,14 +693,26 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/Stage3/hall.png", __ASSET__assets_images_stage3_hall_png);
 		type.set ("assets/images/Stage3/hall.png", AssetType.IMAGE);
 		
+		className.set ("assets/images/Stage3/redascension.png", __ASSET__assets_images_stage3_redascension_png);
+		type.set ("assets/images/Stage3/redascension.png", AssetType.IMAGE);
+		
 		className.set ("assets/images/Stage3/surprised.png", __ASSET__assets_images_stage3_surprised_png);
 		type.set ("assets/images/Stage3/surprised.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage3/x.png", __ASSET__assets_images_stage3_x_png);
+		type.set ("assets/images/Stage3/x.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/Stage4/69.png", __ASSET__assets_images_stage4_69_png);
 		type.set ("assets/images/Stage4/69.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/Stage4/7.png", __ASSET__assets_images_stage4_7_png);
 		type.set ("assets/images/Stage4/7.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage4/7left.png", __ASSET__assets_images_stage4_7left_png);
+		type.set ("assets/images/Stage4/7left.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Stage4/7right.png", __ASSET__assets_images_stage4_7right_png);
+		type.set ("assets/images/Stage4/7right.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/Stage4/bg.png", __ASSET__assets_images_stage4_bg_png);
 		type.set ("assets/images/Stage4/bg.png", AssetType.IMAGE);
@@ -1311,9 +1351,13 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage3_door_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage3_hall_wall_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage3_hall_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage3_redascension_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage3_surprised_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage3_x_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage4_69_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage4_7_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage4_7left_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_stage4_7right_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage4_bg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray { }
@@ -1324,6 +1368,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 #elseif html5
 
 #if openfl
+
+
+
+
 
 
 
@@ -1452,9 +1500,13 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:bitmap("assets/images/Stage3/door.png") class __ASSET__assets_images_stage3_door_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage3/hall wall.png") class __ASSET__assets_images_stage3_hall_wall_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage3/hall.png") class __ASSET__assets_images_stage3_hall_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage3/redascension.png") class __ASSET__assets_images_stage3_redascension_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage3/surprised.png") class __ASSET__assets_images_stage3_surprised_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage3/x.png") class __ASSET__assets_images_stage3_x_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage4/69.png") class __ASSET__assets_images_stage4_69_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage4/7.png") class __ASSET__assets_images_stage4_7_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage4/7left.png") class __ASSET__assets_images_stage4_7left_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Stage4/7right.png") class __ASSET__assets_images_stage4_7right_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage4/bg.png") class __ASSET__assets_images_stage4_bg_png extends lime.graphics.Image {}
 @:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends lime.utils.ByteArray {}
 @:file("assets/sounds/sounds-go-here.txt") class __ASSET__assets_sounds_sounds_go_here_txt extends lime.utils.ByteArray {}

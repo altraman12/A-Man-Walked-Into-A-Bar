@@ -14,7 +14,7 @@ import flixel.util.FlxPoint;
  */
 class GhostState extends FlxState
 {
-	var ghost:FlxSprite;
+	public var ghost:FlxSprite;
 	var hall:FlxBackdrop;
 	var wall:FlxSprite;
 	var knock :Array<FlxText>;
@@ -27,6 +27,8 @@ class GhostState extends FlxState
 	public var doorAnimIndex = 0;
 	public var playDoor = false;
 	var doorOpen = false;
+	public var score = 0;
+	public var scoreText:FlxText;
 	
 	public function justPressed():Bool
 	{
@@ -97,6 +99,9 @@ class GhostState extends FlxState
 		doors = new FlxTypedGroup<Door> ();
 		add(doors);
 		
+		scoreText = new FlxText(FlxG.width / 2, 0, 0, "0", 20, true);
+		add(scoreText);
+		
 		#if web
 			doors.add(new Door(((FlxG.width/2) - 259) + 465 + 175, (FlxG.height - 280) / 2, this, "assets/images/Stage3/door.png"));
 		#else
@@ -141,14 +146,26 @@ class GhostState extends FlxState
 			doorIndex++;
 			ghost.animation.play("forward");
 		}
+		doorOpen = false;
 	}
 	
 	override public function update()
 	{
 		
 		super.update();
-		hall.x -= speed;
 		
+		
+		if (doorIndex - score > 3)
+		{
+			ghost.loadGraphic("assets/images/Stage3/redascension.png", true, Math.round(512 / 4), 720, false);
+			ghost.y = 0;
+			ghost.animation.add("die", [1, 2, 3], 30, false);
+			ghost.animation.play("die");
+			//nextStage
+		}
+		
+		hall.x -= speed;
+		scoreText.text = ""+score;
 		/*	var i = 0;
 		while (i < doors.members.length)
 		{
@@ -199,7 +216,6 @@ class GhostState extends FlxState
 			
 			if (knockCount == 2)
 			{
-				playDoor = true;
 				if (doorOpen)
 				{
 					var curdoor = doors.members[doorIndex - 1];
@@ -207,12 +223,26 @@ class GhostState extends FlxState
 					doorOpen = false;
 					curdoor.surprise();
 					nextDoor();
+					score++;
+				}
+				else
+				{
+					var curdoor = doors.members[doorIndex - 1];
+					knockCount = 0;
+					doorOpen = false;
+					curdoor.xOut();
+					nextDoor();
 				}
 			}
 			else 
 			{
 				knock[knockCount].revive();
 				knockCount++;
+				if (knockCount == 2)
+				{
+					playDoor = true;
+					doorOpen = false;
+				}
 			}
 		}
 		

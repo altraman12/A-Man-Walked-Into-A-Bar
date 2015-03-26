@@ -14,11 +14,13 @@ class Door extends FlxSprite
 	var firstPass = true;
 	var subdoor:Door;
 	var surprised:FlxSprite;
+	var ex:FlxSprite;
 	
 	public function new(X:Float=0, Y:Float=0, level:GhostState, ?SimpleGraphic:Dynamic) 
 	{
 		super(X, Y, SimpleGraphic);
-		if (state.doors.members.length == 149)
+		state = level;
+		if (state.score == 149)
 		{
 			loadGraphic("assets/images/Stage3/789 door.png", true, 175, 250, false);
 		}
@@ -32,10 +34,10 @@ class Door extends FlxSprite
 		animation.add("open4", [4], 30, false);
 		animation.add("open5", [5], 30, false);
 		
-		surprised = new FlxSprite((this.x + (175 / 2)), this.y+25, "assets/images/Stage3/surprised.png");
+		surprised = new FlxSprite((this.x + (175 / 2)), this.y + 25, "assets/images/Stage3/surprised.png");
+		ex = new FlxSprite((this.x + (175 / 2)), this.y+25, "assets/images/Stage3/x.png");
 		
 		animation.add("close5", [4, 3, 2, 1, 0], 30, false);
-		state = level;
 		//this.animation.play("open");
 		//state.doors.add(this);
 	}
@@ -43,6 +45,7 @@ class Door extends FlxSprite
 	public override function update():Void
 	{
 		surprised.x = x + (160 / 2);
+		ex.x = x + (160 / 2);
 		
 		if (firstPass)
 		{
@@ -50,6 +53,10 @@ class Door extends FlxSprite
 			{
 				if (state.doors.members.length == 150)
 				{
+					state.ghost.loadGraphic("assets/images/Stage3/ascension.png", true, Math.round(512 / 4), 720, false);
+					state.ghost.y = 0;
+					state.ghost.animation.add("live", [1, 2, 3], 30, false);
+					state.ghost.animation.play("live");
 					//next level
 				}
 				else
@@ -65,12 +72,19 @@ class Door extends FlxSprite
 		if (this.x <= 0-this.width)
 		{
 			this.destroy();
+			surprised.destroy();
+			ex.destroy();
 		}
 	}	
 	
 	public function surprise()
 	{
 		state.add(surprised);
+	}
+	
+	public function xOut()
+	{
+		state.add(ex);
 	}
 	
 	public function open()
