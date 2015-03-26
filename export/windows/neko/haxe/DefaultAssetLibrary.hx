@@ -144,8 +144,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage2/road tile.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage3/789 door.png", "assets/images/Stage3/789 door.png");
 		type.set ("assets/images/Stage3/789 door.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage3/ascension.png", "assets/images/Stage3/ascension.png");
-		type.set ("assets/images/Stage3/ascension.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage3/ascension.jpg", "assets/images/Stage3/ascension.jpg");
+		type.set ("assets/images/Stage3/ascension.jpg", AssetType.IMAGE);
 		path.set ("assets/images/Stage3/chicken ghost.png", "assets/images/Stage3/chicken ghost.png");
 		type.set ("assets/images/Stage3/chicken ghost.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage3/door.png", "assets/images/Stage3/door.png");
@@ -154,8 +154,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/Stage3/hall wall.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage3/hall.png", "assets/images/Stage3/hall.png");
 		type.set ("assets/images/Stage3/hall.png", AssetType.IMAGE);
-		path.set ("assets/images/Stage3/redascension.png", "assets/images/Stage3/redascension.png");
-		type.set ("assets/images/Stage3/redascension.png", AssetType.IMAGE);
+		path.set ("assets/images/Stage3/redascension.jpg", "assets/images/Stage3/redascension.jpg");
+		type.set ("assets/images/Stage3/redascension.jpg", AssetType.IMAGE);
 		path.set ("assets/images/Stage3/surprised.png", "assets/images/Stage3/surprised.png");
 		type.set ("assets/images/Stage3/surprised.png", AssetType.IMAGE);
 		path.set ("assets/images/Stage3/x.png", "assets/images/Stage3/x.png");
@@ -330,7 +330,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/Stage3/789 door.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage3/ascension.png";
+		id = "assets/images/Stage3/ascension.jpg";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage3/chicken ghost.png";
@@ -345,7 +345,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/Stage3/hall.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
-		id = "assets/images/Stage3/redascension.png";
+		id = "assets/images/Stage3/redascension.jpg";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Stage3/surprised.png";

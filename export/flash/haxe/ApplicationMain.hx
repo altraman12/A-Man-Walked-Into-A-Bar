@@ -221,7 +221,7 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage3/ascension.png");
+		urls.push ("assets/images/Stage3/ascension.jpg");
 		types.push (AssetType.IMAGE);
 		
 		
@@ -241,7 +241,7 @@ class ApplicationMain {
 		types.push (AssetType.IMAGE);
 		
 		
-		urls.push ("assets/images/Stage3/redascension.png");
+		urls.push ("assets/images/Stage3/redascension.jpg");
 		types.push (AssetType.IMAGE);
 		
 		

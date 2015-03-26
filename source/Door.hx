@@ -20,7 +20,7 @@ class Door extends FlxSprite
 	{
 		super(X, Y, SimpleGraphic);
 		state = level;
-		if (state.score == 149)
+		if (state.score == 1)
 		{
 			loadGraphic("assets/images/Stage3/789 door.png", true, 175, 250, false);
 		}
@@ -45,7 +45,7 @@ class Door extends FlxSprite
 	public override function update():Void
 	{
 		surprised.x = x + (160 / 2);
-		ex.x = x + (160 / 2);
+		ex.x = x;
 		
 		if (firstPass)
 		{
@@ -53,10 +53,10 @@ class Door extends FlxSprite
 			{
 				if (state.doors.members.length == 150)
 				{
-					state.ghost.loadGraphic("assets/images/Stage3/ascension.png", true, Math.round(512 / 4), 720, false);
+					state.ghost.loadGraphic("assets/images/Stage3/ascension.jpg", true, Math.round(512 / 4), 720, false);
 					state.ghost.y = 0;
 					state.ghost.animation.add("live", [1, 2, 3], 30, false);
-					state.ghost.animation.play("live");
+					state.ghost.animation.play("live",true,3);
 					//next level
 				}
 				else

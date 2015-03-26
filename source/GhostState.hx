@@ -27,8 +27,10 @@ class GhostState extends FlxState
 	public var doorAnimIndex = 0;
 	public var playDoor = false;
 	var doorOpen = false;
-	public var score = 0;
+	public var score = 150;
 	public var scoreText:FlxText;
+	public var time = 60 * 30;
+	public var timeText:FlxText;
 	
 	public function justPressed():Bool
 	{
@@ -99,8 +101,11 @@ class GhostState extends FlxState
 		doors = new FlxTypedGroup<Door> ();
 		add(doors);
 		
-		scoreText = new FlxText(FlxG.width / 2, 0, 0, "0", 20, true);
+		scoreText = new FlxText(FlxG.width / 2, 0, 0, "150", 20, true);
 		add(scoreText);
+		
+		timeText = new FlxText(0, 0, 0, "" + (60 * 30), 20, true);
+		add(timeText);
 		
 		#if web
 			doors.add(new Door(((FlxG.width/2) - 259) + 465 + 175, (FlxG.height - 280) / 2, this, "assets/images/Stage3/door.png"));
@@ -154,18 +159,10 @@ class GhostState extends FlxState
 		
 		super.update();
 		
-		
-		if (doorIndex - score > 3)
-		{
-			ghost.loadGraphic("assets/images/Stage3/redascension.png", true, Math.round(512 / 4), 720, false);
-			ghost.y = 0;
-			ghost.animation.add("die", [1, 2, 3], 30, false);
-			ghost.animation.play("die");
-			//nextStage
-		}
-		
 		hall.x -= speed;
-		scoreText.text = ""+score;
+		scoreText.text = "" + score;
+		time--;
+		timeText.text = "" + Math.ceil(time);
 		/*	var i = 0;
 		while (i < doors.members.length)
 		{
@@ -223,15 +220,28 @@ class GhostState extends FlxState
 					doorOpen = false;
 					curdoor.surprise();
 					nextDoor();
-					score++;
+					score--;
 				}
 				else
 				{
 					var curdoor = doors.members[doorIndex - 1];
 					knockCount = 0;
 					doorOpen = false;
-					curdoor.xOut();
-					nextDoor();
+					
+					if ((doorIndex+1) - (150-score) > 3)
+					{
+						speed = 0;
+						ghost.loadGraphic("assets/images/Stage3/redascension.jpg", true, Math.round(512 / 4), 720, false);
+						ghost.y = 0;
+						ghost.animation.add("die", [1, 2, 3], 30, false);
+						ghost.animation.play("die",true,3);
+						//nextStage
+					}
+					else 
+					{
+						curdoor.xOut();
+						nextDoor();
+					}
 				}
 			}
 			else 
