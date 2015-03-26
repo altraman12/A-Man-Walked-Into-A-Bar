@@ -4,6 +4,7 @@ import flixel.addons.display.FlxBackdrop;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
+import flixel.system.FlxSound;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.util.FlxMath;
@@ -87,6 +88,7 @@ class SixtyNineState extends FlxState
 	
 	override public function create():Void
 	{
+		FlxG.sound.playMusic(AssetPaths.TSA moosik_wav, 1, true);
 		canMove = true;
 		speedleft = 4;
 		speedright = speedleft + 6;

@@ -29,7 +29,9 @@
 	
 	<set name="BUILD_DIR" value="export" />
 	<classpath name="source" />
-	<assets path="assets" />
+	<assets path="assets" >
+		<music path="TSA moosik_wav" Id = "soundtrack"/>
+	</assets>
 	
 	<!--------------------------------LIBRARIES------------------------------------->
 

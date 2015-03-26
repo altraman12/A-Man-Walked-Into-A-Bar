@@ -7,6 +7,7 @@ import flixel.FlxState;
 import flixel.FlxG;
 import flixel.group.FlxTypedGroup;
 import flixel.group.FlxTypedGroupIterator;
+import flixel.system.FlxSound;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.util.FlxPoint;
@@ -97,6 +98,8 @@ class GhostState extends FlxState
 	
 	override public function create() 
 	{
+		FlxG.sound.playMusic(AssetPaths.TSA moosik_wav, 1, true);
+
 		hall = new FlxBackdrop("assets/images/Stage3/hall wall.png", 0, 0, true, false);
 		add(hall);
 		

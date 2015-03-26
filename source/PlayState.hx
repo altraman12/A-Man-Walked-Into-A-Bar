@@ -7,6 +7,7 @@ import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.group.FlxGroup;
 import flixel.group.FlxTypedGroup;
+import flixel.system.FlxSound;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.util.FlxMath;
@@ -108,6 +109,8 @@ class PlayState extends FlxState
 	 
 	override public function create():Void
 	{
+		FlxG.sound.playMusic(AssetPaths.TSA moosik_wav, 1, true);
+
 		bg = new FlxBackdrop("assets/images/Stage1/bg.png", 1, 0, true, false);
 		add(bg);
 		
