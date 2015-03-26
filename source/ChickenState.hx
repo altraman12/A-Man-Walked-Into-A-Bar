@@ -120,7 +120,6 @@ class ChickenState extends FlxState
 	//temporary menu button
 		var btnMenu:FlxButton;
 		btnMenu = new FlxButton(0, 0, "Main Menu", clickMenu);
-		add(btnMenu);
 		
 	//boolean setting
 		firstpass = true;
@@ -129,7 +128,6 @@ class ChickenState extends FlxState
 	//temporary level skip button
 		var btnSkip:FlxButton;
 		btnSkip = new FlxButton(FlxG.width - 200, 0, "Next Level", clickSkip);
-		add(btnSkip);
 	
 	//kill car
 		killcar = new FlxSprite( -128, 32);
@@ -533,6 +531,13 @@ class ChickenState extends FlxState
 		chicken.animation.play("dead", false, 0);
 		canMove = false;
 		var z = new FlxTimer(1, endgame, 1);
+		var n = new FlxTimer(0.5, ressurect, 1);
+	}
+	
+	function ressurect(Timer:FlxTimer)
+	{
+		chicken.animation.play("up", false, 0);
+		chicken.alpha = 0.75;
 	}
 	
 	private function startwait()
@@ -554,7 +559,7 @@ class ChickenState extends FlxState
 	
 	private function gameOver(Timer:FlxTimer)
 	{
-		FlxG.switchState(new GhostState());
+		FlxG.switchState(new CutScene2());
 	}
 	
 	private function clickMenu()
@@ -564,6 +569,6 @@ class ChickenState extends FlxState
 	
 	private function clickSkip()
 	{
-		FlxG.switchState(new GhostState());
+		FlxG.switchState(new CutScene2());
 	}
 }

@@ -51,6 +51,7 @@ class HXCPP_CLASS_ATTRIBUTES  SoundChannel_obj : public ::openfl::_v2::events::E
 		Float __pitch;
 		::openfl::_v2::media::Sound __soundInstance;
 		::openfl::media::SoundTransform __transform;
+		::openfl::_v2::utils::ByteArray __dynamicBytes;
 		bool __thread_completed;
 		bool __addedToThread;
 		virtual Void stop( );

@@ -70,8 +70,6 @@ class HXCPP_CLASS_ATTRIBUTES  FlxBasic_obj : public hx::Object{
 		virtual ::String toString( );
 		Dynamic toString_dyn();
 
-		static int _ACTIVECOUNT;
-		static int _VISIBLECOUNT;
 };
 
 } // end namespace flixel

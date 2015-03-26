@@ -14,7 +14,7 @@ namespace events{
 
 Void ProgressEvent_obj::__construct(::String type,hx::Null< bool >  __o_bubbles,hx::Null< bool >  __o_cancelable,hx::Null< Float >  __o_bytesLoaded,hx::Null< Float >  __o_bytesTotal)
 {
-HX_STACK_FRAME("openfl.events.ProgressEvent","new",0xeed66288,"openfl.events.ProgressEvent.new","openfl/events/ProgressEvent.hx",14,0xea3bf808)
+HX_STACK_FRAME("openfl.events.ProgressEvent","new",0xeed66288,"openfl.events.ProgressEvent.new","openfl/events/ProgressEvent.hx",67,0xea3bf808)
 HX_STACK_THIS(this)
 HX_STACK_ARG(type,"type")
 HX_STACK_ARG(__o_bubbles,"bubbles")
@@ -26,11 +26,11 @@ bool cancelable = __o_cancelable.Default(false);
 Float bytesLoaded = __o_bytesLoaded.Default(0);
 Float bytesTotal = __o_bytesTotal.Default(0);
 {
-	HX_STACK_LINE(16)
+	HX_STACK_LINE(69)
 	super::__construct(type,bubbles,cancelable);
-	HX_STACK_LINE(18)
+	HX_STACK_LINE(71)
 	this->bytesLoaded = bytesLoaded;
-	HX_STACK_LINE(19)
+	HX_STACK_LINE(72)
 	this->bytesTotal = bytesTotal;
 }
 ;
@@ -51,51 +51,51 @@ Dynamic ProgressEvent_obj::__Create(hx::DynamicArray inArgs)
 	return result;}
 
 ::openfl::_v2::events::Event ProgressEvent_obj::clone( ){
-	HX_STACK_FRAME("openfl.events.ProgressEvent","clone",0xca4c7f85,"openfl.events.ProgressEvent.clone","openfl/events/ProgressEvent.hx",24,0xea3bf808)
+	HX_STACK_FRAME("openfl.events.ProgressEvent","clone",0xca4c7f85,"openfl.events.ProgressEvent.clone","openfl/events/ProgressEvent.hx",77,0xea3bf808)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(26)
+	HX_STACK_LINE(79)
 	::String _g = this->get_type();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(26)
+	HX_STACK_LINE(79)
 	bool _g1 = this->get_bubbles();		HX_STACK_VAR(_g1,"_g1");
-	HX_STACK_LINE(26)
+	HX_STACK_LINE(79)
 	bool _g2 = this->get_cancelable();		HX_STACK_VAR(_g2,"_g2");
-	HX_STACK_LINE(26)
+	HX_STACK_LINE(79)
 	return ::openfl::events::ProgressEvent_obj::__new(_g,_g1,_g2,this->bytesLoaded,this->bytesTotal);
 }
 
 
 ::String ProgressEvent_obj::toString( ){
-	HX_STACK_FRAME("openfl.events.ProgressEvent","toString",0x8ba16d84,"openfl.events.ProgressEvent.toString","openfl/events/ProgressEvent.hx",31,0xea3bf808)
+	HX_STACK_FRAME("openfl.events.ProgressEvent","toString",0x8ba16d84,"openfl.events.ProgressEvent.toString","openfl/events/ProgressEvent.hx",84,0xea3bf808)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	::String _g = this->get_type();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	::String _g1 = (HX_CSTRING("[ProgressEvent type=") + _g);		HX_STACK_VAR(_g1,"_g1");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	::String _g2 = (_g1 + HX_CSTRING(" bubbles="));		HX_STACK_VAR(_g2,"_g2");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	bool _g3 = this->get_bubbles();		HX_STACK_VAR(_g3,"_g3");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	::String _g4 = ::Std_obj::string(_g3);		HX_STACK_VAR(_g4,"_g4");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	::String _g5 = (_g2 + _g4);		HX_STACK_VAR(_g5,"_g5");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	::String _g6 = (_g5 + HX_CSTRING(" cancelable="));		HX_STACK_VAR(_g6,"_g6");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	bool _g7 = this->get_cancelable();		HX_STACK_VAR(_g7,"_g7");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	::String _g8 = ::Std_obj::string(_g7);		HX_STACK_VAR(_g8,"_g8");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	::String _g9 = (_g6 + _g8);		HX_STACK_VAR(_g9,"_g9");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	::String _g10 = (_g9 + HX_CSTRING(" bytesLoaded="));		HX_STACK_VAR(_g10,"_g10");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	::String _g11 = (_g10 + this->bytesLoaded);		HX_STACK_VAR(_g11,"_g11");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	::String _g12 = (_g11 + HX_CSTRING(" bytesTotal="));		HX_STACK_VAR(_g12,"_g12");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	::String _g13 = (_g12 + this->bytesTotal);		HX_STACK_VAR(_g13,"_g13");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(86)
 	return (_g13 + HX_CSTRING("]"));
 }
 

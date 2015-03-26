@@ -54,8 +54,11 @@ class HXCPP_CLASS_ATTRIBUTES  PlayState_obj : public ::flixel::FlxState_obj{
 		int maxBars;
 		::flixel::group::FlxTypedGroup bars;
 		::BarClass bar;
+		::flixel::FlxSprite alcoholBar;
 		::flixel::addons::display::FlxBackdrop bg;
 		int speed;
+		int levelTime;
+		bool dead;
 		virtual bool justPressed( );
 		Dynamic justPressed_dyn();
 
@@ -67,6 +70,9 @@ class HXCPP_CLASS_ATTRIBUTES  PlayState_obj : public ::flixel::FlxState_obj{
 
 		virtual ::flixel::util::FlxPoint clickCoords( );
 		Dynamic clickCoords_dyn();
+
+		virtual int roundToNearest( int number,int nearest);
+		Dynamic roundToNearest_dyn();
 
 		virtual Void create( );
 

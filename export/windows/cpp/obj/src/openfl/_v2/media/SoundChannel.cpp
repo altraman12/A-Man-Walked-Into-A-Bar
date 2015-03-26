@@ -57,7 +57,7 @@ namespace media{
 
 Void SoundChannel_obj::__construct(Dynamic handle,hx::Null< Float >  __o_startTime,hx::Null< int >  __o_loops,::openfl::media::SoundTransform soundTransform)
 {
-HX_STACK_FRAME("openfl._v2.media.SoundChannel","new",0x2471a2a1,"openfl._v2.media.SoundChannel.new","openfl/_v2/media/SoundChannel.hx",25,0xb300254c)
+HX_STACK_FRAME("openfl._v2.media.SoundChannel","new",0x2471a2a1,"openfl._v2.media.SoundChannel.new","openfl/_v2/media/SoundChannel.hx",26,0xb300254c)
 HX_STACK_THIS(this)
 HX_STACK_ARG(handle,"handle")
 HX_STACK_ARG(__o_startTime,"startTime")
@@ -66,31 +66,33 @@ HX_STACK_ARG(soundTransform,"soundTransform")
 Float startTime = __o_startTime.Default(0);
 int loops = __o_loops.Default(0);
 {
-	HX_STACK_LINE(52)
+	HX_STACK_LINE(55)
 	this->__addedToThread = false;
-	HX_STACK_LINE(51)
+	HX_STACK_LINE(54)
 	this->__thread_completed = false;
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(44)
+	this->__dynamicBytes = null();
+	HX_STACK_LINE(40)
 	this->__pitch = (int)1;
-	HX_STACK_LINE(59)
+	HX_STACK_LINE(62)
 	super::__construct(null());
-	HX_STACK_LINE(61)
+	HX_STACK_LINE(64)
 	if (((soundTransform != null()))){
-		HX_STACK_LINE(63)
+		HX_STACK_LINE(66)
 		::openfl::media::SoundTransform _g = soundTransform->clone();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(63)
+		HX_STACK_LINE(66)
 		this->__transform = _g;
 	}
-	HX_STACK_LINE(67)
+	HX_STACK_LINE(70)
 	if (((handle != null()))){
-		HX_STACK_LINE(69)
+		HX_STACK_LINE(72)
 		Dynamic _g1 = ::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_create(handle,startTime,loops,this->__transform);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(69)
+		HX_STACK_LINE(72)
 		this->__handle = _g1;
 	}
-	HX_STACK_LINE(73)
+	HX_STACK_LINE(76)
 	if (((this->__handle != null()))){
-		HX_STACK_LINE(75)
+		HX_STACK_LINE(78)
 		::openfl::_v2::media::SoundChannel_obj::__incompleteList->push(hx::ObjectPtr<OBJ_>(this));
 	}
 }
@@ -113,21 +115,21 @@ Dynamic SoundChannel_obj::__Create(hx::DynamicArray inArgs)
 
 Void SoundChannel_obj::stop( ){
 {
-		HX_STACK_FRAME("openfl._v2.media.SoundChannel","stop",0xc25616a1,"openfl._v2.media.SoundChannel.stop","openfl/_v2/media/SoundChannel.hx",97,0xb300254c)
+		HX_STACK_FRAME("openfl._v2.media.SoundChannel","stop",0xc25616a1,"openfl._v2.media.SoundChannel.stop","openfl/_v2/media/SoundChannel.hx",106,0xb300254c)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(101)
+		HX_STACK_LINE(110)
 		if (((bool((this->__soundInstance != null())) && bool((this->__soundInstance->__audioType == ::openfl::_v2::media::InternalAudioType_obj::MUSIC))))){
-			HX_STACK_LINE(103)
+			HX_STACK_LINE(112)
 			if (((::openfl::_v2::media::SoundChannel_obj::__audioState != null()))){
-				HX_STACK_LINE(104)
+				HX_STACK_LINE(113)
 				::openfl::_v2::media::SoundChannel_obj::__audioState->remove(hx::ObjectPtr<OBJ_>(this));
 			}
 		}
-		HX_STACK_LINE(111)
+		HX_STACK_LINE(120)
 		::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_stop(this->__handle);
-		HX_STACK_LINE(112)
+		HX_STACK_LINE(121)
 		this->__handle = null();
-		HX_STACK_LINE(113)
+		HX_STACK_LINE(122)
 		this->__soundInstance = null();
 	}
 return null();
@@ -137,72 +139,74 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC0(SoundChannel_obj,stop,(void))
 
 bool SoundChannel_obj::__checkComplete( ){
-	HX_STACK_FRAME("openfl._v2.media.SoundChannel","__checkComplete",0xe8454642,"openfl._v2.media.SoundChannel.__checkComplete","openfl/_v2/media/SoundChannel.hx",119,0xb300254c)
+	HX_STACK_FRAME("openfl._v2.media.SoundChannel","__checkComplete",0xe8454642,"openfl._v2.media.SoundChannel.__checkComplete","openfl/_v2/media/SoundChannel.hx",128,0xb300254c)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(119)
+	HX_STACK_LINE(128)
 	if (((this->__handle != null()))){
-		HX_STACK_LINE(121)
+		HX_STACK_LINE(130)
 		if (((  (((this->__dataProvider != null()))) ? bool(::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_needs_data(this->__handle)) : bool(false) ))){
-			HX_STACK_LINE(123)
+			HX_STACK_LINE(132)
 			::openfl::events::SampleDataEvent request = ::openfl::events::SampleDataEvent_obj::__new(::openfl::events::SampleDataEvent_obj::SAMPLE_DATA,null(),null());		HX_STACK_VAR(request,"request");
-			HX_STACK_LINE(124)
+			HX_STACK_LINE(133)
 			Float _g = ::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_get_data_position(this->__handle);		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(124)
+			HX_STACK_LINE(133)
 			request->position = _g;
-			HX_STACK_LINE(125)
-			this->__dataProvider->dispatchEvent(request);
-			HX_STACK_LINE(127)
-			if (((request->data->length > (int)0))){
-				HX_STACK_LINE(129)
-				::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_add_data(this->__handle,request->data);
+			HX_STACK_LINE(135)
+			if (((this->__dynamicBytes->length > (int)0))){
+				HX_STACK_LINE(137)
+				::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_add_data(this->__handle,this->__dynamicBytes);
 			}
+			HX_STACK_LINE(141)
+			this->__dataProvider->dispatchEvent(request);
+			HX_STACK_LINE(142)
+			this->__dynamicBytes = request->data;
 		}
-		HX_STACK_LINE(137)
+		HX_STACK_LINE(148)
 		if (((bool(this->__addedToThread) || bool((bool((this->__soundInstance != null())) && bool((this->__soundInstance->__audioType == ::openfl::_v2::media::InternalAudioType_obj::MUSIC))))))){
-			HX_STACK_LINE(139)
+			HX_STACK_LINE(150)
 			if (((::openfl::_v2::media::SoundChannel_obj::__audioState == null()))){
-				HX_STACK_LINE(141)
+				HX_STACK_LINE(152)
 				::openfl::_v2::media::AudioThreadState _g1 = ::openfl::_v2::media::AudioThreadState_obj::__new();		HX_STACK_VAR(_g1,"_g1");
-				HX_STACK_LINE(141)
+				HX_STACK_LINE(152)
 				::openfl::_v2::media::SoundChannel_obj::__audioState = _g1;
-				HX_STACK_LINE(143)
+				HX_STACK_LINE(154)
 				::openfl::_v2::media::SoundChannel_obj::__audioThreadRunning = true;
-				HX_STACK_LINE(144)
+				HX_STACK_LINE(155)
 				::openfl::_v2::media::SoundChannel_obj::__audioThreadIsIdle = false;
-				HX_STACK_LINE(146)
+				HX_STACK_LINE(157)
 				::cpp::vm::Thread _g2 = ::cpp::vm::Thread_obj::current();		HX_STACK_VAR(_g2,"_g2");
-				HX_STACK_LINE(146)
+				HX_STACK_LINE(157)
 				::openfl::_v2::media::SoundChannel_obj::__audioState->mainThread = _g2;
-				HX_STACK_LINE(147)
+				HX_STACK_LINE(158)
 				::cpp::vm::Thread _g3 = ::cpp::vm::Thread_obj::create(::openfl::_v2::media::SoundChannel_obj::__checkCompleteBackgroundThread_dyn());		HX_STACK_VAR(_g3,"_g3");
-				HX_STACK_LINE(147)
+				HX_STACK_LINE(158)
 				::openfl::_v2::media::SoundChannel_obj::__audioState->audioThread = _g3;
 			}
-			HX_STACK_LINE(151)
+			HX_STACK_LINE(162)
 			if ((!(this->__addedToThread))){
-				HX_STACK_LINE(153)
+				HX_STACK_LINE(164)
 				::openfl::_v2::media::SoundChannel_obj::__audioState->add(hx::ObjectPtr<OBJ_>(this));
-				HX_STACK_LINE(154)
+				HX_STACK_LINE(165)
 				this->__addedToThread = true;
 			}
-			HX_STACK_LINE(158)
+			HX_STACK_LINE(169)
 			return this->__thread_completed;
 		}
 		else{
-			HX_STACK_LINE(164)
+			HX_STACK_LINE(175)
 			if ((this->__runCheckComplete())){
-				HX_STACK_LINE(166)
+				HX_STACK_LINE(177)
 				return true;
 			}
 		}
-		HX_STACK_LINE(170)
+		HX_STACK_LINE(181)
 		return false;
 	}
 	else{
-		HX_STACK_LINE(174)
+		HX_STACK_LINE(185)
 		return true;
 	}
-	HX_STACK_LINE(119)
+	HX_STACK_LINE(128)
 	return false;
 }
 
@@ -210,27 +214,27 @@ bool SoundChannel_obj::__checkComplete( ){
 HX_DEFINE_DYNAMIC_FUNC0(SoundChannel_obj,__checkComplete,return )
 
 bool SoundChannel_obj::__runCheckComplete( ){
-	HX_STACK_FRAME("openfl._v2.media.SoundChannel","__runCheckComplete",0xa6084555,"openfl._v2.media.SoundChannel.__runCheckComplete","openfl/_v2/media/SoundChannel.hx",233,0xb300254c)
+	HX_STACK_FRAME("openfl._v2.media.SoundChannel","__runCheckComplete",0xa6084555,"openfl._v2.media.SoundChannel.__runCheckComplete","openfl/_v2/media/SoundChannel.hx",244,0xb300254c)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(235)
+	HX_STACK_LINE(246)
 	if ((::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_is_complete(this->__handle))){
-		HX_STACK_LINE(237)
+		HX_STACK_LINE(248)
 		this->__soundInstance = null();
-		HX_STACK_LINE(238)
+		HX_STACK_LINE(249)
 		this->__handle = null();
-		HX_STACK_LINE(240)
+		HX_STACK_LINE(251)
 		if (((this->__dataProvider != null()))){
-			HX_STACK_LINE(242)
+			HX_STACK_LINE(253)
 			(::openfl::_v2::media::SoundChannel_obj::__dynamicSoundCount)--;
 		}
-		HX_STACK_LINE(246)
+		HX_STACK_LINE(257)
 		::openfl::_v2::events::Event completeEvent = ::openfl::_v2::events::Event_obj::__new(::openfl::_v2::events::Event_obj::SOUND_COMPLETE,null(),null());		HX_STACK_VAR(completeEvent,"completeEvent");
-		HX_STACK_LINE(247)
+		HX_STACK_LINE(258)
 		this->dispatchEvent(completeEvent);
-		HX_STACK_LINE(249)
+		HX_STACK_LINE(260)
 		return true;
 	}
-	HX_STACK_LINE(253)
+	HX_STACK_LINE(264)
 	return false;
 }
 
@@ -238,9 +242,9 @@ bool SoundChannel_obj::__runCheckComplete( ){
 HX_DEFINE_DYNAMIC_FUNC0(SoundChannel_obj,__runCheckComplete,return )
 
 Float SoundChannel_obj::get_leftPeak( ){
-	HX_STACK_FRAME("openfl._v2.media.SoundChannel","get_leftPeak",0xdfea336e,"openfl._v2.media.SoundChannel.get_leftPeak","openfl/_v2/media/SoundChannel.hx",265,0xb300254c)
+	HX_STACK_FRAME("openfl._v2.media.SoundChannel","get_leftPeak",0xdfea336e,"openfl._v2.media.SoundChannel.get_leftPeak","openfl/_v2/media/SoundChannel.hx",276,0xb300254c)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(265)
+	HX_STACK_LINE(276)
 	return ::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_get_left(this->__handle);
 }
 
@@ -248,9 +252,9 @@ Float SoundChannel_obj::get_leftPeak( ){
 HX_DEFINE_DYNAMIC_FUNC0(SoundChannel_obj,get_leftPeak,return )
 
 Float SoundChannel_obj::get_rightPeak( ){
-	HX_STACK_FRAME("openfl._v2.media.SoundChannel","get_rightPeak",0xed509573,"openfl._v2.media.SoundChannel.get_rightPeak","openfl/_v2/media/SoundChannel.hx",266,0xb300254c)
+	HX_STACK_FRAME("openfl._v2.media.SoundChannel","get_rightPeak",0xed509573,"openfl._v2.media.SoundChannel.get_rightPeak","openfl/_v2/media/SoundChannel.hx",277,0xb300254c)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(266)
+	HX_STACK_LINE(277)
 	return ::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_get_right(this->__handle);
 }
 
@@ -258,9 +262,9 @@ Float SoundChannel_obj::get_rightPeak( ){
 HX_DEFINE_DYNAMIC_FUNC0(SoundChannel_obj,get_rightPeak,return )
 
 Float SoundChannel_obj::get_pitch( ){
-	HX_STACK_FRAME("openfl._v2.media.SoundChannel","get_pitch",0xc8849118,"openfl._v2.media.SoundChannel.get_pitch","openfl/_v2/media/SoundChannel.hx",267,0xb300254c)
+	HX_STACK_FRAME("openfl._v2.media.SoundChannel","get_pitch",0xc8849118,"openfl._v2.media.SoundChannel.get_pitch","openfl/_v2/media/SoundChannel.hx",278,0xb300254c)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(267)
+	HX_STACK_LINE(278)
 	return this->__pitch;
 }
 
@@ -268,12 +272,12 @@ Float SoundChannel_obj::get_pitch( ){
 HX_DEFINE_DYNAMIC_FUNC0(SoundChannel_obj,get_pitch,return )
 
 Float SoundChannel_obj::set_pitch( Float value){
-	HX_STACK_FRAME("openfl._v2.media.SoundChannel","set_pitch",0xabd57d24,"openfl._v2.media.SoundChannel.set_pitch","openfl/_v2/media/SoundChannel.hx",268,0xb300254c)
+	HX_STACK_FRAME("openfl._v2.media.SoundChannel","set_pitch",0xabd57d24,"openfl._v2.media.SoundChannel.set_pitch","openfl/_v2/media/SoundChannel.hx",279,0xb300254c)
 	HX_STACK_THIS(this)
 	HX_STACK_ARG(value,"value")
-	HX_STACK_LINE(268)
+	HX_STACK_LINE(279)
 	::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_set_pitch(this->__handle,value);
-	HX_STACK_LINE(268)
+	HX_STACK_LINE(279)
 	return this->__pitch = value;
 }
 
@@ -281,9 +285,9 @@ Float SoundChannel_obj::set_pitch( Float value){
 HX_DEFINE_DYNAMIC_FUNC1(SoundChannel_obj,set_pitch,return )
 
 Float SoundChannel_obj::get_position( ){
-	HX_STACK_FRAME("openfl._v2.media.SoundChannel","get_position",0x5994b251,"openfl._v2.media.SoundChannel.get_position","openfl/_v2/media/SoundChannel.hx",269,0xb300254c)
+	HX_STACK_FRAME("openfl._v2.media.SoundChannel","get_position",0x5994b251,"openfl._v2.media.SoundChannel.get_position","openfl/_v2/media/SoundChannel.hx",280,0xb300254c)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(269)
+	HX_STACK_LINE(280)
 	return ::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_get_position(this->__handle);
 }
 
@@ -291,12 +295,12 @@ Float SoundChannel_obj::get_position( ){
 HX_DEFINE_DYNAMIC_FUNC0(SoundChannel_obj,get_position,return )
 
 Float SoundChannel_obj::set_position( Float value){
-	HX_STACK_FRAME("openfl._v2.media.SoundChannel","set_position",0x6e8dd5c5,"openfl._v2.media.SoundChannel.set_position","openfl/_v2/media/SoundChannel.hx",270,0xb300254c)
+	HX_STACK_FRAME("openfl._v2.media.SoundChannel","set_position",0x6e8dd5c5,"openfl._v2.media.SoundChannel.set_position","openfl/_v2/media/SoundChannel.hx",281,0xb300254c)
 	HX_STACK_THIS(this)
 	HX_STACK_ARG(value,"value")
-	HX_STACK_LINE(270)
+	HX_STACK_LINE(281)
 	Float _g = this->get_position();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(270)
+	HX_STACK_LINE(281)
 	return ::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_set_position(this->__handle,_g);
 }
 
@@ -304,16 +308,16 @@ Float SoundChannel_obj::set_position( Float value){
 HX_DEFINE_DYNAMIC_FUNC1(SoundChannel_obj,set_position,return )
 
 ::openfl::media::SoundTransform SoundChannel_obj::get_soundTransform( ){
-	HX_STACK_FRAME("openfl._v2.media.SoundChannel","get_soundTransform",0xd7f1ae45,"openfl._v2.media.SoundChannel.get_soundTransform","openfl/_v2/media/SoundChannel.hx",273,0xb300254c)
+	HX_STACK_FRAME("openfl._v2.media.SoundChannel","get_soundTransform",0xd7f1ae45,"openfl._v2.media.SoundChannel.get_soundTransform","openfl/_v2/media/SoundChannel.hx",284,0xb300254c)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(275)
+	HX_STACK_LINE(286)
 	if (((this->__transform == null()))){
-		HX_STACK_LINE(277)
+		HX_STACK_LINE(288)
 		::openfl::media::SoundTransform _g = ::openfl::media::SoundTransform_obj::__new(null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(277)
+		HX_STACK_LINE(288)
 		this->__transform = _g;
 	}
-	HX_STACK_LINE(281)
+	HX_STACK_LINE(292)
 	return this->__transform->clone();
 }
 
@@ -321,16 +325,16 @@ HX_DEFINE_DYNAMIC_FUNC1(SoundChannel_obj,set_position,return )
 HX_DEFINE_DYNAMIC_FUNC0(SoundChannel_obj,get_soundTransform,return )
 
 ::openfl::media::SoundTransform SoundChannel_obj::set_soundTransform( ::openfl::media::SoundTransform value){
-	HX_STACK_FRAME("openfl._v2.media.SoundChannel","set_soundTransform",0xb4a0e0b9,"openfl._v2.media.SoundChannel.set_soundTransform","openfl/_v2/media/SoundChannel.hx",286,0xb300254c)
+	HX_STACK_FRAME("openfl._v2.media.SoundChannel","set_soundTransform",0xb4a0e0b9,"openfl._v2.media.SoundChannel.set_soundTransform","openfl/_v2/media/SoundChannel.hx",297,0xb300254c)
 	HX_STACK_THIS(this)
 	HX_STACK_ARG(value,"value")
-	HX_STACK_LINE(288)
+	HX_STACK_LINE(299)
 	::openfl::media::SoundTransform _g = value->clone();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(288)
+	HX_STACK_LINE(299)
 	this->__transform = _g;
-	HX_STACK_LINE(289)
+	HX_STACK_LINE(300)
 	::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_set_transform(this->__handle,this->__transform);
-	HX_STACK_LINE(291)
+	HX_STACK_LINE(302)
 	return value;
 }
 
@@ -348,21 +352,31 @@ bool SoundChannel_obj::__audioThreadIsIdle;
 bool SoundChannel_obj::__audioThreadRunning;
 
 ::openfl::_v2::media::SoundChannel SoundChannel_obj::createDynamic( Dynamic handle,::openfl::media::SoundTransform soundTransform,::openfl::_v2::events::EventDispatcher dataProvider){
-	HX_STACK_FRAME("openfl._v2.media.SoundChannel","createDynamic",0x952a0564,"openfl._v2.media.SoundChannel.createDynamic","openfl/_v2/media/SoundChannel.hx",82,0xb300254c)
+	HX_STACK_FRAME("openfl._v2.media.SoundChannel","createDynamic",0x952a0564,"openfl._v2.media.SoundChannel.createDynamic","openfl/_v2/media/SoundChannel.hx",85,0xb300254c)
 	HX_STACK_ARG(handle,"handle")
 	HX_STACK_ARG(soundTransform,"soundTransform")
 	HX_STACK_ARG(dataProvider,"dataProvider")
-	HX_STACK_LINE(84)
-	::openfl::_v2::media::SoundChannel result = ::openfl::_v2::media::SoundChannel_obj::__new(null(),(int)0,(int)0,soundTransform);		HX_STACK_VAR(result,"result");
-	HX_STACK_LINE(86)
-	result->__dataProvider = dataProvider;
 	HX_STACK_LINE(87)
-	result->__handle = handle;
-	HX_STACK_LINE(88)
-	::openfl::_v2::media::SoundChannel_obj::__incompleteList->push(result);
+	::openfl::_v2::media::SoundChannel result = ::openfl::_v2::media::SoundChannel_obj::__new(null(),(int)0,(int)0,soundTransform);		HX_STACK_VAR(result,"result");
+	HX_STACK_LINE(89)
+	result->__dataProvider = dataProvider;
 	HX_STACK_LINE(90)
+	result->__handle = handle;
+	HX_STACK_LINE(91)
+	::openfl::_v2::media::SoundChannel_obj::__incompleteList->push(result);
+	HX_STACK_LINE(93)
 	(::openfl::_v2::media::SoundChannel_obj::__dynamicSoundCount)++;
-	HX_STACK_LINE(92)
+	HX_STACK_LINE(96)
+	::openfl::events::SampleDataEvent request = ::openfl::events::SampleDataEvent_obj::__new(::openfl::events::SampleDataEvent_obj::SAMPLE_DATA,null(),null());		HX_STACK_VAR(request,"request");
+	HX_STACK_LINE(97)
+	Float _g = ::openfl::_v2::media::SoundChannel_obj::lime_sound_channel_get_data_position(handle);		HX_STACK_VAR(_g,"_g");
+	HX_STACK_LINE(97)
+	request->position = _g;
+	HX_STACK_LINE(98)
+	dataProvider->dispatchEvent(request);
+	HX_STACK_LINE(99)
+	result->__dynamicBytes = request->data;
+	HX_STACK_LINE(101)
 	return result;
 }
 
@@ -371,29 +385,29 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC3(SoundChannel_obj,createDynamic,return )
 
 Void SoundChannel_obj::__checkCompleteBackgroundThread( ){
 {
-		HX_STACK_FRAME("openfl._v2.media.SoundChannel","__checkCompleteBackgroundThread",0x63d86fba,"openfl._v2.media.SoundChannel.__checkCompleteBackgroundThread","openfl/_v2/media/SoundChannel.hx",183,0xb300254c)
-		HX_STACK_LINE(185)
+		HX_STACK_FRAME("openfl._v2.media.SoundChannel","__checkCompleteBackgroundThread",0x63d86fba,"openfl._v2.media.SoundChannel.__checkCompleteBackgroundThread","openfl/_v2/media/SoundChannel.hx",194,0xb300254c)
+		HX_STACK_LINE(196)
 		while((true)){
-			HX_STACK_LINE(185)
+			HX_STACK_LINE(196)
 			if ((!(::openfl::_v2::media::SoundChannel_obj::__audioThreadRunning))){
-				HX_STACK_LINE(185)
+				HX_STACK_LINE(196)
 				break;
 			}
-			HX_STACK_LINE(187)
+			HX_STACK_LINE(198)
 			if ((!(::openfl::_v2::media::SoundChannel_obj::__audioThreadIsIdle))){
-				HX_STACK_LINE(189)
+				HX_STACK_LINE(200)
 				::openfl::_v2::media::SoundChannel_obj::__audioState->updateComplete();
-				HX_STACK_LINE(191)
+				HX_STACK_LINE(202)
 				::Sys_obj::sleep(0.01);
 			}
 			else{
-				HX_STACK_LINE(195)
+				HX_STACK_LINE(206)
 				::Sys_obj::sleep(0.2);
 			}
 		}
-		HX_STACK_LINE(201)
+		HX_STACK_LINE(212)
 		::openfl::_v2::media::SoundChannel_obj::__audioThreadRunning = false;
-		HX_STACK_LINE(202)
+		HX_STACK_LINE(213)
 		::openfl::_v2::media::SoundChannel_obj::__audioThreadIsIdle = true;
 	}
 return null();
@@ -403,8 +417,8 @@ return null();
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(SoundChannel_obj,__checkCompleteBackgroundThread,(void))
 
 bool SoundChannel_obj::__completePending( ){
-	HX_STACK_FRAME("openfl._v2.media.SoundChannel","__completePending",0xd5114b7f,"openfl._v2.media.SoundChannel.__completePending","openfl/_v2/media/SoundChannel.hx",211,0xb300254c)
-	HX_STACK_LINE(211)
+	HX_STACK_FRAME("openfl._v2.media.SoundChannel","__completePending",0xd5114b7f,"openfl._v2.media.SoundChannel.__completePending","openfl/_v2/media/SoundChannel.hx",222,0xb300254c)
+	HX_STACK_LINE(222)
 	return (::openfl::_v2::media::SoundChannel_obj::__incompleteList->length > (int)0);
 }
 
@@ -413,21 +427,21 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC0(SoundChannel_obj,__completePending,return )
 
 Void SoundChannel_obj::__pollComplete( ){
 {
-		HX_STACK_FRAME("openfl._v2.media.SoundChannel","__pollComplete",0xbc37d897,"openfl._v2.media.SoundChannel.__pollComplete","openfl/_v2/media/SoundChannel.hx",216,0xb300254c)
-		HX_STACK_LINE(218)
+		HX_STACK_FRAME("openfl._v2.media.SoundChannel","__pollComplete",0xbc37d897,"openfl._v2.media.SoundChannel.__pollComplete","openfl/_v2/media/SoundChannel.hx",227,0xb300254c)
+		HX_STACK_LINE(229)
 		int i = ::openfl::_v2::media::SoundChannel_obj::__incompleteList->length;		HX_STACK_VAR(i,"i");
-		HX_STACK_LINE(220)
+		HX_STACK_LINE(231)
 		while((true)){
-			HX_STACK_LINE(220)
+			HX_STACK_LINE(231)
 			int _g = --(i);		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(220)
+			HX_STACK_LINE(231)
 			if ((!(((_g >= (int)0))))){
-				HX_STACK_LINE(220)
+				HX_STACK_LINE(231)
 				break;
 			}
-			HX_STACK_LINE(222)
+			HX_STACK_LINE(233)
 			if ((::openfl::_v2::media::SoundChannel_obj::__incompleteList->__get(i).StaticCast< ::openfl::_v2::media::SoundChannel >()->__checkComplete())){
-				HX_STACK_LINE(224)
+				HX_STACK_LINE(235)
 				::openfl::_v2::media::SoundChannel_obj::__incompleteList->splice(i,(int)1);
 			}
 		}
@@ -477,6 +491,7 @@ void SoundChannel_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(__pitch,"__pitch");
 	HX_MARK_MEMBER_NAME(__soundInstance,"__soundInstance");
 	HX_MARK_MEMBER_NAME(__transform,"__transform");
+	HX_MARK_MEMBER_NAME(__dynamicBytes,"__dynamicBytes");
 	HX_MARK_MEMBER_NAME(__thread_completed,"__thread_completed");
 	HX_MARK_MEMBER_NAME(__addedToThread,"__addedToThread");
 	::openfl::_v2::events::EventDispatcher_obj::__Mark(HX_MARK_ARG);
@@ -492,6 +507,7 @@ void SoundChannel_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(__pitch,"__pitch");
 	HX_VISIT_MEMBER_NAME(__soundInstance,"__soundInstance");
 	HX_VISIT_MEMBER_NAME(__transform,"__transform");
+	HX_VISIT_MEMBER_NAME(__dynamicBytes,"__dynamicBytes");
 	HX_VISIT_MEMBER_NAME(__thread_completed,"__thread_completed");
 	HX_VISIT_MEMBER_NAME(__addedToThread,"__addedToThread");
 	::openfl::_v2::events::EventDispatcher_obj::__Visit(HX_VISIT_ARG);
@@ -536,6 +552,7 @@ Dynamic SoundChannel_obj::__Field(const ::String &inName,bool inCallProp)
 		if (HX_FIELD_EQ(inName,"__pollComplete") ) { return __pollComplete_dyn(); }
 		if (HX_FIELD_EQ(inName,"soundTransform") ) { return get_soundTransform(); }
 		if (HX_FIELD_EQ(inName,"__dataProvider") ) { return __dataProvider; }
+		if (HX_FIELD_EQ(inName,"__dynamicBytes") ) { return __dynamicBytes; }
 		break;
 	case 15:
 		if (HX_FIELD_EQ(inName,"__soundInstance") ) { return __soundInstance; }
@@ -621,6 +638,7 @@ Dynamic SoundChannel_obj::__SetField(const ::String &inName,const Dynamic &inVal
 	case 14:
 		if (HX_FIELD_EQ(inName,"soundTransform") ) { return set_soundTransform(inValue); }
 		if (HX_FIELD_EQ(inName,"__dataProvider") ) { __dataProvider=inValue.Cast< ::openfl::_v2::events::EventDispatcher >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"__dynamicBytes") ) { __dynamicBytes=inValue.Cast< ::openfl::_v2::utils::ByteArray >(); return inValue; }
 		break;
 	case 15:
 		if (HX_FIELD_EQ(inName,"__soundInstance") ) { __soundInstance=inValue.Cast< ::openfl::_v2::media::Sound >(); return inValue; }
@@ -684,6 +702,7 @@ void SoundChannel_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_CSTRING("__pitch"));
 	outFields->push(HX_CSTRING("__soundInstance"));
 	outFields->push(HX_CSTRING("__transform"));
+	outFields->push(HX_CSTRING("__dynamicBytes"));
 	outFields->push(HX_CSTRING("__thread_completed"));
 	outFields->push(HX_CSTRING("__addedToThread"));
 	super::__GetFields(outFields);
@@ -722,6 +741,7 @@ static hx::StorageInfo sMemberStorageInfo[] = {
 	{hx::fsFloat,(int)offsetof(SoundChannel_obj,__pitch),HX_CSTRING("__pitch")},
 	{hx::fsObject /*::openfl::_v2::media::Sound*/ ,(int)offsetof(SoundChannel_obj,__soundInstance),HX_CSTRING("__soundInstance")},
 	{hx::fsObject /*::openfl::media::SoundTransform*/ ,(int)offsetof(SoundChannel_obj,__transform),HX_CSTRING("__transform")},
+	{hx::fsObject /*::openfl::_v2::utils::ByteArray*/ ,(int)offsetof(SoundChannel_obj,__dynamicBytes),HX_CSTRING("__dynamicBytes")},
 	{hx::fsBool,(int)offsetof(SoundChannel_obj,__thread_completed),HX_CSTRING("__thread_completed")},
 	{hx::fsBool,(int)offsetof(SoundChannel_obj,__addedToThread),HX_CSTRING("__addedToThread")},
 	{ hx::fsUnknown, 0, null()}
@@ -736,6 +756,7 @@ static ::String sMemberFields[] = {
 	HX_CSTRING("__pitch"),
 	HX_CSTRING("__soundInstance"),
 	HX_CSTRING("__transform"),
+	HX_CSTRING("__dynamicBytes"),
 	HX_CSTRING("__thread_completed"),
 	HX_CSTRING("__addedToThread"),
 	HX_CSTRING("stop"),

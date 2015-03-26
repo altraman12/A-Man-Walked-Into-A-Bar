@@ -8,16 +8,16 @@ namespace media{
 
 Void SoundLoaderContext_obj::__construct(hx::Null< Float >  __o_bufferTime,hx::Null< bool >  __o_checkPolicyFile)
 {
-HX_STACK_FRAME("openfl.media.SoundLoaderContext","new",0xafd95147,"openfl.media.SoundLoaderContext.new","openfl/media/SoundLoaderContext.hx",11,0x79afda07)
+HX_STACK_FRAME("openfl.media.SoundLoaderContext","new",0xafd95147,"openfl.media.SoundLoaderContext.new","openfl/media/SoundLoaderContext.hx",154,0x79afda07)
 HX_STACK_THIS(this)
 HX_STACK_ARG(__o_bufferTime,"bufferTime")
 HX_STACK_ARG(__o_checkPolicyFile,"checkPolicyFile")
 Float bufferTime = __o_bufferTime.Default(0);
 bool checkPolicyFile = __o_checkPolicyFile.Default(false);
 {
-	HX_STACK_LINE(13)
+	HX_STACK_LINE(156)
 	this->bufferTime = bufferTime;
-	HX_STACK_LINE(14)
+	HX_STACK_LINE(157)
 	this->checkPolicyFile = checkPolicyFile;
 }
 ;

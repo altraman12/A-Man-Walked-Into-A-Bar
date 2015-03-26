@@ -87,7 +87,7 @@ Float Y = __o_Y.Default(0);
 	HX_STACK_LINE(28)
 	super::__construct(X,Y,SimpleGraphic);
 	HX_STACK_LINE(29)
-	this->loadGraphic(HX_CSTRING("assets/images/bar.png"),null(),null(),null(),null(),null());
+	this->loadGraphic(HX_CSTRING("assets/images/Stage1/bar.png"),null(),null(),null(),null(),null());
 	HX_STACK_LINE(30)
 	Float _g = level->player->get_height();		HX_STACK_VAR(_g,"_g");
 	HX_STACK_LINE(30)
@@ -110,6 +110,11 @@ Float Y = __o_Y.Default(0);
 	this->firstPass = true;
 	HX_STACK_LINE(34)
 	level->bars->add(hx::ObjectPtr<OBJ_>(this));
+	HX_STACK_LINE(35)
+	if (((this->x > this->state->alcoholBar->x))){
+		HX_STACK_LINE(37)
+		this->destroy();
+	}
 }
 ;
 	return null();
@@ -130,39 +135,41 @@ Dynamic BarClass_obj::__Create(hx::DynamicArray inArgs)
 
 Void BarClass_obj::update( ){
 {
-		HX_STACK_FRAME("BarClass","update",0x1f6651d2,"BarClass.update","BarClass.hx",38,0xd42b4e59)
+		HX_STACK_FRAME("BarClass","update",0x1f6651d2,"BarClass.update","BarClass.hx",42,0xd42b4e59)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(39)
+		HX_STACK_LINE(43)
 		if ((this->firstPass)){
-			HX_STACK_LINE(41)
+			HX_STACK_LINE(45)
 			if (((this->x <= (Float(::flixel::FlxG_obj::width) / Float((int)2))))){
-				HX_STACK_LINE(43)
-				::BarClass _g = ::BarClass_obj::__new(::flixel::FlxG_obj::width,(int)0,this->state,null());		HX_STACK_VAR(_g,"_g");
-				HX_STACK_LINE(43)
-				this->state->add(_g);
-				HX_STACK_LINE(44)
+				HX_STACK_LINE(47)
+				int _g = this->state->roundToNearest(::flixel::FlxG_obj::width,(int)160);		HX_STACK_VAR(_g,"_g");
+				HX_STACK_LINE(47)
+				::BarClass _g1 = ::BarClass_obj::__new(_g,(int)0,this->state,null());		HX_STACK_VAR(_g1,"_g1");
+				HX_STACK_LINE(47)
+				this->state->add(_g1);
+				HX_STACK_LINE(48)
 				this->firstPass = false;
 			}
 		}
-		HX_STACK_LINE(48)
+		HX_STACK_LINE(52)
 		{
-			HX_STACK_LINE(48)
+			HX_STACK_LINE(52)
 			::BarClass _g = hx::ObjectPtr<OBJ_>(this);		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(48)
+			HX_STACK_LINE(52)
 			_g->set_x((_g->x - this->state->speed));
 		}
-		HX_STACK_LINE(49)
-		Float _g1 = this->get_width();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(49)
-		Float _g2 = ((int)0 - _g1);		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(49)
-		if (((this->x <= _g2))){
-			HX_STACK_LINE(51)
+		HX_STACK_LINE(53)
+		Float _g2 = this->get_width();		HX_STACK_VAR(_g2,"_g2");
+		HX_STACK_LINE(53)
+		Float _g3 = ((int)0 - _g2);		HX_STACK_VAR(_g3,"_g3");
+		HX_STACK_LINE(53)
+		if (((this->x <= _g3))){
+			HX_STACK_LINE(55)
 			this->destroy();
 		}
-		HX_STACK_LINE(54)
+		HX_STACK_LINE(58)
 		if ((::flixel::FlxG_obj::overlap(hx::ObjectPtr<OBJ_>(this),this->state->player,null(),null()))){
-			HX_STACK_LINE(56)
+			HX_STACK_LINE(60)
 			this->collide();
 		}
 	}
@@ -172,12 +179,12 @@ return null();
 
 Void BarClass_obj::gameOver( ::flixel::util::FlxTimer Timer){
 {
-		HX_STACK_FRAME("BarClass","gameOver",0xc0e0a26f,"BarClass.gameOver","BarClass.hx",62,0xd42b4e59)
+		HX_STACK_FRAME("BarClass","gameOver",0xc0e0a26f,"BarClass.gameOver","BarClass.hx",66,0xd42b4e59)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(Timer,"Timer")
-		HX_STACK_LINE(62)
+		HX_STACK_LINE(66)
 		::flixel::FlxState State = ::ChickenState_obj::__new(null());		HX_STACK_VAR(State,"State");
-		HX_STACK_LINE(62)
+		HX_STACK_LINE(66)
 		::flixel::FlxG_obj::game->_requestedState = State;
 	}
 return null();
@@ -188,17 +195,19 @@ HX_DEFINE_DYNAMIC_FUNC1(BarClass_obj,gameOver,(void))
 
 Void BarClass_obj::collide( ){
 {
-		HX_STACK_FRAME("BarClass","collide",0xa9b53395,"BarClass.collide","BarClass.hx",68,0xd42b4e59)
+		HX_STACK_FRAME("BarClass","collide",0xa9b53395,"BarClass.collide","BarClass.hx",72,0xd42b4e59)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(68)
+		HX_STACK_LINE(72)
 		if ((::flixel::util::FlxCollision_obj::pixelPerfectCheck(hx::ObjectPtr<OBJ_>(this),this->state->player,(int)255,null()))){
-			HX_STACK_LINE(70)
+			HX_STACK_LINE(74)
 			::flixel::util::FlxTimer t = ::flixel::util::FlxTimer_obj::__new((int)1,this->gameOver_dyn(),(int)1);		HX_STACK_VAR(t,"t");
-			HX_STACK_LINE(71)
+			HX_STACK_LINE(75)
 			this->state->player->animation->play(HX_CSTRING("die"),true,(int)0);
-			HX_STACK_LINE(72)
+			HX_STACK_LINE(76)
+			this->state->dead = true;
+			HX_STACK_LINE(77)
 			this->state->player->set_x(this->x);
-			HX_STACK_LINE(73)
+			HX_STACK_LINE(78)
 			this->state->speed = (int)0;
 		}
 	}

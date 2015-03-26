@@ -57,7 +57,7 @@ class Door extends FlxSprite
 					state.ghost.y = 0;
 					state.ghost.animation.add("live", [1, 2, 3], 30, false);
 					state.ghost.animation.play("live",true,3);
-					//next level
+					FlxG.switchState(new CutScene3());
 				}
 				else
 				{

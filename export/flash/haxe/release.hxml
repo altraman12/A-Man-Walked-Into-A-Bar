@@ -9,8 +9,10 @@
 -D lime=2.1.3
 -cp source
 -D tools=2.1.3
+-D FLX_NO_DEBUG
 -D flash-use-stage
 -D no-compilation
+-D NAPE_RELEASE_BUILD
 -D openfl-flash
 -D FLX_RENDER_BLIT
 -D fdb

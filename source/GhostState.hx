@@ -174,6 +174,11 @@ class GhostState extends FlxState
 			}
 		}*/
 		
+		if (time <= 0)
+		{
+			FlxG.switchState(new CutScene3Lose());
+		}
+		
 		if (inTransit)
 		{
 			nextDoor();
@@ -235,7 +240,7 @@ class GhostState extends FlxState
 						ghost.y = 0;
 						ghost.animation.add("die", [1, 2, 3], 30, false);
 						ghost.animation.play("die",true,3);
-						//nextStage
+						FlxG.switchState(new CutScene3Lose());
 					}
 					else 
 					{

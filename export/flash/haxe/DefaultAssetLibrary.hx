@@ -46,6 +46,38 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		className.set ("assets/images/Cutscene1/cg1(3).png", __ASSET__assets_images_cutscene1_cg1_3__png);
+		type.set ("assets/images/Cutscene1/cg1(3).png", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene1/cg2(3).png", __ASSET__assets_images_cutscene1_cg2_3__png);
+		type.set ("assets/images/Cutscene1/cg2(3).png", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene1/cg3(3).png", __ASSET__assets_images_cutscene1_cg3_3__png);
+		type.set ("assets/images/Cutscene1/cg3(3).png", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene1/cg4(2).png", __ASSET__assets_images_cutscene1_cg4_2__png);
+		type.set ("assets/images/Cutscene1/cg4(2).png", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene2/cg1(2).png", __ASSET__assets_images_cutscene2_cg1_2__png);
+		type.set ("assets/images/Cutscene2/cg1(2).png", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene2/cg2(2).png", __ASSET__assets_images_cutscene2_cg2_2__png);
+		type.set ("assets/images/Cutscene2/cg2(2).png", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene2/cg3(2).png", __ASSET__assets_images_cutscene2_cg3_2__png);
+		type.set ("assets/images/Cutscene2/cg3(2).png", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene2/cg4(1).png", __ASSET__assets_images_cutscene2_cg4_1__png);
+		type.set ("assets/images/Cutscene2/cg4(1).png", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene2/cg5(1).jpg", __ASSET__assets_images_cutscene2_cg5_1__jpg);
+		type.set ("assets/images/Cutscene2/cg5(1).jpg", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene3/cg1(1).png", __ASSET__assets_images_cutscene3_cg1_1__png);
+		type.set ("assets/images/Cutscene3/cg1(1).png", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene3/cg2(1).png", __ASSET__assets_images_cutscene3_cg2_1__png);
+		type.set ("assets/images/Cutscene3/cg2(1).png", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene3/cg3(1).png", __ASSET__assets_images_cutscene3_cg3_1__png);
+		type.set ("assets/images/Cutscene3/cg3(1).png", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene3/cg4(1).png", __ASSET__assets_images_cutscene3_cg4_1__png);
+		type.set ("assets/images/Cutscene3/cg4(1).png", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene3/cg5.png", __ASSET__assets_images_cutscene3_cg5_png);
+		type.set ("assets/images/Cutscene3/cg5.png", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene3Lose/1.jpg", __ASSET__assets_images_cutscene3lose_1_jpg);
+		type.set ("assets/images/Cutscene3Lose/1.jpg", AssetType.IMAGE);
+		className.set ("assets/images/Cutscene3Lose/2.jpg", __ASSET__assets_images_cutscene3lose_2_jpg);
+		type.set ("assets/images/Cutscene3Lose/2.jpg", AssetType.IMAGE);
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
 		className.set ("assets/images/Stage1/alcolholbar.png", __ASSET__assets_images_stage1_alcolholbar_png);
@@ -172,6 +204,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
 		type.set ("assets/sounds/sounds-go-here.txt", AssetType.TEXT);
+		className.set ("assets/sounds/TSA moosik.wav", __ASSET__assets_sounds_tsa_moosik_wav);
+		type.set ("assets/sounds/TSA moosik.wav", AssetType.SOUND);
 		className.set ("assets/sounds/beep.mp3", __ASSET__assets_sounds_beep_mp3);
 		type.set ("assets/sounds/beep.mp3", AssetType.MUSIC);
 		className.set ("assets/sounds/flixel.mp3", __ASSET__assets_sounds_flixel_mp3);
@@ -185,6 +219,70 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/Cutscene1/cg1(3).png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene1/cg2(3).png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene1/cg3(3).png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene1/cg4(2).png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene2/cg1(2).png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene2/cg2(2).png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene2/cg3(2).png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene2/cg4(1).png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene2/cg5(1).jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3/cg1(1).png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3/cg2(1).png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3/cg3(1).png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3/cg4(1).png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3/cg5.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3Lose/1.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3Lose/2.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/images-go-here.txt";
 		path.set (id, id);
 		
@@ -437,6 +535,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/sounds/TSA moosik.wav";
+		path.set (id, id);
+		
+		type.set (id, AssetType.SOUND);
 		id = "assets/sounds/beep.mp3";
 		path.set (id, id);
 		
@@ -525,6 +627,23 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		#end
 		
 		#if (windows || mac || linux)
@@ -533,6 +652,54 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		
+		className.set ("assets/images/Cutscene1/cg1(3).png", __ASSET__assets_images_cutscene1_cg1_3__png);
+		type.set ("assets/images/Cutscene1/cg1(3).png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene1/cg2(3).png", __ASSET__assets_images_cutscene1_cg2_3__png);
+		type.set ("assets/images/Cutscene1/cg2(3).png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene1/cg3(3).png", __ASSET__assets_images_cutscene1_cg3_3__png);
+		type.set ("assets/images/Cutscene1/cg3(3).png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene1/cg4(2).png", __ASSET__assets_images_cutscene1_cg4_2__png);
+		type.set ("assets/images/Cutscene1/cg4(2).png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene2/cg1(2).png", __ASSET__assets_images_cutscene2_cg1_2__png);
+		type.set ("assets/images/Cutscene2/cg1(2).png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene2/cg2(2).png", __ASSET__assets_images_cutscene2_cg2_2__png);
+		type.set ("assets/images/Cutscene2/cg2(2).png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene2/cg3(2).png", __ASSET__assets_images_cutscene2_cg3_2__png);
+		type.set ("assets/images/Cutscene2/cg3(2).png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene2/cg4(1).png", __ASSET__assets_images_cutscene2_cg4_1__png);
+		type.set ("assets/images/Cutscene2/cg4(1).png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene2/cg5(1).jpg", __ASSET__assets_images_cutscene2_cg5_1__jpg);
+		type.set ("assets/images/Cutscene2/cg5(1).jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene3/cg1(1).png", __ASSET__assets_images_cutscene3_cg1_1__png);
+		type.set ("assets/images/Cutscene3/cg1(1).png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene3/cg2(1).png", __ASSET__assets_images_cutscene3_cg2_1__png);
+		type.set ("assets/images/Cutscene3/cg2(1).png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene3/cg3(1).png", __ASSET__assets_images_cutscene3_cg3_1__png);
+		type.set ("assets/images/Cutscene3/cg3(1).png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene3/cg4(1).png", __ASSET__assets_images_cutscene3_cg4_1__png);
+		type.set ("assets/images/Cutscene3/cg4(1).png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene3/cg5.png", __ASSET__assets_images_cutscene3_cg5_png);
+		type.set ("assets/images/Cutscene3/cg5.png", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene3Lose/1.jpg", __ASSET__assets_images_cutscene3lose_1_jpg);
+		type.set ("assets/images/Cutscene3Lose/1.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/Cutscene3Lose/2.jpg", __ASSET__assets_images_cutscene3lose_2_jpg);
+		type.set ("assets/images/Cutscene3Lose/2.jpg", AssetType.IMAGE);
 		
 		className.set ("assets/images/images-go-here.txt", __ASSET__assets_images_images_go_here_txt);
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
@@ -722,6 +889,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
 		type.set ("assets/sounds/sounds-go-here.txt", AssetType.TEXT);
+		
+		className.set ("assets/sounds/TSA moosik.wav", __ASSET__assets_sounds_tsa_moosik_wav);
+		type.set ("assets/sounds/TSA moosik.wav", AssetType.SOUND);
 		
 		className.set ("assets/sounds/beep.mp3", __ASSET__assets_sounds_beep_mp3);
 		type.set ("assets/sounds/beep.mp3", AssetType.MUSIC);
@@ -1298,6 +1468,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if flash
 
 @:keep @:bind #if display private #end class __ASSET__assets_data_data_goes_here_txt extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene1_cg1_3__png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene1_cg2_3__png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene1_cg3_3__png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene1_cg4_2__png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene2_cg1_2__png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene2_cg2_2__png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene2_cg3_2__png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene2_cg4_1__png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene2_cg5_1__jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene3_cg1_1__png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene3_cg2_1__png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene3_cg3_1__png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene3_cg4_1__png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene3_cg5_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene3lose_1_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_cutscene3lose_2_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage1_alcolholbar_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage1_bar_inside_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -1361,6 +1547,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_stage4_bg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_tsa_moosik_wav extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_beep_mp3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_flixel_mp3 extends flash.media.Sound { }
 
@@ -1368,6 +1555,23 @@ class DefaultAssetLibrary extends AssetLibrary {
 #elseif html5
 
 #if openfl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1447,6 +1651,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 @:file("assets/data/data-goes-here.txt") class __ASSET__assets_data_data_goes_here_txt extends lime.utils.ByteArray {}
+@:bitmap("assets/images/Cutscene1/cg1(3).png") class __ASSET__assets_images_cutscene1_cg1_3__png extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene1/cg2(3).png") class __ASSET__assets_images_cutscene1_cg2_3__png extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene1/cg3(3).png") class __ASSET__assets_images_cutscene1_cg3_3__png extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene1/cg4(2).png") class __ASSET__assets_images_cutscene1_cg4_2__png extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene2/cg1(2).png") class __ASSET__assets_images_cutscene2_cg1_2__png extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene2/cg2(2).png") class __ASSET__assets_images_cutscene2_cg2_2__png extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene2/cg3(2).png") class __ASSET__assets_images_cutscene2_cg3_2__png extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene2/cg4(1).png") class __ASSET__assets_images_cutscene2_cg4_1__png extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene2/cg5(1).jpg") class __ASSET__assets_images_cutscene2_cg5_1__jpg extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene3/cg1(1).png") class __ASSET__assets_images_cutscene3_cg1_1__png extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene3/cg2(1).png") class __ASSET__assets_images_cutscene3_cg2_1__png extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene3/cg3(1).png") class __ASSET__assets_images_cutscene3_cg3_1__png extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene3/cg4(1).png") class __ASSET__assets_images_cutscene3_cg4_1__png extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene3/cg5.png") class __ASSET__assets_images_cutscene3_cg5_png extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene3Lose/1.jpg") class __ASSET__assets_images_cutscene3lose_1_jpg extends lime.graphics.Image {}
+@:bitmap("assets/images/Cutscene3Lose/2.jpg") class __ASSET__assets_images_cutscene3lose_2_jpg extends lime.graphics.Image {}
 @:file("assets/images/images-go-here.txt") class __ASSET__assets_images_images_go_here_txt extends lime.utils.ByteArray {}
 @:bitmap("assets/images/Stage1/alcolholbar.png") class __ASSET__assets_images_stage1_alcolholbar_png extends lime.graphics.Image {}
 @:bitmap("assets/images/Stage1/bar inside.png") class __ASSET__assets_images_stage1_bar_inside_png extends lime.graphics.Image {}
@@ -1510,6 +1730,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:bitmap("assets/images/Stage4/bg.png") class __ASSET__assets_images_stage4_bg_png extends lime.graphics.Image {}
 @:file("assets/music/music-goes-here.txt") class __ASSET__assets_music_music_goes_here_txt extends lime.utils.ByteArray {}
 @:file("assets/sounds/sounds-go-here.txt") class __ASSET__assets_sounds_sounds_go_here_txt extends lime.utils.ByteArray {}
+@:sound("assets/sounds/TSA moosik.wav") class __ASSET__assets_sounds_tsa_moosik_wav extends lime.audio.AudioSource {}
 @:sound("C:/HaxeToolkit/haxe/lib/flixel/3,3,6/assets/sounds/beep.mp3") class __ASSET__assets_sounds_beep_mp3 extends lime.audio.AudioSource {}
 @:sound("C:/HaxeToolkit/haxe/lib/flixel/3,3,6/assets/sounds/flixel.mp3") class __ASSET__assets_sounds_flixel_mp3 extends lime.audio.AudioSource {}
 

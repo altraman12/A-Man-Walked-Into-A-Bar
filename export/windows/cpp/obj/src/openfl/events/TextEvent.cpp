@@ -14,7 +14,7 @@ namespace events{
 
 Void TextEvent_obj::__construct(::String type,hx::Null< bool >  __o_bubbles,hx::Null< bool >  __o_cancelable,::String __o_text)
 {
-HX_STACK_FRAME("openfl.events.TextEvent","new",0x29e58508,"openfl.events.TextEvent.new","openfl/events/TextEvent.hx",13,0x23b91588)
+HX_STACK_FRAME("openfl.events.TextEvent","new",0x29e58508,"openfl.events.TextEvent.new","openfl/events/TextEvent.hx",63,0x23b91588)
 HX_STACK_THIS(this)
 HX_STACK_ARG(type,"type")
 HX_STACK_ARG(__o_bubbles,"bubbles")
@@ -24,9 +24,9 @@ bool bubbles = __o_bubbles.Default(false);
 bool cancelable = __o_cancelable.Default(false);
 ::String text = __o_text.Default(HX_CSTRING(""));
 {
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(65)
 	super::__construct(type,bubbles,cancelable);
-	HX_STACK_LINE(17)
+	HX_STACK_LINE(67)
 	this->text = text;
 }
 ;
@@ -47,47 +47,47 @@ Dynamic TextEvent_obj::__Create(hx::DynamicArray inArgs)
 	return result;}
 
 ::openfl::_v2::events::Event TextEvent_obj::clone( ){
-	HX_STACK_FRAME("openfl.events.TextEvent","clone",0x41494205,"openfl.events.TextEvent.clone","openfl/events/TextEvent.hx",22,0x23b91588)
+	HX_STACK_FRAME("openfl.events.TextEvent","clone",0x41494205,"openfl.events.TextEvent.clone","openfl/events/TextEvent.hx",72,0x23b91588)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(24)
+	HX_STACK_LINE(74)
 	::String _g = this->get_type();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(24)
+	HX_STACK_LINE(74)
 	bool _g1 = this->get_bubbles();		HX_STACK_VAR(_g1,"_g1");
-	HX_STACK_LINE(24)
+	HX_STACK_LINE(74)
 	bool _g2 = this->get_cancelable();		HX_STACK_VAR(_g2,"_g2");
-	HX_STACK_LINE(24)
+	HX_STACK_LINE(74)
 	return ::openfl::events::TextEvent_obj::__new(_g,_g1,_g2,this->text);
 }
 
 
 ::String TextEvent_obj::toString( ){
-	HX_STACK_FRAME("openfl.events.TextEvent","toString",0x2a253b04,"openfl.events.TextEvent.toString","openfl/events/TextEvent.hx",29,0x23b91588)
+	HX_STACK_FRAME("openfl.events.TextEvent","toString",0x2a253b04,"openfl.events.TextEvent.toString","openfl/events/TextEvent.hx",79,0x23b91588)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(81)
 	::String _g = this->get_type();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(81)
 	::String _g1 = (HX_CSTRING("[TextEvent type=") + _g);		HX_STACK_VAR(_g1,"_g1");
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(81)
 	::String _g2 = (_g1 + HX_CSTRING(" bubbles="));		HX_STACK_VAR(_g2,"_g2");
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(81)
 	bool _g3 = this->get_bubbles();		HX_STACK_VAR(_g3,"_g3");
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(81)
 	::String _g4 = ::Std_obj::string(_g3);		HX_STACK_VAR(_g4,"_g4");
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(81)
 	::String _g5 = (_g2 + _g4);		HX_STACK_VAR(_g5,"_g5");
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(81)
 	::String _g6 = (_g5 + HX_CSTRING(" cancelable="));		HX_STACK_VAR(_g6,"_g6");
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(81)
 	bool _g7 = this->get_cancelable();		HX_STACK_VAR(_g7,"_g7");
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(81)
 	::String _g8 = ::Std_obj::string(_g7);		HX_STACK_VAR(_g8,"_g8");
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(81)
 	::String _g9 = (_g6 + _g8);		HX_STACK_VAR(_g9,"_g9");
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(81)
 	::String _g10 = (_g9 + HX_CSTRING(" text="));		HX_STACK_VAR(_g10,"_g10");
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(81)
 	::String _g11 = (_g10 + this->text);		HX_STACK_VAR(_g11,"_g11");
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(81)
 	return (_g11 + HX_CSTRING("]"));
 }
 

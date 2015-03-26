@@ -42,8 +42,6 @@ class HXCPP_CLASS_ATTRIBUTES  PathManager_obj : public ::flixel::plugin::FlxPlug
 
 		virtual Void update( );
 
-		virtual Void draw( );
-
 		virtual Void add( ::flixel::util::FlxPath Path);
 		Dynamic add_dyn();
 

@@ -38,6 +38,9 @@ class HXCPP_CLASS_ATTRIBUTES  Float32Array_obj : public ::openfl::_v2::utils::Ar
 		typedef Float __array_access;
 		int BYTES_PER_ELEMENT;
 		int length;
+		virtual Void __setLength( int nbFloat);
+		Dynamic __setLength_dyn();
+
 		virtual Float __get( int index);
 		Dynamic __get_dyn();
 

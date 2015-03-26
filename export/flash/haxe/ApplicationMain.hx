@@ -29,6 +29,70 @@ class ApplicationMain {
 		types.push (AssetType.TEXT);
 		
 		
+		urls.push ("assets/images/Cutscene1/cg1(3).png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene1/cg2(3).png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene1/cg3(3).png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene1/cg4(2).png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene2/cg1(2).png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene2/cg2(2).png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene2/cg3(2).png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene2/cg4(1).png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene2/cg5(1).jpg");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene3/cg1(1).png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene3/cg2(1).png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene3/cg3(1).png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene3/cg4(1).png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene3/cg5.png");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene3Lose/1.jpg");
+		types.push (AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/Cutscene3Lose/2.jpg");
+		types.push (AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/images-go-here.txt");
 		types.push (AssetType.TEXT);
 		
@@ -279,6 +343,10 @@ class ApplicationMain {
 		
 		urls.push ("assets/sounds/sounds-go-here.txt");
 		types.push (AssetType.TEXT);
+		
+		
+		urls.push ("assets/sounds/TSA moosik.wav");
+		types.push (AssetType.SOUND);
 		
 		
 		urls.push ("assets/sounds/beep.mp3");

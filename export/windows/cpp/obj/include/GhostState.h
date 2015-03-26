@@ -14,9 +14,9 @@ HX_DECLARE_CLASS1(flixel,FlxState)
 HX_DECLARE_CLASS3(flixel,addons,display,FlxBackdrop)
 HX_DECLARE_CLASS2(flixel,group,FlxGroup)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
-HX_DECLARE_CLASS2(flixel,group,FlxTypedGroupIterator)
 HX_DECLARE_CLASS2(flixel,interfaces,IFlxDestroyable)
 HX_DECLARE_CLASS2(flixel,interfaces,IFlxPooled)
+HX_DECLARE_CLASS2(flixel,text,FlxText)
 HX_DECLARE_CLASS2(flixel,util,FlxPoint)
 
 
@@ -44,9 +44,21 @@ class HXCPP_CLASS_ATTRIBUTES  GhostState_obj : public ::flixel::FlxState_obj{
 
 		::flixel::FlxSprite ghost;
 		::flixel::addons::display::FlxBackdrop hall;
-		::flixel::group::FlxTypedGroupIterator doorsIterator;
+		::flixel::FlxSprite wall;
+		Array< ::Dynamic > knock;
 		::flixel::group::FlxTypedGroup doors;
 		int speed;
+		bool inTransit;
+		int knockCount;
+		bool doneWithThisDoor;
+		int doorIndex;
+		int doorAnimIndex;
+		bool playDoor;
+		bool doorOpen;
+		int score;
+		::flixel::text::FlxText scoreText;
+		int time;
+		::flixel::text::FlxText timeText;
 		virtual bool justPressed( );
 		Dynamic justPressed_dyn();
 
@@ -60,6 +72,9 @@ class HXCPP_CLASS_ATTRIBUTES  GhostState_obj : public ::flixel::FlxState_obj{
 		Dynamic clickCoords_dyn();
 
 		virtual Void create( );
+
+		virtual Void nextDoor( );
+		Dynamic nextDoor_dyn();
 
 		virtual Void update( );
 

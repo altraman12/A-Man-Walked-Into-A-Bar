@@ -70,7 +70,6 @@ class HXCPP_CLASS_ATTRIBUTES  FlxTypedSpriteGroup_obj : public ::flixel::FlxSpri
 		Dynamic members;
 		int length;
 		bool _skipTransformChildren;
-		bool _isDrawnDebug;
 		Array< ::Dynamic > _sprites;
 		virtual Void initVars( );
 

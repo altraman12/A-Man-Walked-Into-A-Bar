@@ -22,12 +22,12 @@ class HXCPP_CLASS_ATTRIBUTES  Door_obj : public ::flixel::FlxSprite_obj{
 		typedef ::flixel::FlxSprite_obj super;
 		typedef Door_obj OBJ_;
 		Door_obj();
-		Void __construct(hx::Null< Float >  __o_X,hx::Null< Float >  __o_Y,Dynamic SimpleGraphic,::GhostState level);
+		Void __construct(hx::Null< Float >  __o_X,hx::Null< Float >  __o_Y,::GhostState level,Dynamic SimpleGraphic);
 
 	public:
 		inline void *operator new( size_t inSize, bool inContainer=true)
 			{ return hx::Object::operator new(inSize,inContainer); }
-		static hx::ObjectPtr< Door_obj > __new(hx::Null< Float >  __o_X,hx::Null< Float >  __o_Y,Dynamic SimpleGraphic,::GhostState level);
+		static hx::ObjectPtr< Door_obj > __new(hx::Null< Float >  __o_X,hx::Null< Float >  __o_Y,::GhostState level,Dynamic SimpleGraphic);
 		static Dynamic __CreateEmpty();
 		static Dynamic __Create(hx::DynamicArray inArgs);
 		//~Door_obj();
@@ -41,7 +41,22 @@ class HXCPP_CLASS_ATTRIBUTES  Door_obj : public ::flixel::FlxSprite_obj{
 
 		::GhostState state;
 		bool firstPass;
+		::Door subdoor;
+		::flixel::FlxSprite surprised;
+		::flixel::FlxSprite ex;
 		virtual Void update( );
+
+		virtual Void surprise( );
+		Dynamic surprise_dyn();
+
+		virtual Void xOut( );
+		Dynamic xOut_dyn();
+
+		virtual Void open( );
+		Dynamic open_dyn();
+
+		virtual Void close( );
+		Dynamic close_dyn();
 
 };
 

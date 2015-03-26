@@ -48,6 +48,38 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		path.set ("assets/images/Cutscene1/cg1(3).png", "assets/images/Cutscene1/cg1(3).png");
+		type.set ("assets/images/Cutscene1/cg1(3).png", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene1/cg2(3).png", "assets/images/Cutscene1/cg2(3).png");
+		type.set ("assets/images/Cutscene1/cg2(3).png", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene1/cg3(3).png", "assets/images/Cutscene1/cg3(3).png");
+		type.set ("assets/images/Cutscene1/cg3(3).png", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene1/cg4(2).png", "assets/images/Cutscene1/cg4(2).png");
+		type.set ("assets/images/Cutscene1/cg4(2).png", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene2/cg1(2).png", "assets/images/Cutscene2/cg1(2).png");
+		type.set ("assets/images/Cutscene2/cg1(2).png", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene2/cg2(2).png", "assets/images/Cutscene2/cg2(2).png");
+		type.set ("assets/images/Cutscene2/cg2(2).png", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene2/cg3(2).png", "assets/images/Cutscene2/cg3(2).png");
+		type.set ("assets/images/Cutscene2/cg3(2).png", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene2/cg4(1).png", "assets/images/Cutscene2/cg4(1).png");
+		type.set ("assets/images/Cutscene2/cg4(1).png", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene2/cg5(1).jpg", "assets/images/Cutscene2/cg5(1).jpg");
+		type.set ("assets/images/Cutscene2/cg5(1).jpg", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene3/cg1(1).png", "assets/images/Cutscene3/cg1(1).png");
+		type.set ("assets/images/Cutscene3/cg1(1).png", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene3/cg2(1).png", "assets/images/Cutscene3/cg2(1).png");
+		type.set ("assets/images/Cutscene3/cg2(1).png", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene3/cg3(1).png", "assets/images/Cutscene3/cg3(1).png");
+		type.set ("assets/images/Cutscene3/cg3(1).png", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene3/cg4(1).png", "assets/images/Cutscene3/cg4(1).png");
+		type.set ("assets/images/Cutscene3/cg4(1).png", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene3/cg5.png", "assets/images/Cutscene3/cg5.png");
+		type.set ("assets/images/Cutscene3/cg5.png", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene3Lose/1.jpg", "assets/images/Cutscene3Lose/1.jpg");
+		type.set ("assets/images/Cutscene3Lose/1.jpg", AssetType.IMAGE);
+		path.set ("assets/images/Cutscene3Lose/2.jpg", "assets/images/Cutscene3Lose/2.jpg");
+		type.set ("assets/images/Cutscene3Lose/2.jpg", AssetType.IMAGE);
 		path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
 		type.set ("assets/images/images-go-here.txt", AssetType.TEXT);
 		path.set ("assets/images/Stage1/alcolholbar.png", "assets/images/Stage1/alcolholbar.png");
@@ -174,6 +206,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/sounds/sounds-go-here.txt", "assets/sounds/sounds-go-here.txt");
 		type.set ("assets/sounds/sounds-go-here.txt", AssetType.TEXT);
+		path.set ("assets/sounds/TSA moosik.wav", "assets/sounds/TSA moosik.wav");
+		type.set ("assets/sounds/TSA moosik.wav", AssetType.SOUND);
 		path.set ("assets/sounds/beep.ogg", "assets/sounds/beep.ogg");
 		type.set ("assets/sounds/beep.ogg", AssetType.SOUND);
 		path.set ("assets/sounds/flixel.ogg", "assets/sounds/flixel.ogg");
@@ -186,6 +220,54 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/data/data-goes-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
+		id = "assets/images/Cutscene1/cg1(3).png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene1/cg2(3).png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene1/cg3(3).png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene1/cg4(2).png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene2/cg1(2).png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene2/cg2(2).png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene2/cg3(2).png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene2/cg4(1).png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene2/cg5(1).jpg";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3/cg1(1).png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3/cg2(1).png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3/cg3(1).png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3/cg4(1).png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3/cg5.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3Lose/1.jpg";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/Cutscene3Lose/2.jpg";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/images-go-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
@@ -375,6 +457,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/sounds/sounds-go-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
+		id = "assets/sounds/TSA moosik.wav";
+		path.set (id, id);
+		type.set (id, AssetType.SOUND);
 		id = "assets/sounds/beep.ogg";
 		path.set (id, id);
 		type.set (id, AssetType.SOUND);
@@ -454,9 +539,43 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1208,7 +1327,41 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #elseif html5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

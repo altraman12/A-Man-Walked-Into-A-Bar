@@ -111,12 +111,10 @@ class PlayState extends FlxState
 		//temporary level skip button
 		var btnChicken:FlxButton;
 		btnChicken = new FlxButton(FlxG.width - 80, 0, "Level 2", clickChicken);
-		add(btnChicken);
 		
 		//temporary menu button
 		var btnMenu:FlxButton;
 		btnMenu = new FlxButton(0, 0, "Main Menu", clickMenu);
-		add(btnMenu);
 		
 		bg = new FlxBackdrop("assets/images/Stage1/bg.png", 1, 0, true, false);
 		add(bg);
@@ -208,7 +206,7 @@ class PlayState extends FlxState
 		
 		if (player.x>=alcoholBar.x)
 		{
-			FlxG.switchState(new ChickenState());
+			FlxG.switchState(new CutScene1());
 		}
 		
 		bg.x -= speed;
@@ -255,7 +253,7 @@ class PlayState extends FlxState
 	
 	private function clickChicken()
 	{
-		FlxG.switchState(new ChickenState());
+		FlxG.switchState(new CutScene1());
 	}
 	
 	private function clickMenu()

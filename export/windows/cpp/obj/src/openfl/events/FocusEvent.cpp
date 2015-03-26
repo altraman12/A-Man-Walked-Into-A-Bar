@@ -29,7 +29,7 @@ namespace events{
 
 Void FocusEvent_obj::__construct(::String type,hx::Null< bool >  __o_bubbles,hx::Null< bool >  __o_cancelable,::openfl::_v2::display::InteractiveObject relatedObject,hx::Null< bool >  __o_shiftKey,hx::Null< int >  __o_keyCode)
 {
-HX_STACK_FRAME("openfl.events.FocusEvent","new",0xf00a0d8b,"openfl.events.FocusEvent.new","openfl/events/FocusEvent.hx",20,0xe559e625)
+HX_STACK_FRAME("openfl.events.FocusEvent","new",0xf00a0d8b,"openfl.events.FocusEvent.new","openfl/events/FocusEvent.hx",106,0xe559e625)
 HX_STACK_THIS(this)
 HX_STACK_ARG(type,"type")
 HX_STACK_ARG(__o_bubbles,"bubbles")
@@ -42,13 +42,13 @@ bool cancelable = __o_cancelable.Default(false);
 bool shiftKey = __o_shiftKey.Default(false);
 int keyCode = __o_keyCode.Default(0);
 {
-	HX_STACK_LINE(22)
+	HX_STACK_LINE(108)
 	super::__construct(type,bubbles,cancelable);
-	HX_STACK_LINE(24)
+	HX_STACK_LINE(110)
 	this->keyCode = keyCode;
-	HX_STACK_LINE(25)
+	HX_STACK_LINE(111)
 	this->shiftKey = shiftKey;
-	HX_STACK_LINE(26)
+	HX_STACK_LINE(112)
 	this->relatedObject = relatedObject;
 }
 ;
@@ -69,69 +69,69 @@ Dynamic FocusEvent_obj::__Create(hx::DynamicArray inArgs)
 	return result;}
 
 ::openfl::_v2::events::Event FocusEvent_obj::clone( ){
-	HX_STACK_FRAME("openfl.events.FocusEvent","clone",0x40033148,"openfl.events.FocusEvent.clone","openfl/events/FocusEvent.hx",31,0xe559e625)
+	HX_STACK_FRAME("openfl.events.FocusEvent","clone",0x40033148,"openfl.events.FocusEvent.clone","openfl/events/FocusEvent.hx",117,0xe559e625)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(119)
 	::String _g = this->get_type();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(119)
 	bool _g1 = this->get_bubbles();		HX_STACK_VAR(_g1,"_g1");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(119)
 	bool _g2 = this->get_cancelable();		HX_STACK_VAR(_g2,"_g2");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(119)
 	::openfl::events::FocusEvent event = ::openfl::events::FocusEvent_obj::__new(_g,_g1,_g2,this->relatedObject,this->shiftKey,this->keyCode);		HX_STACK_VAR(event,"event");
-	HX_STACK_LINE(34)
+	HX_STACK_LINE(120)
 	Dynamic _g3 = this->get_target();		HX_STACK_VAR(_g3,"_g3");
-	HX_STACK_LINE(34)
+	HX_STACK_LINE(120)
 	event->set_target(_g3);
-	HX_STACK_LINE(35)
+	HX_STACK_LINE(121)
 	Dynamic _g4 = this->get_currentTarget();		HX_STACK_VAR(_g4,"_g4");
-	HX_STACK_LINE(35)
+	HX_STACK_LINE(121)
 	event->set_currentTarget(_g4);
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(125)
 	return event;
 }
 
 
 ::String FocusEvent_obj::toString( ){
-	HX_STACK_FRAME("openfl.events.FocusEvent","toString",0x8b53f7a1,"openfl.events.FocusEvent.toString","openfl/events/FocusEvent.hx",44,0xe559e625)
+	HX_STACK_FRAME("openfl.events.FocusEvent","toString",0x8b53f7a1,"openfl.events.FocusEvent.toString","openfl/events/FocusEvent.hx",130,0xe559e625)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g = this->get_type();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g1 = (HX_CSTRING("[FocusEvent type=") + _g);		HX_STACK_VAR(_g1,"_g1");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g2 = (_g1 + HX_CSTRING(" bubbles="));		HX_STACK_VAR(_g2,"_g2");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	bool _g3 = this->get_bubbles();		HX_STACK_VAR(_g3,"_g3");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g4 = ::Std_obj::string(_g3);		HX_STACK_VAR(_g4,"_g4");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g5 = (_g2 + _g4);		HX_STACK_VAR(_g5,"_g5");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g6 = (_g5 + HX_CSTRING(" cancelable="));		HX_STACK_VAR(_g6,"_g6");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	bool _g7 = this->get_cancelable();		HX_STACK_VAR(_g7,"_g7");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g8 = ::Std_obj::string(_g7);		HX_STACK_VAR(_g8,"_g8");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g9 = (_g6 + _g8);		HX_STACK_VAR(_g9,"_g9");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g10 = (_g9 + HX_CSTRING(" relatedObject="));		HX_STACK_VAR(_g10,"_g10");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g11 = ::Std_obj::string(this->relatedObject);		HX_STACK_VAR(_g11,"_g11");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g12 = (_g10 + _g11);		HX_STACK_VAR(_g12,"_g12");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g13 = (_g12 + HX_CSTRING(" shiftKey="));		HX_STACK_VAR(_g13,"_g13");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g14 = ::Std_obj::string(this->shiftKey);		HX_STACK_VAR(_g14,"_g14");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g15 = (_g13 + _g14);		HX_STACK_VAR(_g15,"_g15");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g16 = (_g15 + HX_CSTRING(" keyCode="));		HX_STACK_VAR(_g16,"_g16");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	::String _g17 = (_g16 + this->keyCode);		HX_STACK_VAR(_g17,"_g17");
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(132)
 	return (_g17 + HX_CSTRING("]"));
 }
 

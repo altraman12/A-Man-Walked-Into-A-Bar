@@ -61,8 +61,6 @@ class HXCPP_CLASS_ATTRIBUTES  FlxTypedButton_obj : public ::flixel::FlxSprite_ob
 
 		virtual Void draw( );
 
-		virtual Void drawDebug( );
-
 		virtual Void updateButton( );
 		Dynamic updateButton_dyn();
 

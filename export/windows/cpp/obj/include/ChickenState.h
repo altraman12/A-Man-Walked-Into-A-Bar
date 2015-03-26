@@ -11,11 +11,13 @@ HX_DECLARE_CLASS1(flixel,FlxBasic)
 HX_DECLARE_CLASS1(flixel,FlxObject)
 HX_DECLARE_CLASS1(flixel,FlxSprite)
 HX_DECLARE_CLASS1(flixel,FlxState)
+HX_DECLARE_CLASS3(flixel,addons,display,FlxBackdrop)
 HX_DECLARE_CLASS2(flixel,group,FlxGroup)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
 HX_DECLARE_CLASS2(flixel,interfaces,IFlxDestroyable)
 HX_DECLARE_CLASS2(flixel,interfaces,IFlxPooled)
 HX_DECLARE_CLASS2(flixel,util,FlxPoint)
+HX_DECLARE_CLASS2(flixel,util,FlxTimer)
 
 
 class HXCPP_CLASS_ATTRIBUTES  ChickenState_obj : public ::flixel::FlxState_obj{
@@ -41,6 +43,29 @@ class HXCPP_CLASS_ATTRIBUTES  ChickenState_obj : public ::flixel::FlxState_obj{
 		::String __ToString() const { return HX_CSTRING("ChickenState"); }
 
 		::flixel::FlxSprite chicken;
+		::flixel::FlxSprite cargoingleft1;
+		::flixel::FlxSprite cargoingleft1copy;
+		::flixel::FlxSprite cargoingleft1copy2;
+		::flixel::FlxSprite cargoingright1;
+		::flixel::FlxSprite cargoingright1copy;
+		::flixel::FlxSprite cargoingright1copy2;
+		::flixel::FlxSprite cargoingleft2;
+		::flixel::FlxSprite cargoingleft2copy;
+		::flixel::FlxSprite cargoingleft2copy2;
+		::flixel::FlxSprite cargoingright2;
+		::flixel::FlxSprite cargoingright2copy;
+		::flixel::FlxSprite cargoingright2copy2;
+		::flixel::FlxSprite cargoingleft3;
+		::flixel::FlxSprite cargoingleft3copy;
+		::flixel::FlxSprite cargoingleft3copy2;
+		::flixel::FlxSprite cargoingright3;
+		::flixel::FlxSprite cargoingright3copy;
+		::flixel::FlxSprite cargoingright3copy2;
+		::flixel::FlxSprite killcar;
+		::flixel::addons::display::FlxBackdrop background;
+		int velocidad;
+		bool firstpass;
+		bool canMove;
 		virtual bool justPressed( );
 		Dynamic justPressed_dyn();
 
@@ -55,12 +80,33 @@ class HXCPP_CLASS_ATTRIBUTES  ChickenState_obj : public ::flixel::FlxState_obj{
 
 		virtual Void create( );
 
+		virtual Void update( );
+
 		virtual Void destroy( );
 
-		virtual Void update( );
+		virtual Void runover( );
+		Dynamic runover_dyn();
+
+		virtual Void ressurect( ::flixel::util::FlxTimer Timer);
+		Dynamic ressurect_dyn();
+
+		virtual Void startwait( );
+		Dynamic startwait_dyn();
+
+		virtual Void startstart( ::flixel::util::FlxTimer Timer);
+		Dynamic startstart_dyn();
+
+		virtual Void endgame( ::flixel::util::FlxTimer Timer);
+		Dynamic endgame_dyn();
+
+		virtual Void gameOver( ::flixel::util::FlxTimer Timer);
+		Dynamic gameOver_dyn();
 
 		virtual Void clickMenu( );
 		Dynamic clickMenu_dyn();
+
+		virtual Void clickSkip( );
+		Dynamic clickSkip_dyn();
 
 };
 

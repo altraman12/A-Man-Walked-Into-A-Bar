@@ -317,6 +317,7 @@ obj/mscv18-ncxp/57588eaa_Type.obj
 obj/mscv18-ncxp/57588eaa_ValueType.obj
 obj/mscv18-ncxp/57588eaa_StringTools.obj
 obj/mscv18-ncxp/57588eaa_StringBuf.obj
+obj/mscv18-ncxp/57588eaa_SixtyNineState.obj
 obj/mscv18-ncxp/57588eaa_Reflect.obj
 obj/mscv18-ncxp/57588eaa_PlayState.obj
 obj/mscv18-ncxp/57588eaa_OptnState.obj
@@ -324,10 +325,16 @@ obj/mscv18-ncxp/57588eaa_MenuState.obj
 obj/mscv18-ncxp/57588eaa_IMap.obj
 obj/mscv18-ncxp/57588eaa_List.obj
 obj/mscv18-ncxp/57588eaa_Lambda.obj
+obj/mscv18-ncxp/57588eaa_GhostState.obj
 obj/mscv18-ncxp/57588eaa_EReg.obj
+obj/mscv18-ncxp/57588eaa_Door.obj
 obj/mscv18-ncxp/57588eaa_DefaultAssetLibrary.obj
 obj/mscv18-ncxp/82ea9a66_AssetLibrary.obj
 obj/mscv18-ncxp/57588eaa_Date.obj
+obj/mscv18-ncxp/57588eaa_CutScene3Lose.obj
+obj/mscv18-ncxp/57588eaa_CutScene3.obj
+obj/mscv18-ncxp/57588eaa_CutScene2.obj
+obj/mscv18-ncxp/57588eaa_CutScene1.obj
 obj/mscv18-ncxp/57588eaa_ChickenState.obj
 obj/mscv18-ncxp/0ed47a05_FlxState.obj
 obj/mscv18-ncxp/a12cfa6b_FlxGroup.obj
